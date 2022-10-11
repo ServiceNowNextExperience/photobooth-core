@@ -12,9 +12,14 @@ If you install that application you can use it to exercise this code.
 
 ### Tables [NOT YET STARTED]
 
-1. Photobooth: Unique record for each Photobooth installation (e.g. if there are two at a single event).
-2. Snapshot: Contains each individual snapshot made, to be monitored by the flow to process the requests.
-3. Request: New record is inserted each time a request is made to start a snapshot session. This may originate with a 3rd party API call, but it will notify the Photobooth App to initiate the taking of a new Snapshot and contain the appropriate email address to send the results to.
+1. Photobooth
+   - Unique record for each Photobooth installation (e.g. if there are two booths at a single event).
+2. Snapshot
+   - Contains images from each snapshot made.
+   - To be monitored by the flow to process the requests.
+3. Request
+   - New record is inserted each time a request is made to start a snapshot session. This may originate with a 3rd party API call, but it will notify the Photobooth App to initiate the taking of a new Snapshot and contain the appropriate email address to send the results to.
+   - Images are an array containing a bitmap of SRGB colors (e.g. [172, 186, 299...]) and will be several kilobytes in size, so need to ensure the best field type to store this.
 
 ### API [NOT YET STARTED]
 
