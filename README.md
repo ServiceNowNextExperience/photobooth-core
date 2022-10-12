@@ -21,13 +21,11 @@ If you install that application you can use it to exercise this code.
 3. Request
    - New record is inserted each time a request is made to start a snapshot session. This may originate with a 3rd party API call, but it will notify the Photobooth App to initiate the taking of a new Snapshot and contain the appropriate email address to send the results to.
 
-### API [NOT YET STARTED]
+### API [STARTED]
 
 Receives the imageData (Uint8ClampedArray) from the camera and saves it in the Snapshot table for later processing by the Flow.
 
-GraphQL?
-
-REST?
+NOTE: Created new Scripted Rest API /photobooth/snapshot.  It currently just logs the request.
 
 ### Flow [NOT YET STARTED]
 
