@@ -2,6 +2,10 @@
 
 The Photobooth Core application containing the tables and flows to support the photobooth application.
 
+To open you may use App Engine Studio > Photobooth Core
+
+**Pro Tip** Be sure to "Pull from repository" each time you start dev and it will make your life easier.
+
 ## Used By
 
 This application is not dependent on other apps but it is used by the [Photobooth App](https://github.com/ServiceNowNextExperience/photobooth).
@@ -10,7 +14,7 @@ If you install that application you can use it to exercise this code.
 
 ## Components
 
-### Tables [NOT YET STARTED]
+### Tables [STARTED]
 
 1. Photobooth
    - Unique record for each Photobooth installation (e.g. if there are two booths at a single event).
@@ -27,6 +31,8 @@ Receives the imageData (Uint8ClampedArray) from the camera and saves it in the S
 
 NOTE: Created new Scripted Rest API /photobooth/snapshot.  It currently just logs the request.
 
-### Flow [NOT YET STARTED]
+### Flow [STARTED]
 
-??? Process a new Snapshot record and send an email with the image to the email specified in the associated request.
+Process a new Snapshot record and send an email with the image to the email specified in the associated request.
+
+NOTE: Empty flow created.
