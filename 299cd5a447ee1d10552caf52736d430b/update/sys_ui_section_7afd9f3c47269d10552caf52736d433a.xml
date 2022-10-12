@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="7afd9f3c47269d10552caf52736d433a" sys_domain="global" table="x_snc_pb_core_photobooth" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2022-10-12 22:36:29</sys_created_on>
+            <sys_id>72fd9f3c47269d10552caf52736d433d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2022-10-12 22:36:29</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_pb_core_photobooth</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2022-10-12 22:36:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7afd9f3c47269d10552caf52736d433a</sys_id>
+            <sys_name>x_snc_pb_core_photobooth</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+            <sys_update_name>sys_ui_section_7afd9f3c47269d10552caf52736d433a</sys_update_name>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
