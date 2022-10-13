@@ -4,7 +4,7 @@ The Photobooth Core application containing the tables and flows to support the p
 
 To open you may use App Engine Studio > Photobooth Core
 
-**Pro Tip** Be sure to "Pull from repository" each time you start dev and it will make your life easier.
+**PRO TIP** Be sure to "Pull from repository" each time you start dev and it will make your life easier and you won't be having to stash all your changes everytime I modify this readme before checking in.
 
 ## Used By
 
