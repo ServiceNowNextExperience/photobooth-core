@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="name" table="x_snc_pb_core_photobooth">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="state" table="x_snc_pb_core_request">
         <active>true</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice>3</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Name</column_label>
+        <column_label>State</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>New</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -21,16 +21,16 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>name</element>
+        <element>state</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>255</max_length>
-        <name>x_snc_pb_core_photobooth</name>
+        <internal_type display_value="Choice">choice</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_snc_pb_core_request</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -46,12 +46,12 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>jon.lind</sys_created_by>
-        <sys_created_on>2022-10-12 22:36:51</sys_created_on>
-        <sys_name>Name</sys_name>
+        <sys_created_on>2022-10-14 19:25:16</sys_created_on>
+        <sys_name>State</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name>sys_dictionary_x_snc_pb_core_photobooth_name</sys_update_name>
+        <sys_update_name>sys_dictionary_x_snc_pb_core_request_state</sys_update_name>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_snc_pb_core_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_snc_pb_core_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2022-10-14 19:25:18</sys_created_on>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+            <sys_update_name>sys_choice_x_snc_pb_core_request_state</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_snc_pb_core_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2022-10-14 19:25:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>new</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ready</label>
+            <language>en</language>
+            <name>x_snc_pb_core_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2022-10-14 19:25:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>ready</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="60fd1f3c47269d10552caf52736d43a3" label="Photobooth" max_length="40" name="x_snc_pb_core_photobooth" type="collection">
-        <element label="Name" max_length="255" name="name" type="string"/>
+    <element db_object_id="60fd1f3c47269d10552caf52736d43a3" max_length="40" name="x_snc_pb_core_photobooth" type="collection">
+        <element label="Name" mandatory="true" max_length="255" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
     </element>
 </database>

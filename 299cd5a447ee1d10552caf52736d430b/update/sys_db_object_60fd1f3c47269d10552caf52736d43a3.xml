@@ -13,7 +13,7 @@
         <label>Photobooth</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_snc_pb_core_photobooth</name>
-        <number_ref/>
+        <number_ref display_value="PB">3db3c9ad87a65d1089790fe5dabb3539</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
@@ -22,7 +22,7 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2022-10-12 22:36:20</sys_created_on>
         <sys_id>60fd1f3c47269d10552caf52736d43a3</sys_id>
-        <sys_name>Pb Core Photobooth</sys_name>
+        <sys_name>Photobooth</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
