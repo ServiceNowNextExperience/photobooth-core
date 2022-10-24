@@ -2,7 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="state" table="x_snc_pb_core_request">
         <active>true</active>
         <array>false</array>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>3</choice>
@@ -11,7 +11,7 @@
         <column_label>State</column_label>
         <comments/>
         <create_roles/>
-        <default_value>New</default_value>
+        <default_value>new</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>

@@ -3,7 +3,7 @@
         <element label="Email" mandatory="true" max_length="255" name="email" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Photobooth" mandatory="true" max_length="32" name="photobooth" reference="x_snc_pb_core_photobooth" type="reference"/>
-        <element choice="3" default="New" label="State" max_length="40" name="state" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
                 <element inactive_on_update="false" label="Ready" sequence="1" value="ready"/>
