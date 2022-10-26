@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="DELETE">
+        <before>false</before>
+        <description/>
+        <name>Test Saving Image From Object</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[(function(){  
+	var dataObj = new TestBase64Encoding().getDataObj();
+	
+//	gs.info(`JGL: ${JSON.stringify(dataObj)}`);
+	const { requestId } = dataObj;
+	
+	if(!requestId){
+		throw "requestId property must be specified";
+	}
+	const imageData = dataObj.imageData.replace('data:', '');
+	const [imageTypeAndEncoding, image] = imageData.split(',', 2);
+	const [imageType, encoding] = imageTypeAndEncoding.split(';');
+	
+	gs.info(`JGL: Request ID:${requestId} ${imageType} ${encoding} :: ${image}`);
+
+	const snapshotGr = new GlideRecord('x_snc_pb_core_snapshot');
+	snapshotGr.initialize();
+	snapshotGr.request = requestId;
+	const snapshotId = snapshotGr.insert();
+
+	const attachment = new GlideSysAttachment();
+	const agr = attachment.writeBase64(snapshotGr, "image", imageType, image);
+	
+	
+	gs.info(`JGL: Snapshot ID: ${snapshotId} AGR: ${agr}`);
+	
+
+	
+//	gs.info(`JGL: Snapshot ID: ${snapshotId}`);
+})();]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-10-26 15:47:18</sys_created_on>
+        <sys_id>14364a5d877e191089790fe5dabb3520</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Test Saving Image From Object</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_script_fix_14364a5d877e191089790fe5dabb3520</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-10-26 19:35:28</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_script_fix_14364a5d877e191089790fe5dabb3520</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_fix"&gt;&lt;sys_script_fix action="INSERT_OR_UPDATE"&gt;&lt;before&gt;false&lt;/before&gt;&lt;description/&gt;&lt;name&gt;Test Saving Image From Object&lt;/name&gt;&lt;record_for_rollback&gt;true&lt;/record_for_rollback&gt;&lt;script&gt;&lt;![CDATA[(function(){  
+	var dataObj = new TestBase64Encoding().getDataObj();
+	
+//	gs.info(`JGL: ${JSON.stringify(dataObj)}`);
+	const { requestId } = dataObj;
+	
+	if(!requestId){
+		throw "requestId property must be specified";
+	}
+	const imageData = dataObj.imageData.replace('data:', '');
+	const [imageTypeAndEncoding, image] = imageData.split(',', 2);
+	const [imageType, encoding] = imageTypeAndEncoding.split(';');
+	
+	gs.info(`JGL: Request ID:${requestId} ${imageType} ${encoding} :: ${image}`);
+
+	const snapshotGr = new GlideRecord('x_snc_pb_core_snapshot');
+	snapshotGr.initialize();
+	snapshotGr.request = requestId;
+	const snapshotId = snapshotGr.insert();
+
+	const attachment = new GlideSysAttachment();
+	const agr = attachment.writeBase64(snapshotGr, "image", imageType, image);
+	
+	
+	gs.info(`JGL: Snapshot ID: ${snapshotId} AGR: ${agr}`);
+	
+
+	
+//	gs.info(`JGL: Snapshot ID: ${snapshotId}`);
+})();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_fix&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jon.lind&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-26 15:47:18&lt;/sys_created_on&gt;&lt;sys_id&gt;14364a5d877e191089790fe5dabb3520&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test Saving Image From Object&lt;/sys_name&gt;&lt;sys_package display_value="Photobooth Core" source="x_snc_pb_core"&gt;299cd5a447ee1d10552caf52736d430b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Photobooth Core"&gt;299cd5a447ee1d10552caf52736d430b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fix_14364a5d877e191089790fe5dabb3520&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jon.lind&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-26 19:35:28&lt;/sys_updated_on&gt;&lt;unloadable&gt;false&lt;/unloadable&gt;&lt;/sys_script_fix&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1796245918</payload_hash>
+        <record_name>Test Saving Image From Object</record_name>
+        <reverted_from/>
+        <source>e58cd3f847269d10552caf52736d4381</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-10-26 19:35:28</sys_created_on>
+        <sys_id>63ca3e998732591089790fe5dabb3553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18415cae1b70000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-10-26 19:35:28</sys_updated_on>
+        <type>Fix Script</type>
+        <update_guid>6bca3e99dd3259106548e689da7be052</update_guid>
+        <update_guid_history>6bca3e99dd3259106548e689da7be052:1796245918,c199f259c9325910b0c574ed2e4b36f0:-1704349395,9e693e19e4325910e9f3ddc35248abc8:-577666009,c8987ad5e4325910886666df6fbb01d6:-1536970382,1a3b62d58afe1910e969f7906ecc3af9:-441963019,e12bae95dbfe191069f65ddc3574f5d1:-983152308,516a6a9592fe19109484c1000b613977:-653124155,dc4a6e555cfe19104ab09ff292998133:-2038998168,0439ea55b6fe1910922683b9de86b5d1:1382291372,f078a255fbfe19100c26aa0c6ab321c8:710907566,67d662159ffe1910094bfc9309e28b76:1426839063,4726a6d128fe1910273a28e4ec02e291:-1992149732,c3f226510efe191084760b6ef919928e:-193498445,89ddc2d15bbe1910a500a2d4e847f1c6:-1267237095,32cd0e9155be1910a31b9cb4725beddf:1512826323,783dca9132be191071cd4c1a481b948b:1780239669,ea4c429170be1910a907811b46d33118:283102223,f93c8e51b6be1910b345e90db68cb457:324057584,d7fb4a5148be19102f52ec480303ba1b:1538072631,248b825133be1910c7f73ae04701d7b2:661628919,d61b8251a8be1910ec41a68d770fa759:-1201306495,6dea025156be19104c773315cae6e4cc:1037101934,051ac611f7be19108d1e8f6562e5f2ec:397802836,c9b982116fbe191063eb9d800ac302e2:-1058472606,07590edd467e19100c2540e0ceceb172:-1997737173,ff190add6b7e1910e3ada6ec5facf70d:656473493,6d17869d347e1910d0141c5f32092f02:-573471719,19964e5d207e1910a0dd4ac4906d2f11:1493509794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-10-26 20:27:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
+        <sys_id>2bbd3d8529b24fc298cd460baf02e801</sys_id>
+        <sys_metadata>14364a5d877e191089790fe5dabb3520</sys_metadata>
+        <sys_name>Test Saving Image From Object</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>sys_script_fix_14364a5d877e191089790fe5dabb3520</sys_update_name>
+        <sys_update_version display_value="sys_script_fix_14364a5d877e191089790fe5dabb3520">63ca3e998732591089790fe5dabb3553</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

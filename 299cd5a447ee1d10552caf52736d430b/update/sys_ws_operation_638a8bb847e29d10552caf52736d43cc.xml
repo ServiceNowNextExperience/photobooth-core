@@ -8,10 +8,22 @@
         <http_method>POST</http_method>
         <name>snapshot</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	// Body is like:
+	// { "imageData": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...", "requestId": "433481ed87a65d1089790fe5dabb3592" }
+	// Parse out "data:", type, encoding, etc.
+	const {imageData, requestId} = request.body.data;
+	const [imageTypeAndEncoding, image] = imageData.replace('data:', '').split(',', 2);
+	const [imageType] = imageTypeAndEncoding.split(';');
+	
+	const snapshotGr = new GlideRecord('x_snc_pb_core_snapshot');
+	snapshotGr.initialize();
+	snapshotGr.request = requestId;
+	const snapshotId = snapshotGr.insert();
 
-	gs.info(`JGL:${request.body.dataString}`);
-	response.setBody({"status" : "success"});
-
+	const attachment = new GlideSysAttachment();
+	const attachmentId = attachment.writeBase64(snapshotGr, "image", imageType, image);
+	
+	response.setBody({"status" : "success", "attachmentId" : attachmentId, "snapshotId" : snapshotId});
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_snc_pb_core/photobooth/snapshot</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
