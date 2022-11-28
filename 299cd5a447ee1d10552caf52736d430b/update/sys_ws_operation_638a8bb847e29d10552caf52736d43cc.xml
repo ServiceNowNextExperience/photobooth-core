@@ -7,30 +7,54 @@
         <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
         <http_method>POST</http_method>
         <name>snapshot</name>
-        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-	// Body is like:
-	// { "imageData": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...", "requestId": "433481ed87a65d1089790fe5dabb3592" }
-	// Parse out "data:", type, encoding, etc.
-	const {imageData, requestId} = request.body.data;
-	const [imageTypeAndEncoding, image] = imageData.replace('data:', '').split(',', 2);
-	const [imageType] = imageTypeAndEncoding.split(';');
-	
-	const snapshotGr = new GlideRecord('x_snc_pb_core_snapshot');
-	snapshotGr.initialize();
-	snapshotGr.request = requestId;
-	const snapshotId = snapshotGr.insert();
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    // Body is like:
+    // { "imageData": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...", "requestId": "433481ed87a65d1089790fe5dabb3592" }
+    // Parse out "data:", type, encoding, etc.
+    const {
+        imageData,
+        requestId
+    } = request.body.data;
+    const [imageTypeAndEncoding, image] = imageData.replace('data:', '').split(',', 2);
+    const [imageType] = imageTypeAndEncoding.split(';');
 
-	const attachment = new GlideSysAttachment();
-	const attachmentId = attachment.writeBase64(snapshotGr, "image", imageType, image);
-	
-	response.setBody({"status" : "success", "attachmentId" : attachmentId, "snapshotId" : snapshotId});
+    const logPrefix = `PB: REQ: ${requestId} Snapshot API:`;
+    gs.info(`${logPrefix} Called`);
+
+    try {
+        const snapshotGr = new GlideRecord('x_snc_pb_core_snapshot');
+        snapshotGr.initialize();
+        snapshotGr.request = requestId;
+
+        if(!requestId){
+			throw "No RequestID passed to snapshot API.";
+		}
+            const snapshotId = snapshotGr.insert();
+
+        const attachment = new GlideSysAttachment();
+        const attachmentId = attachment.writeBase64(snapshotGr, "image", imageType, image);
+
+        response.setBody({
+            "status": "success",
+            "attachmentId": attachmentId,
+            "snapshotId": snapshotId
+        });
+    } catch (exc) {
+        gs.error(`${logPrefix} error for Request ID: ` + JSON.stringify(exc));
+        response.setBody({
+            "status": "error",
+            "requestId": requestId,
+            "message": `Query logs table for errors starting with ${logPrefix}`
+        });
+    }
+
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_snc_pb_core/photobooth/snapshot</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/snapshot</relative_path>
         <request_example/>
-        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_acl_authorization>false</requires_acl_authorization>
         <requires_authentication>true</requires_authentication>
         <requires_snc_internal_role>true</requires_snc_internal_role>
         <short_description/>
