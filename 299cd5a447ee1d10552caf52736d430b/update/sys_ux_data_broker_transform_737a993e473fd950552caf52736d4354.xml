@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_pb_core.PB Public Update Snapshot</api_name>
+        <description>Data resource approve or reject the snapshot</description>
+        <mutates_server_data>true</mutates_server_data>
+        <name>PB Public Update Snapshot</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+    {&#13;
+        "name": "sysId",&#13;
+        "label": "SysId of the Snapshot record",&#13;
+        "fieldType": "string",&#13;
+        "valueType": "object",&#13;
+        "readOnly": false,&#13;
+        "mandatory": true,&#13;
+        "description": ""&#13;
+    },&#13;
+    {&#13;
+        "name": "email",&#13;
+        "label": "Email address to send to",&#13;
+        "fieldType": "string",&#13;
+        "valueType": "object",&#13;
+        "readOnly": false,&#13;
+        "mandatory": false,&#13;
+        "description": ""&#13;
+    },&#13;
+    {&#13;
+        "name": "approved",&#13;
+        "label": "Approved",&#13;
+        "fieldType": "boolean",&#13;
+        "valueType": "boolean",&#13;
+        "readOnly": false,&#13;
+        "mandatory": false,&#13;
+        "description": "Whether or not the user approves the snapshot. If not it will be deleted."&#13;
+    }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "Approved",
+  "comment" : ""
+}, {
+  "message" : "Email address to send to",
+  "comment" : ""
+}, {
+  "message" : "SysId of the Snapshot record",
+  "comment" : ""
+}, {
+  "message" : "Whether or not the user approves the snapshot. If not it will be deleted.",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform({sysId, email, approved}){  
+    const snapshotQuery = new global.GlideQuery('x_snc_pb_core_snapshot').where("sys_id", sysId);
+	
+	const {db_image : dbImage, request} = snapshotQuery
+		.selectOne('db_image', 'request.email', 'request.sys_id')
+		.get();
+	
+	if(approved === false){
+        gs.info("Approved is false, deleting db_image");
+        if(dbImage) {
+            new global.GlideQuery('db_image')
+            .where('sys_id', dbImage)
+            .deleteMultiple();
+        }
+		
+        gs.info("Approved is false, deleting snapshot");
+		snapshotQuery.deleteMultiple();
+		return;
+	} else if(approved === true){
+        gs.info("Approved is true, sending email");
+        const sendEmail = email || request.email;
+        if(!sendEmail){
+            const msg = `Unable to send email because no email was passed or found in the request ${request.sys_id}`;
+            gs.error(msg);
+            throw msg;
+        }
+        snapshotQuery.update({'send_email' : sendEmail});
+        return;
+    } else {
+        throw "Unknown error in PB Public Send Snapshot--approved must either be explicitly 'true' or 'false'.";
+    }
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-12-19 21:28:21</sys_created_on>
+        <sys_id>737a993e473fd950552caf52736d4354</sys_id>
+        <sys_name>PB Public Update Snapshot</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_737a993e473fd950552caf52736d4354</sys_update_name>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=737a993e473fd950552caf52736d4354"/>
+</record_update>

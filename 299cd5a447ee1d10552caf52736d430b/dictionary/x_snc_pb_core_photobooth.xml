@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="60fd1f3c47269d10552caf52736d43a3" max_length="40" name="x_snc_pb_core_photobooth" type="collection">
         <element hint="The WebRTC Camera Device ID for the camera you wish to default to." label="Camera Device ID" max_length="70" name="camera_device_id" type="string"/>
+        <element hint="If enabled a copy of the image will be saved to the db_image table and an approval link sent to the user." label="Enable Mobile Approval" max_length="40" name="enable_mobile_approval" type="boolean"/>
         <element label="Name" mandatory="true" max_length="255" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
     </element>
