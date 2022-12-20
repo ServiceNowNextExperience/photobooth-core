@@ -110,6 +110,7 @@
         <sys_db_object display_value="" name="sys_script_fix">sys_script_fix</sys_db_object>
         <sys_id>2bbd3d8529b24fc298cd460baf02e801</sys_id>
         <sys_metadata>14364a5d877e191089790fe5dabb3520</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Test Saving Image From Object</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_parent/>
@@ -118,5 +119,7 @@
         <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
         <sys_update_name>sys_script_fix_14364a5d877e191089790fe5dabb3520</sys_update_name>
         <sys_update_version display_value="sys_script_fix_14364a5d877e191089790fe5dabb3520">63ca3e998732591089790fe5dabb3553</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-10-26 20:27:59</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

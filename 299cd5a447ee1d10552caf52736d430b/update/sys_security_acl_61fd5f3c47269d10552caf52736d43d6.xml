@@ -12,11 +12,14 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2022-10-12 22:36:24</sys_created_on>
         <sys_id>61fd5f3c47269d10552caf52736d43d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_pb_core_photobooth</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_security_acl_61fd5f3c47269d10552caf52736d43d6</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-10-12 22:43:22</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

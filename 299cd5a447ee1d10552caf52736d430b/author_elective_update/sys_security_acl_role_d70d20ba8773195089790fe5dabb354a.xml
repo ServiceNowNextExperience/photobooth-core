@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-12-19 18:09:49</sys_created_on>
+        <sys_id>d70d20ba8773195089790fe5dabb354a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>now.photobooth-portal.snapshot.snc_internal</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_security_acl display_value="now.photobooth-portal.snapshot">5decac7a8773195089790fe5dabb35f7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_d70d20ba8773195089790fe5dabb354a</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-12-19 18:09:49</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>df0d24b68773195089790fe5dabb350c</transaction_id>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_security_acl_role_d70d20ba8773195089790fe5dabb354a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>jon.lind</sys_created_by><sys_created_on>2022-12-19 18:09:49</sys_created_on><sys_id>d70d20ba8773195089790fe5dabb354a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>now.photobooth-portal.snapshot.snc_internal</sys_name><sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package><sys_policy/><sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope><sys_security_acl display_value="now.photobooth-portal.snapshot">5decac7a8773195089790fe5dabb35f7</sys_security_acl><sys_update_name>sys_security_acl_role_d70d20ba8773195089790fe5dabb354a</sys_update_name><sys_updated_by>jon.lind</sys_updated_by><sys_updated_on>2022-12-19 18:09:49</sys_updated_on><sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role><transaction_id>df0d24b68773195089790fe5dabb350c</transaction_id></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>652727083</payload_hash>
+        <record_name>now.photobooth-portal.snapshot.snc_internal</record_name>
+        <reverted_from/>
+        <source>f6d2fb3247131110552caf52736d43b8</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-11-25 12:02:37</sys_created_on>
+        <sys_id>112dec7a8773195089790fe5dabb354c</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>184aeab0f480000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Access Roles</type>
+        <update_guid>dd2dec7a19731950df272ab4fa387e4b</update_guid>
+        <update_guid_history>dd2dec7a19731950df272ab4fa387e4b:652727083</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="now.photobooth-portal.snapshot.snc_internal">d92da0ba8773195089790fe5dabb3576</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-12-19 18:10:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>366f18982e47493c972c4faf445be2e1</sys_id>
+        <sys_metadata>d70d20ba8773195089790fe5dabb354a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>now.photobooth-portal.snapshot.snc_internal</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent display_value="now.photobooth-portal.snapshot">5decac7a8773195089790fe5dabb35f7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_d70d20ba8773195089790fe5dabb354a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_d70d20ba8773195089790fe5dabb354a">112dec7a8773195089790fe5dabb354c</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-12-19 18:10:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="DELETE">
+        <description/>
+        <name>Snapshot</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-12-19 17:17:36</sys_created_on>
+        <sys_id>ea1168fe8733195089790fe5dabb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Snapshot</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_type_ea1168fe8733195089790fe5dabb35ee</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-12-19 17:17:36</sys_updated_on>
+    </sys_ux_screen_type>
+    <sys_translated_text action="DELETE" query="documentkey=ea1168fe8733195089790fe5dabb35ee"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_ux_screen_type_ea1168fe8733195089790fe5dabb35ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type"><sys_ux_screen_type action="INSERT_OR_UPDATE"><description/><name>Snapshot</name><sys_class_name>sys_ux_screen_type</sys_class_name><sys_created_by>jon.lind</sys_created_by><sys_created_on>2022-12-19 17:17:36</sys_created_on><sys_id>ea1168fe8733195089790fe5dabb35ee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Snapshot</sys_name><sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package><sys_policy/><sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope><sys_update_name>sys_ux_screen_type_ea1168fe8733195089790fe5dabb35ee</sys_update_name><sys_updated_by>jon.lind</sys_updated_by><sys_updated_on>2022-12-19 17:17:36</sys_updated_on></sys_ux_screen_type><sys_translated_text action="delete_multiple" query="documentkey=ea1168fe8733195089790fe5dabb35ee"/></record_update>]]></payload>
+        <payload_hash>-2101239096</payload_hash>
+        <record_name>Snapshot</record_name>
+        <reverted_from/>
+        <source>34cf5cfa8733195089790fe5dabb350f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-12-19 17:17:37</sys_created_on>
+        <sys_id>2e1168fe8733195089790fe5dabb35f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1852b6413d50000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-12-19 17:17:37</sys_updated_on>
+        <type>UX Screen Collection</type>
+        <update_guid>661168fe703319501e15ce54ee70e5f0</update_guid>
+        <update_guid_history>661168fe703319501e15ce54ee70e5f0:-2101239096</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-12-19 17:20:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen_type">sys_ux_screen_type</sys_db_object>
+        <sys_id>5b143f279abf47b69cacc3c47b928ab1</sys_id>
+        <sys_metadata>ea1168fe8733195089790fe5dabb35ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Snapshot</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_type_ea1168fe8733195089790fe5dabb35ee</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_type_ea1168fe8733195089790fe5dabb35ee">2e1168fe8733195089790fe5dabb35f0</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-12-19 17:20:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-12-19 22:43:46</sys_created_on>
+        <sys_id>60cb6d7e477fd950552caf52736d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>737a993e473fd950552caf52736d4354.snc_internal</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_security_acl display_value="737a993e473fd950552caf52736d4354">d1ab2d7e477fd950552caf52736d4345</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_60cb6d7e477fd950552caf52736d43f4</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-12-19 22:43:46</sys_updated_on>
+        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <transaction_id>20cb21fa477fd950552caf52736d4370</transaction_id>
+    </sys_security_acl_role>
+</record_update>

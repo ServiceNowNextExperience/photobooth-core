@@ -4,12 +4,15 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2022-10-12 22:36:23</sys_created_on>
         <sys_id>5dfd5f3c47269d10552caf52736d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_pb_core_photobooth.x_snc_pb_core.admin</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_security_acl display_value="x_snc_pb_core_photobooth">99fd5f3c47269d10552caf52736d4371</sys_security_acl>
         <sys_update_name>sys_security_acl_role_5dfd5f3c47269d10552caf52736d4373</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-10-12 22:43:22</sys_updated_on>
         <sys_user_role display_value="x_snc_pb_core.admin" name="x_snc_pb_core.admin">c9cc1bf847269d10552caf52736d4394</sys_user_role>
         <transaction_id/>
     </sys_security_acl_role>
