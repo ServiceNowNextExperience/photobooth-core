@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>200</order>
+        <search_context_config display_value="Photobooth Workspace - Workspace Search">759e556bfcc8ad10319fac4749b93133</search_context_config>
+        <source display_value="Photobooth Workspace - x_snc_pb_core_request">4dbed56b87c8ad1089790fe5dabb35fc</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:58</sys_created_on>
+        <sys_id>12be196b87c8ad1089790fe5dabb354c</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_12be196b87c8ad1089790fe5dabb354c</sys_update_name>
+    </m2m_search_context_config_search_source>
+</record_update>

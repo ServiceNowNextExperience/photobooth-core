@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="record default Copy">ff927864871c615089790fe5dabb3547</macroponent>
+        <name>header_image/NODE__isHidden</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {any} params.imports
+  */
+function evaluateProperty({api}) {
+  if (api.data.gform
+    && api.data.gform.nowRecordCommonHeader
+    && api.data.gform.nowRecordCommonHeader.headerImageItem
+    && api.data.gform.nowRecordCommonHeader.headerImageItem.headerImage)
+      return false;
+	return true;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:19:14</sys_created_on>
+        <sys_id>00a27864871c615089790fe5dabb35c2</sys_id>
+        <sys_name>header_image/NODE__isHidden</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_00a27864871c615089790fe5dabb35c2</sys_update_name>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

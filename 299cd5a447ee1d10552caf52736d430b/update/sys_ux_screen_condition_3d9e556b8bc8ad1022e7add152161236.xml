@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_condition">
+    <sys_ux_screen_condition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions_params_mapping/>
+        <is_result_memoizable>false</is_result_memoizable>
+        <screen display_value="Record Information">3d9e556b90c8ad10b78adc0447e81034</screen>
+        <screen_condition/>
+        <script><![CDATA[(function showRecordInformationTab(params) {
+    var ribbonUtil = new x_snc_pb_core.workspaceStarterExpUtils();
+    var experienceId = 'bd9e556bd7c8ad10e797a1d87a80e42f';
+
+    // call the form header utility class with the current table, sys id, and experience id
+    var showSidePanelPage = ribbonUtil.shouldShowSidePanel(params.table, params.sysId, experienceId);
+    return showSidePanelPage;
+})(inputProperties);]]></script>
+        <scripted_condition>true</scripted_condition>
+        <sys_class_name>sys_ux_screen_condition</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:28</sys_created_on>
+        <sys_id>3d9e556b8bc8ad1022e7add152161236</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_condition_3d9e556b8bc8ad1022e7add152161236</sys_update_name>
+    </sys_ux_screen_condition>
+</record_update>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Adjust default">c2437ca4871c615089790fe5dabb3544</macroponent>
+        <name>Set values of Rate card</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    
+    var curr = api.data.rate_card_1.output.curr;
+    var rate = api.data.rate_card_1.output.adjTypes; 
+    var data = []; 
+    for(var i = 0; i < rate.length; i++)
+    {
+        data[i] = JSON.parse(rate[i]);
+    }
+    api.setState('rateArray', data);
+
+    var currency = {};
+    for(var i = 0; i < curr.length; i++)
+    {
+        var obj = JSON.parse(curr[i]);
+        var key = Object.getOwnPropertyNames(obj);
+        currency[key] = obj[key];
+    }
+    api.setState('currencyValues', currency);
+    var temp = {};
+    api.setState('updateValues', temp);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:22:36</sys_created_on>
+        <sys_id>d16330e4871c615089790fe5dabb3594</sys_id>
+        <sys_name>Set values of Rate card</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_d16330e4871c615089790fe5dabb3594</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

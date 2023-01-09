@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="record default Copy">ff927864871c615089790fe5dabb3547</macroponent>
+        <name>Handle activityLogs update</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[
+function handler({api, event: {payload: {name, value}}, helpers, imports}) {
+    const TEMPLATES_REFRESH_STATE_NAME = 'templatesRefresh';
+    const TEMPLATES_REFRESH_OPERATIONS = ['inserted', 'closed', 'deleted', 'updated'];
+    const templateRefreshState = api.state[TEMPLATES_REFRESH_STATE_NAME];
+
+    if (name === 'activityLogs' && value && value.size > 0) {
+        const mapEntries = Array.from(value);
+        if (!mapEntries || mapEntries.length < 1)
+            return;
+        const curCrudActivities = mapEntries.pop()[1].activities.get('crud');
+        if (!curCrudActivities || curCrudActivities.length < 1)
+            return;
+        const {table, operation, timestamp} = curCrudActivities[curCrudActivities.length - 1];
+
+        if (table.match(/^sys_template\d*$/) && TEMPLATES_REFRESH_OPERATIONS.includes(operation) && timestamp !== templateRefreshState.timestamp) {
+                api.setState(TEMPLATES_REFRESH_STATE_NAME, {
+                    timestamp,
+                });
+        }
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:19:38</sys_created_on>
+        <sys_id>0eb23c64871c615089790fe5dabb35cc</sys_id>
+        <sys_name>Handle activityLogs update</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_0eb23c64871c615089790fe5dabb35cc</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

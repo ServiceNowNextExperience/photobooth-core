@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="Photobooth Workspace Search Profile">b19e556b0fc8ad102064fc0af2500e34</profile>
+        <search_source display_value="">bfbe596b87c8ad1089790fe5dabb354c</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:58:04</sys_created_on>
+        <sys_id>ffbe596b87c8ad1089790fe5dabb354f</sys_id>
+        <sys_name>Photobooth Workspace Search Profile.Photobooth Instance</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_ffbe596b87c8ad1089790fe5dabb354f</sys_update_name>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

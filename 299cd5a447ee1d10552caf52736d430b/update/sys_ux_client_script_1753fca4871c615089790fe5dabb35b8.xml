@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Adjust default">c2437ca4871c615089790fe5dabb3544</macroponent>
+        <name>Set values from contract</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+
+    var adjStartDate = api.data.contract_record_1.result.starts.displayValue;
+    var adjEndDate = api.data.contract_record_1.result.ends.displayValue;
+    var rateCard = api.data.contract_record_1.result.ratecard.value;
+    var amount = api.context.props.paymentAmount;
+
+    api.setState('adjAmount', amount);
+    api.setState('adjStartDate', adjStartDate);
+    api.setState('adjEndDate', adjEndDate);
+    api.setState('rateCard', rateCard);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:22:27</sys_created_on>
+        <sys_id>1753fca4871c615089790fe5dabb35b8</sys_id>
+        <sys_name>Set values from contract</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_1753fca4871c615089790fe5dabb35b8</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

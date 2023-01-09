@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Photobooth Workspace Config">799e556b4ec8ad10359127788b88ba36</app_config>
+        <description/>
+        <event_mappings/>
+        <macroponent display_value="Record">558adc930f0210107d20409dc4767e84</macroponent>
+        <macroponent_config/>
+        <name>Record Default (Old)</name>
+        <order>1000</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Record">bd9e556b6cc8ad10ba166a7e7f041031</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f19e556beac8ad101c82fb8c27c4fb31</sys_id>
+        <sys_name>Record Default (Old)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_f19e556beac8ad101c82fb8c27c4fb31</sys_update_name>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=f19e556beac8ad101c82fb8c27c4fb31"/>
+</record_update>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Record Information">b19e556b5dc8ad10ce656f6cf73bd62f</macroponent>
+        <name>Set display block items</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ */
+function handler({api}) {
+  const transformHighlightValue = (item) => {
+    return {
+      type: 'highlighted-value',
+      label: item.displayValue,
+      status: item.status,
+      showIcon: item.showIcon,
+      color: item.colorName,
+      variant: item.variantName
+    };
+  };
+
+  const transformStringValue = (item) => {
+    return {
+      type: 'string',
+      value: item.displayValue
+    };
+  };
+
+  const transformTextLinkValue = (item) => {
+    return {
+      type: 'text-link',
+      label: item.displayValue,
+      href: 'javascript:void(0)',
+      table: item.table,
+      sysId: item.sysId
+    };
+  };
+
+  const headerItems = api.context.props.recordSecondaryItems;
+  const displayBlockItems = headerItems.map(item => {
+    const { fieldLabel, type } = item;
+    let displayBlockItemValue = {};
+
+    switch (type) {
+      case 'simple':
+        displayBlockItemValue = transformStringValue(item);
+        break;
+      case 'reference':
+        displayBlockItemValue = transformTextLinkValue(item);
+        break;
+      case 'highlighted':
+        displayBlockItemValue = transformHighlightValue(item);
+        break;
+      default:
+        // noop - empty object
+        break;
+    }
+
+    return {
+      label: fieldLabel,
+      value: displayBlockItemValue
+    };
+  });
+
+  api.setState('displayBlockItems', displayBlockItems);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:31</sys_created_on>
+        <sys_id>399e556be4c8ad105431bd3eaa6dba30</sys_id>
+        <sys_name>Set display block items</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_399e556be4c8ad105431bd3eaa6dba30</sys_update_name>
+        <target/>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

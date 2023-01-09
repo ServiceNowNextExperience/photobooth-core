@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_source">
+    <sys_search_source action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition table="x_snc_pb_core_request">active=true</condition>
+        <group/>
+        <name>Photobooth Workspace - x_snc_pb_core_request</name>
+        <roles/>
+        <source_table>x_snc_pb_core_request</source_table>
+        <sys_class_name>sys_search_source</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:53</sys_created_on>
+        <sys_id>4dbed56b87c8ad1089790fe5dabb35fc</sys_id>
+        <sys_name>Photobooth Workspace - x_snc_pb_core_request</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_search_source_4dbed56b87c8ad1089790fe5dabb35fc</sys_update_name>
+    </sys_search_source>
+    <sys_translated_text action="delete_multiple" query="documentkey=4dbed56b87c8ad1089790fe5dabb35fc"/>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>KB</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:26</sys_created_on>
+        <sys_id>319e556b63c8ad10c67d0d2de7fae433</sys_id>
+        <sys_name>KB</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_type_319e556b63c8ad10c67d0d2de7fae433</sys_update_name>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=319e556b63c8ad10c67d0d2de7fae433"/>
+</record_update>

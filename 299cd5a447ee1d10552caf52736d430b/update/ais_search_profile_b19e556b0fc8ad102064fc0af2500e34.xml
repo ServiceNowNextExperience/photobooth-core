@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile">
+    <ais_search_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This is default AI Search profile for Photobooth Workspace</description>
+        <genius_result_assembly/>
+        <label>Photobooth Workspace Search Profile</label>
+        <name>x_snc_pb_core_crrfjhu_search_profile</name>
+        <publish_id>2449c534-4b9b-4e35-b53e-a68c1d07d4ba</publish_id>
+        <state>DRAFT</state>
+        <sys_class_name>ais_search_profile</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:28</sys_created_on>
+        <sys_id>b19e556b0fc8ad102064fc0af2500e34</sys_id>
+        <sys_name>Photobooth Workspace Search Profile</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>ais_search_profile_b19e556b0fc8ad102064fc0af2500e34</sys_update_name>
+    </ais_search_profile>
+</record_update>

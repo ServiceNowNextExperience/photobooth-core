@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="CMDB Workspace App Config">6825d0ae8f312010960c53ac37bdee72</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "ckfsmyrmqaaaaddzddhhhddlfiptjbi",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "global.MODAL_SELECTED_RELAY_6413351eff67501035be517f793bf1d2",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "global.MODAL_SELECTED_RELAY_6413351eff67501035be517f793bf1d2",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_canvas_core.MODAL_SELECTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "modalId" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "modalId" ]
+            }
+          },
+          "showModal" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "showModal" ]
+            }
+          },
+          "displayOptions" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "displayOptions" ]
+            }
+          }
+        }
+      },
+      "sysId" : "882eed4091382d3a41f1bb3f382ae089"
+    },
+    "operation" : null,
+    "targetId" : "ckfsmyrmkaaaaddyddhhhddggggnggtuiiii",
+    "type" : "EVENT"
+  } ]
+}, {
+  "eventMappingId" : "aaddzddhptjbhhddckfsmyrmqaalfii",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "global.RELATED_LIST_REFRESH_REQUESTED_RELAY_6413351eff67501035be517f793bf1d2",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "global.RELATED_LIST_REFRESH_REQUESTED_RELAY_6413351eff67501035be517f793bf1d2",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_uib_base_aw.RECORD#RELATED_LIST_REFRESH_REQUESTED",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : {
+          "relatedListName" : {
+            "type" : "EVENT_PAYLOAD_BINDING",
+            "binding" : {
+              "address" : [ "relatedListName" ]
+            }
+          }
+        }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "dyddhhhddgckfsmynggtuiirmkaaaadgggii",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="DA Modal Multi-Record Associator Default">94f2f0a4871c615089790fe5dabb353d</macroponent>
+        <macroponent_config>{
+  "hideSelectAll" : false,
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "headingOnlyVisibleToScreenReaders" : false,
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>DA Modal Multi-Record Associator Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="record default Copy">ff927864871c615089790fe5dabb3547</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="DA Modal Multi-Record Associator">ace270a4871c615089790fe5dabb357c</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:20:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68f2f0a4871c615089790fe5dabb355c</sys_id>
+        <sys_name>DA Modal Multi-Record Associator Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_68f2f0a4871c615089790fe5dabb355c</sys_update_name>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=68f2f0a4871c615089790fe5dabb355c"/>
+</record_update>

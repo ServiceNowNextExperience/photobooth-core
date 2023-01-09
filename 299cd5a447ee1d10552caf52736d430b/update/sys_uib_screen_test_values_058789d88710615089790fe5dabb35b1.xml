@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+  "029f04e053610110ac9bddeeff7b1294" : {
+    "inputTable" : "@context.props.table",
+    "inputSysId" : "@context.props.sysId",
+    "inputQuery" : "@context.props.query",
+    "view" : "@context.app.view",
+    "forcedViewName" : "@context.props.views",
+    "detailsContext" : "@context.props.activityLogs",
+    "inputExtraParams" : "@context.props.extraParams"
+  },
+  "0c3568c75bee0110d78e9e7fb681c784" : {
+    "screen" : "@context.props.screen",
+    "activityLogs" : "@context.props.activityLogs",
+    "extraParams" : "@context.props.extraParams",
+    "fields" : "@context.props.fields",
+    "table" : "@context.props.table",
+    "sysId" : "@context.props.sysId",
+    "query" : "@context.props.query",
+    "userPrefs" : "@context.props.userPrefs",
+    "views" : "@context.props.views",
+    "selectedTabIndex" : "@context.props.selectedTabIndex"
+  }
+}</macroponent_config>
+        <screen display_value="Recent Snapshots default Copy">788789d88710615089790fe5dabb3584</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-05 22:12:01</sys_created_on>
+        <sys_id>058789d88710615089790fe5dabb35b1</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_058789d88710615089790fe5dabb35b1</sys_update_name>
+    </sys_uib_screen_test_values>
+</record_update>

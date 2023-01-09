@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Split default">6e2378a4871c615089790fe5dabb35d5</macroponent>
+        <name>Set state values on input</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    if (event.elementId === 'substateSelect') {
+        api.setState('substate', event.payload.value);
+    } else if (event.elementId === 'assetFunctionSelect') {
+        api.setState('assetFunction', event.payload.value);
+    } else if (event.elementId === 'qtyInput') {
+        api.setState('quantity', event.payload.value);
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:21:38</sys_created_on>
+        <sys_id>db23b8a4871c615089790fe5dabb3562</sys_id>
+        <sys_name>Set state values on input</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_db23b8a4871c615089790fe5dabb3562</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

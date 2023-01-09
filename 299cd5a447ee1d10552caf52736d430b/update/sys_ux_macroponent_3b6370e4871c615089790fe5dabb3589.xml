@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "heading_1",
+  "elementLabel" : "Heading 1",
+  "propertyValues" : {
+    "hasNoMargin" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "level" : {
+      "type" : "JSON_LITERAL",
+      "value" : "2"
+    },
+    "variant" : {
+      "type" : "JSON_LITERAL",
+      "value" : "header-secondary"
+    },
+    "wontWrap" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "label" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Reject major case candidate",
+        "comment" : ""
+      }
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Header",
+  "definition" : {
+    "id" : "1f6e0643eca7a637e36bd7833549ec9e",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : {
+    "padding-bottom" : "24px"
+  }
+}, {
+  "elementId" : "rich_text_1",
+  "elementLabel" : "Rich Text 1",
+  "propertyValues" : {
+    "html" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "descriptionText" ]
+      }
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "2d56f06d55f46bbd4e79b5e624beb940",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : {
+    "color" : "rgb(var(--now-color_text--primary))",
+    "padding-bottom" : "4px"
+  }
+}, {
+  "elementId" : "textarea_1",
+  "elementLabel" : "Textarea 1",
+  "propertyValues" : {
+    "minlength" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "maxlength" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "showCounter" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "autoresize" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "helperContent" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Internal work notes - not visible to customer",
+        "comment" : ""
+      }
+    },
+    "optional" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "label" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Work Notes",
+        "comment" : ""
+      }
+    },
+    "rows" : {
+      "type" : "JSON_LITERAL",
+      "value" : "3"
+    },
+    "autofocus" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "required" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "showBorders" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "readonly" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "invalid" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "disableReject" ]
+      }
+    },
+    "name" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "messages" : {
+      "type" : "LIST_CONTAINER",
+      "container" : [ ]
+    },
+    "resize" : {
+      "type" : "JSON_LITERAL",
+      "value" : "vertical"
+    },
+    "disabled" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "placeholder" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "value" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "hideRequiredIndicator" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ckfwjjahhdsaaaabbyddhhhiieeryvfcdc",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_textarea.NOW_TEXTAREA#INPUT",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_textarea.NOW_TEXTAREA#INPUT",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "98dbfc670fa310106dc9445485767ed5"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckfwjjahhdsaaaabbzddhhhiijjhhteeffada",
+      "type" : "CLIENT_SCRIPT"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "46fb70a70fa310106dc9445485767eb7"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckfwjjalxtaaaaccaaddhhhiiypffqrerq",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : "Main",
+  "definition" : {
+    "id" : "d667a5e769598b2e5c6e92ebe73394f6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : { }
+}, {
+  "elementId" : "button_1",
+  "elementLabel" : "Button 1",
+  "propertyValues" : {
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "variant" : {
+      "type" : "JSON_LITERAL",
+      "value" : "primary"
+    },
+    "icon" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "disabled" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "disableReject" ]
+      }
+    },
+    "label" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Reject",
+        "comment" : ""
+      }
+    },
+    "tooltipContent" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "toolTipText" ]
+      }
+    },
+    "configAria" : {
+      "type" : "MAP_CONTAINER",
+      "container" : { }
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ckfwbfzdsaaaaaanddhhhiiiiccdaakccng",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : {
+        "dataBrokerId" : "3ef24d6b0fa310106dc9445485767efc",
+        "operationName" : "EXECUTE",
+        "parentResourceId" : "reject_major_case_candidate_1",
+        "payload" : {
+          "type" : "MAP_CONTAINER",
+          "container" : {
+            "caseSysID" : {
+              "type" : "CONTEXT_BINDING",
+              "binding" : {
+                "address" : [ "sysId" ],
+                "category" : "props"
+              }
+            },
+            "worknotes" : {
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "worknotes" ]
+              }
+            }
+          }
+        }
+      },
+      "targetId" : "ckfwbfzdsaaaaaaoddhhhiihhvptiicjjg",
+      "type" : "DATABROKER_OP"
+    }, {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "671c8d6cc79020102cdf073703c26041"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckhaaahhwcbbaaaaaawddhhhutudtiijiiii",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : "Footer",
+  "definition" : {
+    "id" : "d37ce8abca89d02905fed903c8e34d8e",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : {
+    "padding-left" : "8px"
+  }
+}, {
+  "elementId" : "button_2",
+  "elementLabel" : "Button 2",
+  "propertyValues" : {
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "variant" : {
+      "type" : "JSON_LITERAL",
+      "value" : "secondary"
+    },
+    "icon" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "disabled" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "label" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Cancel",
+        "comment" : ""
+      }
+    },
+    "tooltipContent" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Cancel",
+        "comment" : ""
+      }
+    },
+    "configAria" : {
+      "type" : "MAP_CONTAINER",
+      "container" : { }
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ckfwjjbaduaaaaccjjddhhhiiggnccaarefr",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : null,
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : {
+        "apiName" : "sn_majorissue_mgt.MODAL_SELECTED_RELAY_c3379cde0f6710106dc9445485767eda",
+        "payload" : {
+          "type" : "JSON_LITERAL",
+          "value" : {
+            "modalId" : null,
+            "showModal" : null,
+            "displayOptions" : null,
+            "bare" : null
+          }
+        },
+        "sysId" : "9facb8ef0f2310106dc9445485767e81"
+      },
+      "operation" : null,
+      "targetId" : "ckfwjjbaduaaaaccaddhhhiiqfffjjcaasjj",
+      "type" : "EVENT"
+    } ]
+  } ],
+  "slot" : "Footer",
+  "definition" : {
+    "id" : "d37ce8abca89d02905fed903c8e34d8e",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : {
+    "padding-left" : "8px"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "3ef24d6b0fa310106dc9445485767efc",
+    "type" : "TRANSFORM"
+  },
+  "dependencies" : { },
+  "elementId" : "reject_major_case_candidate_1",
+  "elementLabel" : "Reject major case candidate 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "ckhaaaddaabkaaaaaapddhhhuggbgkufcn",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "50ebc96cc79020102cdf073703c26060"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckhaaaddaablaaaaaaqddhhhuqgabbiicczr",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EXPLICIT"
+}, {
+  "definition" : {
+    "id" : "7df1f5dfc78020102cdf073703c260ea",
+    "type" : "TRANSFORM"
+  },
+  "dependencies" : { },
+  "elementId" : "get_case_data_1",
+  "elementLabel" : "Get case data 1",
+  "eventMappings" : [ {
+    "eventMappingId" : "ckhakbzmnaaaabblddhiiaddhhblaajddt",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_INITIATED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_INITIATED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "aecec236c71020102cdf073703c26029"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckhakbzmnaaaabbmddhiiaccffccddvmhhj",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "caseSysID" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "sysId" ],
+        "category" : "props"
+      }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
+        <description/>
+        <dispatched_events>9facb8ef0f2310106dc9445485767e81,fd65c7040fb710106dc9445485767eb3</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"slotName":"Header","rules":{"grid-area":"header"},"styles":{"display":"flex","flex-direction":"column","height":"fit-content"}},{"slotName":"Main","rules":{"grid-area":"main"},"styles":{"display":"flex","flex-direction":"column","height":"fit-content","padding-bottom":"32px"}},{"slotName":"Footer","rules":{"grid-area":"footer"},"styles":{"display":"flex","flex-direction":"row-reverse","height":"fit-content"}}],
+    "root" : null,
+    "rules" : {"grid-template-columns":"1fr","grid-template-areas":"\"header\" \"main\" \"footer\"","height":"100%"},
+    "styles" : {"padding":"12px","margin":"12px"},
+    "templateId" : "7ebde90d53c31010e6bcddeeff7b126d",
+    "type" : "grid"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Reject Major Case Candidate Default</name>
+        <output_prop_mapping/>
+        <props>[ {
+  "name" : "table",
+  "label" : "Table",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "sysId",
+  "label" : "sysId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : true,
+  "selectable" : false,
+  "disabled" : false
+} ]</props>
+        <required_translations>[ {
+  "message" : "Cancel",
+  "comment" : ""
+}, {
+  "message" : "Internal work notes - not visible to customer",
+  "comment" : ""
+}, {
+  "message" : "Reject",
+  "comment" : ""
+}, {
+  "message" : "Reject major case candidate",
+  "comment" : ""
+}, {
+  "message" : "Work Notes",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "worknotes",
+  "label" : "worknotes",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "disableReject",
+  "label" : "disableReject",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  }
+}, {
+  "name" : "descriptionText",
+  "label" : "descriptionText",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "Enter the reason that you are rejecting this proposed major case."
+  }
+}, {
+  "name" : "toolTipText",
+  "label" : "toolTipText",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:22:46</sys_created_on>
+        <sys_id>3b6370e4871c615089790fe5dabb3589</sys_id>
+        <sys_name>Reject Major Case Candidate Default</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_3b6370e4871c615089790fe5dabb3589</sys_update_name>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=3b6370e4871c615089790fe5dabb3589"/>
+</record_update>
