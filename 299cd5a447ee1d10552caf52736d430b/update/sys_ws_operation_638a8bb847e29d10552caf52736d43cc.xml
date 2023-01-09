@@ -29,11 +29,18 @@
         if(!requestId){
 			throw "No RequestID passed to snapshot API.";
 		}
-            const snapshotId = snapshotGr.insert();
+        const snapshotId = snapshotGr.insert();
 
+		
+		
+		const imageFileName = "k22-fun.jpg";
         const attachment = new GlideSysAttachment();
-        const attachmentId = attachment.writeBase64(snapshotGr, "image", imageType, image);
+        const attachmentId = attachment.writeBase64(snapshotGr, imageFileName, imageType, image);
 
+		snapshotGr.image = attachmentId;
+		snapshotGr.update();
+		
+		
         response.setBody({
             "status": "success",
             "attachmentId": attachmentId,

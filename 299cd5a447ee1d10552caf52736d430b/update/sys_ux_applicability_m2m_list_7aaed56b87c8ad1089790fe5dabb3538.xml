@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Audience for appPhotobooth Workspace">1aae956b87c8ad1089790fe5dabb35d5</applicability>
+        <list display_value="All">faaed56b87c8ad1089790fe5dabb3536</list>
+        <order>100</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:44</sys_created_on>
+        <sys_id>7aaed56b87c8ad1089790fe5dabb3538</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_7aaed56b87c8ad1089790fe5dabb3538</sys_update_name>
+    </sys_ux_applicability_m2m_list>
+</record_update>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="Photobooth Workspace Config">799e556b4ec8ad10359127788b88ba36</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="Record Information">b19e556b5dc8ad10ce656f6cf73bd62f</macroponent>
+        <macroponent_config>{
+  "isOpenFrameConfigValid" : {
+    "type" : "DATA_OUTPUT_BINDING",
+    "binding" : {
+      "address" : [ "validate_openframe_configuration_1", "output", "isOpenframeConfigValid" ]
+    }
+  },
+  "recordSecondaryItems" : {
+    "type" : "DATA_OUTPUT_BINDING",
+    "binding" : {
+      "address" : [ "gform", "nowRecordCommonHeader", "secondaryItems" ]
+    }
+  },
+  "ribbonConfig" : {
+    "type" : "DATA_OUTPUT_BINDING",
+    "binding" : {
+      "address" : [ "gform", "snRecordRibbon" ]
+    }
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "Record Information",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>Record Information</name>
+        <order>0</order>
+        <parent_macroponent display_value="Record">558adc930f0210107d20409dc4767e84</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Record Information tab">f19e556b58c8ad10f5394acd17ba3832</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d9e556b90c8ad10b78adc0447e81034</sys_id>
+        <sys_name>Record Information</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_3d9e556b90c8ad10b78adc0447e81034</sys_update_name>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d9e556b90c8ad10b78adc0447e81034"/>
+</record_update>

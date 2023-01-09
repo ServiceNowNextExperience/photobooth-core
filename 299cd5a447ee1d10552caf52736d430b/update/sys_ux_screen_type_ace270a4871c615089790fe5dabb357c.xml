@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_screen_type">
+    <sys_ux_screen_type action="INSERT_OR_UPDATE">
+        <description/>
+        <name>DA Modal Multi-Record Associator</name>
+        <sys_class_name>sys_ux_screen_type</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:20:21</sys_created_on>
+        <sys_id>ace270a4871c615089790fe5dabb357c</sys_id>
+        <sys_name>DA Modal Multi-Record Associator</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_type_ace270a4871c615089790fe5dabb357c</sys_update_name>
+    </sys_ux_screen_type>
+    <sys_translated_text action="delete_multiple" query="documentkey=ace270a4871c615089790fe5dabb357c"/>
+</record_update>

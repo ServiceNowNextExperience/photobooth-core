@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Reject Major Case Candidate Default">3b6370e4871c615089790fe5dabb3589</macroponent>
+        <name>Disable reject button</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[function handler({api, event, helpers, imports}) {
+	if(event.payload.fieldValue.trim()==""){
+		api.setState('disableReject',true);
+		api.setState('toolTipText','');
+	}
+	else{
+		api.setState('disableReject',false);
+		var translated = helpers.translate('Reject major case');
+		translated.then(value => {
+			api.setState('toolTipText', value);
+		});
+  }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:22:48</sys_created_on>
+        <sys_id>1c7370e4871c615089790fe5dabb35d5</sys_id>
+        <sys_name>Disable reject button</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_1c7370e4871c615089790fe5dabb35d5</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

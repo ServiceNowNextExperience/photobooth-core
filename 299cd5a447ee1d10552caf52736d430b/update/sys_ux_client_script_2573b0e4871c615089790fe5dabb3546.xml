@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Reject Major Case Candidate Default">3b6370e4871c615089790fe5dabb3589</macroponent>
+        <name>Major case candidate rejected notification </name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    var caseSysId = api.context.props.sysId;
+    var reject_mjr_case_notification = api.data.get_case_data_1.output.reject_mjr_case_notification;
+    api.emit("NOW_UXF_PAGE#ADD_NOTIFICATIONS", {
+        items: [{
+            id: "reject_majorcase_alert1",
+            status: "info",
+            icon: "info-circle-outline",
+            content: {
+                type: "html",
+                value: "<span>"+reject_mjr_case_notification+"</span>",
+            },
+            action: {
+                type: "dismiss"
+            },
+        }]
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:22:52</sys_created_on>
+        <sys_id>2573b0e4871c615089790fe5dabb3546</sys_id>
+        <sys_name>Major case candidate rejected notification </sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_2573b0e4871c615089790fe5dabb3546</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

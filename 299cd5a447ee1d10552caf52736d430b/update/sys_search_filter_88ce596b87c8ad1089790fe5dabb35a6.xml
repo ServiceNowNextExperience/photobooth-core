@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="">bfbe596b87c8ad1089790fe5dabb354c</ais_search_source>
+        <label>Photobooth Instance</label>
+        <name>Photobooth Instance</name>
+        <order>100</order>
+        <search_context_config display_value="">b59e556b84c8ad102202de6707e42533</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:58:05</sys_created_on>
+        <sys_id>88ce596b87c8ad1089790fe5dabb35a6</sys_id>
+        <sys_name>Photobooth Instance</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_search_filter_88ce596b87c8ad1089790fe5dabb35a6</sys_update_name>
+    </sys_search_filter>
+</record_update>

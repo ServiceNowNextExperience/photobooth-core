@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "main",
+  "elementLabel" : "Main",
+  "propertyValues" : {
+    "ariaRegionName" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "",
+        "comment" : ""
+      }
+    },
+    "includeAriaHeading" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "ariaRegionHeadingLevel" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1"
+    },
+    "type" : {
+      "type" : "JSON_LITERAL",
+      "value" : "section"
+    },
+    "ariaRole" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "d356d14b6e293a3020a244b63d278d8f",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [{
+      "elementId" : "ribbon",
+      "elementLabel" : "Ribbon",
+      "propertyValues" : {
+        "table" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "ribbonConfig", "table" ],
+            "category" : "props"
+          }
+        },
+        "sysId" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "ribbonConfig", "sysId" ],
+            "category" : "props"
+          }
+        },
+        "widgets" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "ribbonConfig", "widgets" ],
+            "category" : "props"
+          }
+        },
+        "active" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "isVisible" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
+        "collapsed" : {
+          "type" : "JSON_LITERAL",
+          "value" : false
+        },
+        "orientation" : {
+          "type" : "JSON_LITERAL",
+          "value" : "vertical"
+        },
+        "isOpenframeConfigValid" : {
+          "type" : "CONTEXT_BINDING",
+          "binding" : {
+            "address" : [ "isOpenFrameConfigValid" ],
+            "category" : "props"
+          }
+        },
+        "transparentBackground" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : null,
+      "definition" : {
+        "id" : "70384114ef8d8eb4f9f5566feb0064e8",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "CLIENT_TRANSFORM_SCRIPT",
+        "script" : {
+          "apiVersion" : "2.0.0",
+          "inlineScript" : null,
+          "scriptSysId" : "5eab0320b1530110f8774712371ed396"
+        }
+      },
+      "isHero" : false,
+      "isNonDestructive" : false,
+      "styles" : {
+        "padding-right" : "calc(var(--now-scale-space--xl, 1) * var(--now-static-space--xl))",
+        "padding-left" : "calc(var(--now-scale-space--xl, 1) * var(--now-static-space--xl))"
+      }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "isInline" : null,
+        "items" : [{"element_id":"heading","styles":{}},{"element_id":"loader","styles":{}},{"element_id":"display_value_block","styles":{}},{"element_id":"ribbon","styles":{}}],
+        "root" : null,
+        "rules" : null,
+        "styles" : {"flex-direction":"column"},
+        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+        "type" : "flex"
+      },
+      "version" : "3.0.0"
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ ]</data>
+        <description/>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "isInline" : null,
+    "items" : [{"element_id":"main","styles":{}}],
+    "root" : null,
+    "rules" : null,
+    "styles" : {"flex-direction":"column","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"solid"},
+    "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+    "type" : "flex"
+  },
+  "version" : "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Record Information</name>
+        <output_prop_mapping/>
+        <props>[ {
+  "name" : "isOpenFrameConfigValid",
+  "label" : "isOpenFrameConfigValid",
+  "fieldType" : "boolean",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "recordSecondaryItems",
+  "label" : "recordSecondaryItems",
+  "fieldType" : "json",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+}, {
+  "name" : "ribbonConfig",
+  "label" : "ribbonConfig",
+  "fieldType" : "json",
+  "typeMetadata" : null,
+  "valueType" : "string",
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : false,
+  "selectable" : false,
+  "disabled" : false
+} ]</props>
+        <required_translations>[{
+  "message" : "Record Information",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:30</sys_created_on>
+        <sys_id>b19e556b5dc8ad10ce656f6cf73bd62f</sys_id>
+        <sys_name>Record Information</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_macroponent_b19e556b5dc8ad10ce656f6cf73bd62f</sys_update_name>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=b19e556b5dc8ad10ce656f6cf73bd62f"/>
+</record_update>

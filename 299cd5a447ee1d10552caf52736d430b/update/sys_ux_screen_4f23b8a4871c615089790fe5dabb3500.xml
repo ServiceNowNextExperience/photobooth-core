@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="CMDB Workspace App Config">6825d0ae8f312010960c53ac37bdee72</app_config>
+        <description/>
+        <event_mappings>[ {
+  "eventMappingId" : "cktjxgsaaqaaaabbbddghhqgywddiihhjp",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_itam_workspace.GFORM_RELOAD_RELAY_6f78bd739c423010fa9bccc407a63b4e",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_itam_workspace.GFORM_RELOAD_RELAY_6f78bd739c423010fa9bccc407a63b4e",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : {
+      "dataBrokerId" : "dc6e87a5232200100e4bc50947bf654b",
+      "operationName" : "RELOAD",
+      "parentResourceId" : "gform",
+      "payload" : {
+        "type" : "MAP_CONTAINER",
+        "container" : { }
+      }
+    },
+    "targetId" : "cktjxgsaapaaaabbaddghhqocvcaapadd",
+    "type" : "DATABROKER_OP"
+  } ]
+}, {
+  "eventMappingId" : "cksrighhddccaaaabbiddhiibbzxyddxtvg",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_itam_workspace.RECORD#CLOSE_MODAL_RELAY_6f78bd739c423010fa9bccc407a63b4e",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_itam_workspace.RECORD#CLOSE_MODAL_RELAY_6f78bd739c423010fa9bccc407a63b4e",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_uib_base_aw.RECORD#CLOSE_MODAL",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "3bcac58cb7731010cd8af8e32e11a971"
+    },
+    "operation" : null,
+    "targetId" : "cksrighhddccaaaabbhddhiibbtiipaawmffee",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Split default">6e2378a4871c615089790fe5dabb35d5</macroponent>
+        <macroponent_config>{
+  "table" : "",
+  "sysId" : "",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false,
+  "views" : "",
+  "selectedTabIndex" : 0,
+  "headingOnlyVisibleToScreenReaders" : false
+}</macroponent_config>
+        <name>Split default</name>
+        <order>0</order>
+        <parent_macroponent display_value="record default Copy">ff927864871c615089790fe5dabb3547</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Split">231338a4871c615089790fe5dabb3583</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:21:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f23b8a4871c615089790fe5dabb3500</sys_id>
+        <sys_name>Split default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_4f23b8a4871c615089790fe5dabb3500</sys_update_name>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=4f23b8a4871c615089790fe5dabb3500"/>
+</record_update>

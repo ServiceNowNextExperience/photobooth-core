@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config display_value="CMDB Workspace App Config">6825d0ae8f312010960c53ac37bdee72</app_config>
+        <description>Adjust UI action for workspace</description>
+        <event_mappings>[ {
+  "eventMappingId" : "claaffiinaaaaabbxxddfggwwyfhhmct",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_itam_workspace.GFORM_RELOAD_RELAY_c27037a4a306011021fd885716fcda9f",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_itam_workspace.GFORM_RELOAD_RELAY_c27037a4a306011021fd885716fcda9f",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : {
+      "dataBrokerId" : "dc6e87a5232200100e4bc50947bf654b",
+      "operationName" : "RELOAD",
+      "parentResourceId" : "gform",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      }
+    },
+    "targetId" : "claaffiinaaaaabbxwddfggwomkwthjw",
+    "type" : "DATABROKER_OP"
+  } ]
+}, {
+  "eventMappingId" : "claafasbriiaabbhhyddfggwkaarjggjjrh",
+  "isConfiguration" : false,
+  "offRowStorageId" : null,
+  "sourceEventApiName" : "sn_itam_workspace.RECORD#CLOSE_MODAL_RELAY_c27037a4a306011021fd885716fcda9f",
+  "sourceEventCorrelationId" : null,
+  "sourceEventDefinition" : {
+    "apiName" : "sn_itam_workspace.RECORD#CLOSE_MODAL_RELAY_c27037a4a306011021fd885716fcda9f",
+    "id" : null,
+    "type" : "UXEVENT"
+  },
+  "sourceEventSysId" : null,
+  "targets" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "conditional" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "sn_uib_base_aw.RECORD#CLOSE_MODAL",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : "3bcac58cb7731010cd8af8e32e11a971"
+    },
+    "operation" : null,
+    "targetId" : "claafasbriiaabbhhxddfggwaajjjzrnci",
+    "type" : "EVENT"
+  } ]
+} ]</event_mappings>
+        <macroponent display_value="Adjust default">c2437ca4871c615089790fe5dabb3544</macroponent>
+        <macroponent_config>{
+  "paymentAmount" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "table" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "sysId" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>Adjust default</name>
+        <order>0</order>
+        <parent_macroponent display_value="record default Copy">ff927864871c615089790fe5dabb3547</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Adjust">cf33f8a4871c615089790fe5dabb35d5</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:22:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9653fca4871c615089790fe5dabb3530</sys_id>
+        <sys_name>Adjust default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_screen_9653fca4871c615089790fe5dabb3530</sys_update_name>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=9653fca4871c615089790fe5dabb3530"/>
+</record_update>

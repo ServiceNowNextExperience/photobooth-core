@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_pb_core.workspaceStarterExpUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>workspaceStarterExpUtils</name>
+        <script><![CDATA[var workspaceStarterExpUtils = Class.create();
+workspaceStarterExpUtils.prototype = {
+    initialize: function() {},
+
+    checkContextualConfig: function(tableName) {
+        //To check Agent assist is configured for current table on workspace
+        var gr = new GlideRecord('cxs_table_config');
+        gr.addQuery('table', '=', tableName);
+        gr.addQuery('ui_type', '=', 'workspace');
+        gr.query();
+        if (gr.next()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+	
+    TABLE_RIBBON_CONFIG_SETTING: 'sys_ux_ribbon_config_setting',
+    TABLE_HEADER_CONFIG: 'sys_ux_m2m_workspace_header_ux_header_config',
+    TABLE_PAGE_PROPERTY: 'sys_ux_page_property',
+    TABLE_FORM_HEADER_SECONDARY_VALUES: 'sys_aw_form_header_secondary_values',
+
+    // returns true if the table (or inherited parent tables) has a valid ribbon config
+    queryRibbonConfig: function(table, sourceTables, ribbonConfigId) {
+        var gr = new GlideRecord(this.TABLE_RIBBON_CONFIG_SETTING);
+        gr.addQuery('configuration', ribbonConfigId);
+        var grt = gr.addQuery('table', table);
+        for (i = 0; i < sourceTables.length; i++) {
+            if (sourceTables[i] != table)
+                grt.addOrCondition('table', sourceTables[i]);
+        }
+        gr.addQuery('active', true);
+        gr.addQuery('ribbon.active', true);
+        gr.query();
+        if (gr.next())
+            return true;
+
+        return false;
+    },
+
+    // returns true if there are any secondary values defined for the immediate table
+    queryFormSecondaryValues: function(table) {
+        var gr = new GlideRecord(this.TABLE_FORM_HEADER_SECONDARY_VALUES);
+        gr.addQuery('active', true);
+        gr.addQuery('form_header.table', table);
+        gr.query();
+        if (gr.next())
+            return true;
+
+        return false;
+    },
+
+    // returns true if the table (or inherited parent tables) has a configured form headers
+    querySecondaryValuesConfig: function(table, sourceTables, headerConfigId) {
+        var gr = new GlideRecord(this.TABLE_HEADER_CONFIG);
+        gr.addQuery('header_config', headerConfigId);
+        gr.addQuery('workspace_form_header.active', true);
+        var grt = gr.addQuery('workspace_form_header.table', table);
+        for (i = 0; i < sourceTables.length; i++) {
+            if (sourceTables[i] != table)
+                grt.addOrCondition('workspace_form_header.table', sourceTables[i]);
+        }
+        gr.query();
+        if (gr.next())
+            return this.queryFormSecondaryValues(table);
+
+        return false;
+    },
+
+    // returns page propery values used to configure the secondary values and ribbon on the record page
+    queryPageProperties: function(pageId, ribbonLocationPropName, secondaryValuesLocationPropName) {
+        var headerConfigId = '';
+        var ribbonConfigId = '';
+        var isSecondaryValueLocationSideBar = false;
+        var isRibbonLocationSideBar = false;
+
+        var gr = new GlideRecord(this.TABLE_PAGE_PROPERTY);
+        gr.addQuery('page', pageId);
+        gr.query();
+        while (gr.next()) {
+            if (gr.name == ribbonLocationPropName && gr.value == 'sidebar') {
+                isRibbonLocationSideBar = true;
+            } else if (gr.name == secondaryValuesLocationPropName && gr.value == 'sidebar') {
+                isSecondaryValueLocationSideBar = true;
+            } else if (gr.name == 'headerConfigId') {
+                headerConfigId = gr.getValue('value');
+            } else if (gr.name == 'ribbonConfigId') {
+                ribbonConfigId = gr.getValue('value');
+            }
+        }
+
+        return {
+            ribbonConfigId: ribbonConfigId,
+            headerConfigId: headerConfigId,
+            isSecondaryValueLocationSideBar: isSecondaryValueLocationSideBar,
+            isRibbonLocationSideBar: isRibbonLocationSideBar
+        };
+    },
+
+    // determines if the record information sidebar page should be visible for the given page, table, and sys id
+    shouldShowSidePanel: function(table, sysId, pageId, ribbonLocationPropName, secondaryValuesLocationPropName) {
+        // these are optional parameters, if undefined set the default name
+        if (typeof ribbonLocationPropName == 'undefined')
+            ribbonLocationPropName = 'ribbonLocation';
+        if (typeof secondaryValuesLocationPropName == 'undefined')
+            secondaryValuesLocationPropName = 'record_secondary_values_location';
+
+        var pageProperties = this.queryPageProperties(pageId, ribbonLocationPropName, secondaryValuesLocationPropName);
+        var ribbonConfigId = pageProperties.ribbonConfigId;
+        var headerConfigId = pageProperties.headerConfigId;
+        var isSecondaryValueLocationSideBar = pageProperties.isSecondaryValueLocationSideBar;
+        var isRibbonLocationSideBar = pageProperties.isRibbonLocationSideBar;
+
+        // check if the current record is new
+        if (sysId == -1)
+            return false;
+
+        // if both ribbon and secondary values are in the header, return false
+        if (!isRibbonLocationSideBar && !isSecondaryValueLocationSideBar)
+            return false;
+
+        // retrieve the tables up the inheritance hierarchy
+        var sourceTables = new GlideTableHierarchy(table).getTables();
+        var hasRibbonConfig = this.queryRibbonConfig(table, sourceTables, ribbonConfigId);
+        var hasSecondaryValuesConfig = this.querySecondaryValuesConfig(table, sourceTables, headerConfigId);
+
+        if (isRibbonLocationSideBar && !isSecondaryValueLocationSideBar)
+            return hasRibbonConfig;
+
+        if (isSecondaryValueLocationSideBar && !isRibbonLocationSideBar)
+            return hasSecondaryValuesConfig;
+
+        // if either the ribbon or secondary configs are valid, return true
+        return hasRibbonConfig || hasSecondaryValuesConfig;
+    },
+
+    type: 'workspaceStarterExpUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:31</sys_created_on>
+        <sys_id>7d9e556b5ec8ad1079421dd6bf9aac35</sys_id>
+        <sys_name>workspaceStarterExpUtils</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_script_include_7d9e556b5ec8ad1079421dd6bf9aac35</sys_update_name>
+    </sys_script_include>
+</record_update>

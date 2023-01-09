@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="CMDB Workspace App Config">6825d0ae8f312010960c53ac37bdee72</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon>paperclip-outline</icon>
+        <name>Attachment</name>
+        <optional_parameters/>
+        <order>10</order>
+        <parent_macroponent display_value="record default Copy">ff927864871c615089790fe5dabb3547</parent_macroponent>
+        <parent_macroponent_composition_element_id>contextual_sidebar</parent_macroponent_composition_element_id>
+        <route_type>attachment</route_type>
+        <screen_type display_value="Attachment">ed8334e4871c615089790fe5dabb352b</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:23:26</sys_created_on>
+        <sys_id>ed93b4e4871c615089790fe5dabb3522</sys_id>
+        <sys_name>Attachment</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_app_route_ed93b4e4871c615089790fe5dabb3522</sys_update_name>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=ed93b4e4871c615089790fe5dabb3522"/>
+</record_update>

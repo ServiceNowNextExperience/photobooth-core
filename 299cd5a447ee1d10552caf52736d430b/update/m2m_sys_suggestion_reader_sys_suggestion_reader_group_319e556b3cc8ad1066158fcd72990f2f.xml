@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_suggestion_reader_sys_suggestion_reader_group">
+    <m2m_sys_suggestion_reader_sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <reader_requested_fields/>
+        <reader_searchable_fields/>
+        <sys_class_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:34</sys_created_on>
+        <sys_id>319e556b3cc8ad1066158fcd72990f2f</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_suggestion_reader_group_id display_value="Suggested Result Reader Group for Starter Workspace AI Search Configuration">fd9e556b83c8ad1075b293de1bff1330</sys_suggestion_reader_group_id>
+        <sys_suggestion_reader_id display_value="Personal Click Reader">ec49ee515b511010627eed35cc81c7b9</sys_suggestion_reader_id>
+        <sys_update_name>m2m_sys_suggestion_reader_sys_suggestion_reader_group_319e556b3cc8ad1066158fcd72990f2f</sys_update_name>
+    </m2m_sys_suggestion_reader_sys_suggestion_reader_group>
+</record_update>

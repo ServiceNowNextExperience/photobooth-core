@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Modal - Show duplicate vis default">6303b4a4871c615089790fe5dabb3571</macroponent>
+        <name>Close modal and reload form</name>
+        <preset/>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    api.emit('ADD_NOTIFICATIONS', {
+        items: [{
+            "id": "alert-succeded-to-show-vi",
+            "status": "info",
+            "icon": "info-circle-outline",
+            "content": event.payload.data.output.message,
+            "textLinkProps": {
+                "label": "View status",
+                "href": event.payload.data.output.url
+            },
+            "action": {
+                "type": "dismiss"
+            }
+        }]
+    });
+
+    helpers.modal.close();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-06 15:21:09</sys_created_on>
+        <sys_id>d013b4a4871c615089790fe5dabb35ad</sys_id>
+        <sys_name>Close modal and reload form</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_client_script_d013b4a4871c615089790fe5dabb35ad</sys_update_name>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

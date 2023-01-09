@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_ribbon_config">
+    <sys_ux_ribbon_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Photobooth Workspace Ribbon Config</description>
+        <name>Photobooth Workspace</name>
+        <sys_class_name>sys_ux_ribbon_config</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:29</sys_created_on>
+        <sys_id>7d9e556bb5c8ad10699590cce7b1c72e</sys_id>
+        <sys_name>Photobooth Workspace</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_ribbon_config_7d9e556bb5c8ad10699590cce7b1c72e</sys_update_name>
+    </sys_ux_ribbon_config>
+</record_update>
