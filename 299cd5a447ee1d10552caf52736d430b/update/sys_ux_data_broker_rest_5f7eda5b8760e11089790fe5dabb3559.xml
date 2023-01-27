@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_rest">
+    <sys_ux_data_broker_rest action="INSERT_OR_UPDATE">
+        <api_name>x_snc_pb_core.Post Snapshot</api_name>
+        <api_url>/api/x_snc_pb_core/photobooth/snapshot</api_url>
+        <description>Post a snapshot to the photobooth API for processing</description>
+        <http_method>POST</http_method>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Post Snapshot</name>
+        <output_schema>[{&#13;
+"name": "status",&#13;
+"description": "Object containing status of snapshot post",&#13;
+"fieldType": "object",&#13;
+"readOnly": false&#13;
+}]</output_schema>
+        <parameters/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "imageData",&#13;
+    "label": "Image Data (Base 64 String)",&#13;
+    "description": "Base 64 string that stores the image",&#13;
+    "readOnly": false,&#13;
+    "mandatory": true,&#13;
+    "defaultValue": ""&#13;
+  },&#13;
+{&#13;
+    "name": "requestId",&#13;
+    "label": "Request Sys ID",&#13;
+    "description": "Sys ID of the Photobooth Request that this snapshot is for",&#13;
+    "readOnly": false,&#13;
+    "mandatory": false,&#13;
+    "defaultValue": ""&#13;
+  }&#13;
+]</props>
+        <request_body>{&#13;
+    "imageData": "{{imageData}}",&#13;
+    "requestId": "{{requestId}}"&#13;
+}</request_body>
+        <required_translations>[ {
+  "message" : "Base 64 string that stores the image",
+  "comment" : ""
+}, {
+  "message" : "Image Data (Base 64 String)",
+  "comment" : ""
+}, {
+  "message" : "Request Sys ID",
+  "comment" : ""
+}, {
+  "message" : "Sys ID of the Photobooth Request that this snapshot is for",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_data_broker_rest</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-27 22:30:15</sys_created_on>
+        <sys_id>5f7eda5b8760e11089790fe5dabb3559</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Post Snapshot</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_data_broker_rest_5f7eda5b8760e11089790fe5dabb3559</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-01-27 22:30:15</sys_updated_on>
+    </sys_ux_data_broker_rest>
+    <sys_translated_text action="delete_multiple" query="documentkey=5f7eda5b8760e11089790fe5dabb3559"/>
+</record_update>
