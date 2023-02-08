@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="60fd1f3c47269d10552caf52736d43a3" label="Photobooth Instance" max_length="40" name="x_snc_pb_core_photobooth" text_index="true" type="collection">
+    <element db_object_id="60fd1f3c47269d10552caf52736d43a3" label="Photobooth Instance" max_length="40" name="x_snc_pb_core_photobooth" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element hint="The WebRTC Camera Device ID for the camera you wish to default to." label="Camera Device ID" max_length="70" name="camera_device_id" type="string"/>
-        <element label="Name" mandatory="true" max_length="255" name="name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Long Name" mandatory="true" max_length="100" name="long_name" type="string"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Url" max_length="100" name="url" type="url"/>
     </element>
 </database>

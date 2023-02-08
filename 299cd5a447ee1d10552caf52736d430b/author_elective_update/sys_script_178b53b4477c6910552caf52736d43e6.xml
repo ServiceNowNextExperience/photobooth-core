@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_pb_core_photobooth</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_snc_pb_core_photobooth">nameVALCHANGES^nameISNOTEMPTY^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set URL from Name</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	current.url = `${gs.getProperty('glide.servlet.uri')}now/photobooth/home/${current.name}`;
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-02-01 18:50:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>178b53b4477c6910552caf52736d43e6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Set URL from Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_script_178b53b4477c6910552caf52736d43e6</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:59:10</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=178b53b4477c6910552caf52736d43e6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_script_178b53b4477c6910552caf52736d43e6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_snc_pb_core_photobooth&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_snc_pb_core_photobooth"&gt;nameVALCHANGES^nameISNOTEMPTY^EQ&lt;item endquery="false" field="name" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="false" field="name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Set URL from Name&lt;/name&gt;&lt;order&gt;200&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	current.url = `${gs.getProperty('glide.servlet.uri')}now/photobooth/home/${current.name}`;
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jon.lind&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-01 18:50:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;178b53b4477c6910552caf52736d43e6&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set URL from Name&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Photobooth Core" source="x_snc_pb_core"&gt;299cd5a447ee1d10552caf52736d430b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Photobooth Core"&gt;299cd5a447ee1d10552caf52736d430b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_178b53b4477c6910552caf52736d43e6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jon.lind&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-01 18:59:10&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=178b53b4477c6910552caf52736d43e6"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1490751962</payload_hash>
+        <record_name>Set URL from Name</record_name>
+        <reverted_from/>
+        <source>2c05f2ec47f82910552caf52736d432e</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-02-01 18:59:10</sys_created_on>
+        <sys_id>234e1378477c6910552caf52736d4395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1860e58df6f0000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-02-01 18:59:10</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>e34e13781d7c6910eb807fa71674ef94</update_guid>
+        <update_guid_history>e34e13781d7c6910eb807fa71674ef94:-1490751962,e70edb38757c6910a529581da8856ed1:1245963284,615c53b4f67c691090e6b2e4e11a0279:657188385</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-02-01 19:00:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>1ba41c02ad0d4930b56d10430bcb6390</sys_id>
+        <sys_metadata>178b53b4477c6910552caf52736d43e6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set URL from Name</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent display_value="Photobooth Instance">60fd1f3c47269d10552caf52736d43a3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>sys_script_178b53b4477c6910552caf52736d43e6</sys_update_name>
+        <sys_update_version display_value="sys_script_178b53b4477c6910552caf52736d43e6">234e1378477c6910552caf52736d4395</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-02-01 19:00:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
