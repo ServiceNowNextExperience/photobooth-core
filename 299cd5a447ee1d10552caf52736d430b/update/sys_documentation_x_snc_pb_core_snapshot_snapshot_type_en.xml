@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="snapshot_type" label="Snapshot Type" language="en" table="x_snc_pb_core_snapshot">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>snapshot_type</element>
+            <help/>
+            <hint/>
+            <label>Snapshot Type</label>
+            <language>en</language>
+            <name>x_snc_pb_core_snapshot</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-03-09 18:13:38</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Snapshot Type</sys_name>
+            <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_pb_core_snapshot_snapshot_type_en</sys_update_name>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-03-09 18:13:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
