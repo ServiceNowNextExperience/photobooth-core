@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>bf954e6e8735615089790fe5dabb3579</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_attachment">
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>audio/vnd.wave</content_type>
+        <encryption_context/>
+        <file_name>camera-click.wav</file_name>
+        <hash>53a94316b1dc1b55f6ee36be8100d3f183391af0beaa4fe6705823f01c137e85</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>165986</size_bytes>
+        <size_compressed>111525</size_compressed>
+        <state>available</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-03-28 16:03:51</sys_created_on>
+        <sys_id>bf954e6e8735615089790fe5dabb3579</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-03-28 16:03:52</sys_updated_on>
+        <table_name>x_snc_pb_core_photobooth</table_name>
+        <table_sys_id>6e22456d87a65d1089790fe5dabb3592</table_sys_id>
+    </sys_attachment>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-03-28 16:15:59</sys_created_on>
+        <sys_id>516886228775615089790fe5dabb356c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>camera-click.wav</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_metadata_link_516886228775615089790fe5dabb356c</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-03-28 16:15:59</sys_updated_on>
+        <tablename>sys_attachment</tablename>
+    </sys_metadata_link>
+</record_update>
