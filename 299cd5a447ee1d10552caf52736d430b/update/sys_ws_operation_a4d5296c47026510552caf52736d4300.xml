@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>snapshot</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	const { snapshotId } = request.pathParams;
+
+	const attachment = new GlideRecord('sys_attachment');
+	attachment.addQuery('table_name', 'x_snc_pb_core_snapshot');
+	attachment.addQuery('table_sys_id', snapshotId);
+	attachment.query();
+
+	if (!attachment.next()) {
+		throw `No sys attachment was found for snapshot x_snc_pb_core_snapshot with sys_id of ${snapshotId}: ${attachment.getEncodedQuery()}`;
+	}
+	response.setHeader("Content-Type", attachment.content_type);
+	const write = response.getStreamWriter();
+
+	const attachmentStream = new GlideSysAttachment().getContentStream(attachment.sys_id);
+
+	var writer = response.getStreamWriter();
+	writer.writeStream(attachmentStream);
+	
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_pb_core/photobooth/snapshot/{snapshotId}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/snapshot/{snapshotId}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-03 18:54:04</sys_created_on>
+        <sys_id>a4d5296c47026510552caf52736d4300</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>snapshot</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ws_operation_a4d5296c47026510552caf52736d4300</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-03 20:51:16</sys_updated_on>
+        <web_service_definition display_value="Photobooth">b37a4bb847e29d10552caf52736d4394</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
