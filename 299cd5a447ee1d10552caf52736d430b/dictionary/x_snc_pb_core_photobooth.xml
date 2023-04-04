@@ -2,11 +2,27 @@
     <element db_object_id="60fd1f3c47269d10552caf52736d43a3" label="Photobooth Instance" max_length="40" name="x_snc_pb_core_photobooth" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element hint="The WebRTC Camera Device ID for the camera you wish to default to." label="Camera Device ID" max_length="70" name="camera_device_id" type="string"/>
+        <element default="50" hint="Height of the &quot;Chin&quot; at the bottom of the composite 2x2 image result.  Leave as 0 for no chin." label="Chin Height Pixels" mandatory="true" max_length="40" name="chin_height" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="white" hint="The CSS Canvas Fill Style (usually a color such as &quot;Green&quot; or &quot;White&quot;) for the background of the composite 2x2 image." label="Fill Style" mandatory="true" max_length="100" name="fill_style" type="string"/>
+        <element default="10" hint="Gap around edges and between images in 2x2 composite." label="Gap Pixels" mandatory="true" max_length="40" name="gap" type="integer"/>
         <element attributes="edge_encryption_enabled=true" display="true" label="Long Name" mandatory="true" max_length="100" name="long_name" type="string"/>
         <element label="Name" max_length="255" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="start_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Url" max_length="100" name="url" type="url"/>
+        <element attributes="edge_encryption_enabled=true" default="/x_snc_pb_camera.servicenow_flat.png" hint="The path to a local image file or a url (including &quot;https://&quot; to an image file." label="Watermark Image" max_length="255" name="watermark_image" type="string"/>
+        <element hint="Height to scale the watermark image to in pixels. Generally the same as the chin height.  Leave blank for no scaling." label="Watermark Image Height" max_length="40" name="watermark_image_height" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="bottom-center" hint="Where to place the watermark relative to the image being watermarked.  Must be one of top-left, top-center, top-right, bottom-left, bottom-center (default), bottom-right, center" label="Watermark Image Position" max_length="40" name="watermark_image_position" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Top Left" sequence="0" value="top-left"/>
+                <element inactive_on_update="false" label="Top Center" sequence="1" value="top-center"/>
+                <element inactive_on_update="false" label="Top Right" sequence="2" value="top-right"/>
+                <element inactive_on_update="false" label="Bottom Left" sequence="3" value="bottom-left"/>
+                <element inactive_on_update="false" label="Bottom Center" sequence="4" value="bottom-center"/>
+                <element inactive_on_update="false" label="Bottom Right" sequence="5" value="bottom-right"/>
+                <element inactive_on_update="false" label="Center" sequence="6" value="center"/>
+            </choice>
+        </element>
     </element>
 </database>

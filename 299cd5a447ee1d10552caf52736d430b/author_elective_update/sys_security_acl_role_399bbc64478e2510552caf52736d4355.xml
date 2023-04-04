@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-03 15:49:10</sys_created_on>
+        <sys_id>399bbc64478e2510552caf52736d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.public</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_security_acl display_value="">109b7c64478e2510552caf52736d43a9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_399bbc64478e2510552caf52736d4355</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-03 15:49:10</sys_updated_on>
+        <sys_user_role display_value="public" name="public">b0593b350a0a0aa7001d689e4542dc28</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_security_acl_role_399bbc64478e2510552caf52736d4355</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>jon.lind</sys_created_by><sys_created_on>2023-04-03 15:49:10</sys_created_on><sys_id>399bbc64478e2510552caf52736d4355</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.public</sys_name><sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package><sys_policy/><sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope><sys_security_acl display_value="">109b7c64478e2510552caf52736d43a9</sys_security_acl><sys_update_name>sys_security_acl_role_399bbc64478e2510552caf52736d4355</sys_update_name><sys_updated_by>jon.lind</sys_updated_by><sys_updated_on>2023-04-03 15:49:10</sys_updated_on><sys_user_role display_value="public" name="public">b0593b350a0a0aa7001d689e4542dc28</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1140459165</payload_hash>
+        <record_name>.public</record_name>
+        <reverted_from/>
+        <source>fd6742ee8735615089790fe5dabb358d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-03 15:49:10</sys_created_on>
+        <sys_id>43cbbc64478e2510552caf52736d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18747ced8d30000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-03 15:49:10</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>4bcbbc64d38e25101ef63052922cc865</update_guid>
+        <update_guid_history>4bcbbc64d38e25101ef63052922cc865:-1140459165</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=".public">ed3cb8a4478e2510552caf52736d433a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-03 15:50:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0799aba0af6a4f42b42b7a0b99723e44</sys_id>
+        <sys_metadata>399bbc64478e2510552caf52736d4355</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.public</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_399bbc64478e2510552caf52736d4355</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_399bbc64478e2510552caf52736d4355">43cbbc64478e2510552caf52736d4366</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-03 15:50:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
