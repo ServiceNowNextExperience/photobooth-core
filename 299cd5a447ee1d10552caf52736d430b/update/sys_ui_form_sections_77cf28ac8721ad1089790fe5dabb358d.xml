@@ -28,6 +28,20 @@
             <sys_updated_by>jon.lind</sys_updated_by>
             <sys_updated_on>2023-03-09 18:25:24</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>jarod.mundt@snc</sys_created_by>
+            <sys_created_on>2023-04-05 15:45:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da3e870d8706a51089790fe5dabb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_pb_core_snapshot" name="x_snc_pb_core_snapshot" sys_domain="global" view="Default view">77cf28ac8721ad1089790fe5dabb358d</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_pb_core_snapshot" sys_domain="global" view="Default view">9e3e870d8706a51089790fe5dabb3566</sys_ui_section>
+            <sys_updated_by>jarod.mundt@snc</sys_updated_by>
+            <sys_updated_on>2023-04-05 15:45:52</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_snc_pb_core_snapshot</name>
             <roles/>

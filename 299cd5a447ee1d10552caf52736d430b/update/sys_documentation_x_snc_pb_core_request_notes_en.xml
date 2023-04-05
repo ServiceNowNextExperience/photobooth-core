@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="snapshot_type" label="Snapshot type" language="en" table="x_snc_pb_core_snapshot">
+    <sys_documentation element="notes" label="Notes" language="en" table="x_snc_pb_core_request">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>snapshot_type</element>
+            <element>notes</element>
             <help/>
             <hint/>
-            <label>Snapshot type</label>
+            <label>Notes</label>
             <language>en</language>
-            <name>x_snc_pb_core_snapshot</name>
-            <plural>Snapshot types</plural>
+            <name>x_snc_pb_core_request</name>
+            <plural>Notes</plural>
             <sys_class_name>sys_documentation</sys_class_name>
-            <sys_created_by>jon.lind</sys_created_by>
-            <sys_created_on>2023-03-09 18:13:38</sys_created_on>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_name>Snapshot type</sys_name>
+            <sys_created_by>jarod.mundt@snc</sys_created_by>
+            <sys_created_on>2023-04-03 17:17:02</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Notes</sys_name>
             <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
             <sys_policy/>
             <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-            <sys_update_name>sys_documentation_x_snc_pb_core_snapshot_snapshot_type_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_snc_pb_core_request_notes_en</sys_update_name>
             <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-            <sys_updated_on>2023-04-03 17:07:55</sys_updated_on>
+            <sys_updated_on>2023-04-03 17:17:02</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

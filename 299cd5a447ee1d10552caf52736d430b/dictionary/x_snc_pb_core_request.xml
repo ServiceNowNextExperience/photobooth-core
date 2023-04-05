@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="639d973c47269d10552caf52736d4300" label="Photobooth Request" max_length="40" name="x_snc_pb_core_request" type="collection">
+    <element audit="true" db_object_id="639d973c47269d10552caf52736d4300" label="Photobooth Request" max_length="40" name="x_snc_pb_core_request" type="collection">
         <element label="Email" mandatory="true" max_length="255" name="email" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="First Name" max_length="100" name="first_name" type="string"/>
+        <element label="Notes" max_length="4000" name="notes" type="journal_input"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Photobooth" mandatory="true" max_length="32" name="photobooth" reference="x_snc_pb_core_photobooth" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" max_length="40" name="state" type="choice">

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="80cc1bf847269d10552caf52736d4346" label="Photobooth Snapshot" max_length="40" name="x_snc_pb_core_snapshot" type="collection">
+    <element audit="true" db_object_id="80cc1bf847269d10552caf52736d4346" label="Photobooth Snapshot" max_length="40" name="x_snc_pb_core_snapshot" type="collection">
         <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Notes" max_length="40" name="notes" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element label="Request" max_length="32" name="request" reference="x_snc_pb_core_request" type="reference"/>
-        <element choice="3" label="Snapshot Type" max_length="40" name="snapshot_type" type="choice">
+        <element choice="3" default="Ready" label="Snapshot state" max_length="40" name="snapshot_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ready" sequence="0" value="Ready"/>
+                <element inactive_on_update="false" label="Sharing" sequence="1" value="Sharing"/>
+                <element inactive_on_update="false" label="Shared" sequence="2" value="Shared"/>
+            </choice>
+        </element>
+        <element choice="3" label="Snapshot type" max_length="40" name="snapshot_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Main" sequence="0" value="main"/>
                 <element inactive_on_update="false" label="Single" sequence="1" value="single"/>

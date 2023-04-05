@@ -28,16 +28,15 @@
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
-        <from/>
-        <generation_type>engine</generation_type>
+        <from>K23 Photobooth &lt;noreply@servicenow.com&gt;</from>
+        <generation_type>triggered</generation_type>
         <importance/>
         <include_attachments>true</include_attachments>
         <item>event.parm1</item>
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Thanks for checking out the photobooth at Knowledge 2023!</p>
-<p>Here are your photos!</p>]]></message_html>
+        <message_html/>
         <message_list/>
         <message_text/>
         <name>Photobooth - Send Snapshot</name>
@@ -47,11 +46,11 @@
         <recipient_fields>request.email</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
-        <reply_to/>
+        <reply_to>jon.lind@servicenow.com</reply_to>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Here's your photobooth photos from Knowledge 2023!</subject>
+        <subject/>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>ashley.snyder</sys_created_by>
@@ -59,17 +58,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d4a045f047f35d5075cac472846d43c1</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Photobooth - Send Snapshot</sys_name>
         <sys_overrides/>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sysevent_email_action_d4a045f047f35d5075cac472846d43c1</sys_update_name>
-        <sys_updated_by>ashley.snyder</sys_updated_by>
-        <sys_updated_on>2022-12-19 19:23:11</sys_updated_on>
+        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
+        <sys_updated_on>2023-04-05 16:01:56</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <template display_value="Photobooth Message Content">41a28f018706a51089790fe5dabb3545</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
