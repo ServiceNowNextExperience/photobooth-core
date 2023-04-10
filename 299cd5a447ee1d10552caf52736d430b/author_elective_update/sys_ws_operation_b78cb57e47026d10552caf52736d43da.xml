@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="DELETE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>snapshot</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    const snapshotGr = new GlideRecord('x_snc_pb_core_snapshot');
+    const {
+        pathParams: {
+            snapshotId
+        },
+        body: {
+            state,
+            integrations
+        }
+    } = request;
+    const validStates = ['Ready', 'Sharing', 'Shared'];
+
+    if (!snapshotId || !snapshotGr.get(request.pathParams.snapshotId)) {
+        throw `Unable to find snapshot with id of "${snapshotId}"`;
+    }
+
+    if (state) {
+        if (!validStates.contains(state)) {
+            throw `State "${state}" is not a valid choice among [${validStates.join(', ')}]`;
+        }
+		snapshotGr.state = state || snapshotGr.state;
+    }
+
+    if (integrations !== undefined) {
+        snapshotGr.integrations = integrations;
+    }
+
+    snapshotGr.update();
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_snc_pb_core/photobooth/snapshot/{snapshotId}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/snapshot/{snapshotId}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-10 20:18:52</sys_created_on>
+        <sys_id>b78cb57e47026d10552caf52736d43da</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>snapshot</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ws_operation_b78cb57e47026d10552caf52736d43da</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 20:40:28</sys_updated_on>
+        <web_service_definition display_value="Photobooth">b37a4bb847e29d10552caf52736d4394</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_ws_operation_b78cb57e47026d10552caf52736d43da</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl/&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;snapshot&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    const snapshotGr = new GlideRecord('x_snc_pb_core_snapshot');
+    const {
+        pathParams: {
+            snapshotId
+        },
+        body: {
+            state,
+            integrations
+        }
+    } = request;
+    const validStates = ['Ready', 'Sharing', 'Shared'];
+
+    if (!snapshotId || !snapshotGr.get(request.pathParams.snapshotId)) {
+        throw `Unable to find snapshot with id of "${snapshotId}"`;
+    }
+
+    if (state) {
+        if (!validStates.contains(state)) {
+            throw `State "${state}" is not a valid choice among [${validStates.join(', ')}]`;
+        }
+		snapshotGr.state = state || snapshotGr.state;
+    }
+
+    if (integrations !== undefined) {
+        snapshotGr.integrations = integrations;
+    }
+
+    snapshotGr.update();
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/x_snc_pb_core/photobooth/snapshot/{snapshotId}&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/snapshot/{snapshotId}&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;false&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;false&lt;/requires_authentication&gt;&lt;requires_snc_internal_role&gt;false&lt;/requires_snc_internal_role&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;jon.lind&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-04-10 20:18:52&lt;/sys_created_on&gt;&lt;sys_id&gt;b78cb57e47026d10552caf52736d43da&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;snapshot&lt;/sys_name&gt;&lt;sys_package display_value="Photobooth Core" source="x_snc_pb_core"&gt;299cd5a447ee1d10552caf52736d430b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Photobooth Core"&gt;299cd5a447ee1d10552caf52736d430b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_b78cb57e47026d10552caf52736d43da&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;jon.lind&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-04-10 20:40:28&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="Photobooth"&gt;b37a4bb847e29d10552caf52736d4394&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>400364824</payload_hash>
+        <record_name>snapshot</record_name>
+        <reverted_from/>
+        <source>a73c7d3e47026d10552caf52736d43d3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-10 20:40:28</sys_created_on>
+        <sys_id>1a9106b247426d10552caf52736d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1876ce60cfd0000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 20:40:28</sys_updated_on>
+        <type>Scripted REST Resource</type>
+        <update_guid>9e9106b29b426d10db9ae044eb68f185</update_guid>
+        <update_guid_history>9e9106b29b426d10db9ae044eb68f185:400364824,4271ce7267426d1080572003d2e3773f:-1208961278,dbd0867299426d1017020c7fbec001ce:-695230405,07a0427250426d1037661b7d0a99a19e:-857386707,d5cc797e88026d10a404f9daa690c7e1:1510650153,4eac797ecb026d10016f9e9de5d1ea79:1256626616</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-10 22:04:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_operation">sys_ws_operation</sys_db_object>
+        <sys_id>000aa438b17f4f3c803e7496f8e2d290</sys_id>
+        <sys_metadata>b78cb57e47026d10552caf52736d43da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>snapshot</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>sys_ws_operation_b78cb57e47026d10552caf52736d43da</sys_update_name>
+        <sys_update_version display_value="sys_ws_operation_b78cb57e47026d10552caf52736d43da">1a9106b247426d10552caf52736d4386</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 22:04:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

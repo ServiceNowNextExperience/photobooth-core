@@ -16,7 +16,7 @@
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>7f11d7cd8706a51089790fe5dabb355d</remote_trigger_id>
+        <remote_trigger_id>cecaceba47426d10552caf52736d439f</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,22 +29,23 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>396dd33c47269d10552caf52736d434a</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Process Snapshot</sys_name>
         <sys_overrides/>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_hub_flow_396dd33c47269d10552caf52736d434a</sys_update_name>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:34</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:38</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=396dd33c47269d10552caf52736d434a"/>
     <sys_variable_value action="delete_multiple" query="document_key=396dd33c47269d10552caf52736d434a"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_snc_pb_core_snapshot">snapshot_stateCHANGESTOSharing<item display_value="Sharing" endquery="false" field="snapshot_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Sharing"/>
+        <condition table="x_snc_pb_core_snapshot">snapshot_stateCHANGESTOSharing^snapshot_type=main<item display_value="Sharing" endquery="false" field="snapshot_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Sharing"/>
+            <item display_value="Main" endquery="false" field="snapshot_type" goto="false" newquery="false" operator="=" or="false" value="main"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -56,16 +57,16 @@
         <run_when_user_list/>
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:58:32</sys_created_on>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-10 21:20:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7f11d7cd8706a51089790fe5dabb355d</sys_id>
+        <sys_id>cecaceba47426d10552caf52736d439f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:32</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:35</sys_updated_on>
         <table>x_snc_pb_core_snapshot</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -73,15 +74,15 @@
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>396dd33c47269d10552caf52736d434a</identifier>
         <runner>FDTriggerRunner</runner>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:58:32</sys_created_on>
-        <sys_id>3b11d7cd8706a51089790fe5dabb355e</sys_id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-10 21:20:35</sys_created_on>
+        <sys_id>cacaceba47426d10552caf52736d43a0</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:32</sys_updated_on>
-        <trigger display_value="">7f11d7cd8706a51089790fe5dabb355d</trigger>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:36</sys_updated_on>
+        <trigger display_value="">cecaceba47426d10552caf52736d439f</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=396dd33c47269d10552caf52736d434a^sys_idNOT IN3b11d7cd8706a51089790fe5dabb355e"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=396dd33c47269d10552caf52736d434a^sys_idNOT INcacaceba47426d10552caf52736d43a0"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=396dd33c47269d10552caf52736d434a^sys_idNOT IN36e4c3c18706a51089790fe5dabb3536"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -92,10 +93,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:13</sys_created_on>
         <sys_id>36e4c3c18706a51089790fe5dabb3536</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:34</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:37</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -124,10 +125,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:13</sys_created_on>
         <sys_id>76e4c3c18706a51089790fe5dabb3537</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:13</sys_updated_on>
-        <value>snapshot_stateCHANGESTOSharing</value>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:19:53</sys_updated_on>
+        <value>snapshot_stateCHANGESTOSharing^snapshot_type=main</value>
         <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -306,14 +307,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:08</sys_created_on>
         <sys_id>dde4c3c18706a51089790fe5dabb351a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:33</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:36</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -389,14 +390,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:12</sys_created_on>
         <sys_id>e6e4c3c18706a51089790fe5dabb3531</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:33</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:36</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -426,10 +427,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:14</sys_created_on>
         <sys_id>03e4c3c18706a51089790fe5dabb357b</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:59</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:37</sys_updated_on>
         <ui_id>4c6917c9-0e3b-457c-92a1-ff36e20da71d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=03e4c3c18706a51089790fe5dabb357b"/>
@@ -514,10 +515,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>13e4c3c18706a51089790fe5dabb3595</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:59</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:37</sys_updated_on>
         <ui_id>14c840fc-4a62-4b8b-9988-964266cc9da5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=13e4c3c18706a51089790fe5dabb3595"/>
@@ -588,10 +589,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>57e4c3c18706a51089790fe5dabb3582</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:59</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:37</sys_updated_on>
         <ui_id>403c3530-5909-4478-a6f5-bd015f75870f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=57e4c3c18706a51089790fe5dabb3582"/>
@@ -744,18 +745,18 @@
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3c9cc7898706a51089790fe5dabb351f","name":"plan","plan_signature":null}}</plan>
         <plan_id>396dd33c47269d10552caf52736d434a</plan_id>
-        <snapshot>06315bcd8706a51089790fe5dabb35a8</snapshot>
+        <snapshot>728c87898706a51089790fe5dabb3546</snapshot>
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3c9cc7898706a51089790fe5dabb351f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:32</sys_updated_on>
-        <trigger display_value="">7f11d7cd8706a51089790fe5dabb355d</trigger>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:36</sys_updated_on>
+        <trigger display_value="">cecaceba47426d10552caf52736d439f</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=396dd33c47269d10552caf52736d434a"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -786,15 +787,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>728c87898706a51089790fe5dabb3546</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:29</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:33</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=728c87898706a51089790fe5dabb3546"/>
@@ -809,10 +810,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>209c87898706a51089790fe5dabb35f3</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:33</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:36</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -855,10 +856,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>6c9c87898706a51089790fe5dabb35f4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:38:39</sys_updated_on>
-        <value>snapshot_stateCHANGESTOSharing</value>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:30</sys_updated_on>
+        <value>snapshot_stateCHANGESTOSharing^snapshot_type=main</value>
         <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=209c87898706a51089790fe5dabb35f3"/>
@@ -1023,14 +1024,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:36</sys_created_on>
         <sys_id>7b8c87898706a51089790fe5dabb35b8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:27</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1106,14 +1107,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:32</sys_created_on>
         <sys_id>f68c87898706a51089790fe5dabb3548</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:28</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:31</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1143,10 +1144,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>9c9c87898706a51089790fe5dabb35ea</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:29</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:32</sys_updated_on>
         <ui_id>403c3530-5909-4478-a6f5-bd015f75870f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9c9c87898706a51089790fe5dabb35ea"/>
@@ -1231,10 +1232,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:38</sys_created_on>
         <sys_id>d09c87898706a51089790fe5dabb35d5</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:29</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:32</sys_updated_on>
         <ui_id>4c6917c9-0e3b-457c-92a1-ff36e20da71d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d09c87898706a51089790fe5dabb35d5"/>
@@ -1319,10 +1320,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>e09c87898706a51089790fe5dabb35f1</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:29</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-10 21:20:32</sys_updated_on>
         <ui_id>14c840fc-4a62-4b8b-9988-964266cc9da5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e09c87898706a51089790fe5dabb35f1"/>
