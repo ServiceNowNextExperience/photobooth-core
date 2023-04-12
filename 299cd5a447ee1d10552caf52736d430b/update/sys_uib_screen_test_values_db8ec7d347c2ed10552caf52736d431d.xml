@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{ }</macroponent_config>
+        <screen display_value="Camera default">9f8ec7d347c2ed10552caf52736d4319</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-04-12 15:33:38</sys_created_on>
+        <sys_id>db8ec7d347c2ed10552caf52736d431d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_db8ec7d347c2ed10552caf52736d431d</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-04-12 15:33:38</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>
