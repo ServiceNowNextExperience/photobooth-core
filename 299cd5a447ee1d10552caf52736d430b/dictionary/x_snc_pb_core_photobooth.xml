@@ -3,9 +3,11 @@
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element hint="The WebRTC Camera Device ID for the camera you wish to default to." label="Camera Device ID" max_length="70" name="camera_device_id" type="string"/>
         <element default="50" hint="Height of the &quot;Chin&quot; at the bottom of the composite 2x2 image result.  Leave as 0 for no chin." label="Chin Height Pixels" mandatory="true" max_length="40" name="chin_height" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Completion Message" max_length="55" name="completion_message" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" default="white" hint="The CSS Canvas Fill Style (usually a color such as &quot;Green&quot; or &quot;White&quot;) for the background of the composite 2x2 image." label="Fill Style" mandatory="true" max_length="100" name="fill_style" type="string"/>
         <element default="10" hint="Gap around edges and between images in 2x2 composite." label="Gap Pixels" mandatory="true" max_length="40" name="gap" type="integer"/>
+        <element label="Idle Message" max_length="55" name="idle_message" type="string"/>
         <element attributes="edge_encryption_enabled=true" display="true" label="Long Name" mandatory="true" max_length="100" name="long_name" type="string"/>
         <element label="Name" max_length="255" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>

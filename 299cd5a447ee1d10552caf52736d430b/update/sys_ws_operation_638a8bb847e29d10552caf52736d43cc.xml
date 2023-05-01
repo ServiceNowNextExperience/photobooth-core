@@ -37,11 +37,17 @@
 
         writeToAttachment({snapshotGr, imageType, image});
 
+/*		const requestGr = new GlideRecord('x_snc_pb_core_request');
+		requestGr.get(requestId);
+		requestGr.state = "ready";
+		requestGr.update();
+gs.info(`${logPrefix} updating request id: ${requestGr.getUniqueValue()}`);*/
         response.setBody({
             "status": "success",
             "attachmentId": attachmentId,
             "snapshotId": snapshotId
         });
+		
     } catch (exc) {
         gs.error(`${logPrefix} error for Request ID: ` + JSON.stringify(exc));
         response.setBody({
@@ -49,10 +55,6 @@
             "requestId": requestId,
             "message": `Query logs table for errors starting with ${logPrefix}`
         });
-    }
-
-    function writeToDbImage({snapshotGr, imageType, image}){
-        
     }
 
     function writeToAttachment({snapshotGr, imageType, image}) {
@@ -78,14 +80,14 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2022-10-12 21:12:25</sys_created_on>
         <sys_id>638a8bb847e29d10552caf52736d43cc</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>snapshot</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_ws_operation_638a8bb847e29d10552caf52736d43cc</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-03 20:56:48</sys_updated_on>
+        <sys_updated_on>2023-04-27 17:43:23</sys_updated_on>
         <web_service_definition display_value="Photobooth">b37a4bb847e29d10552caf52736d4394</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

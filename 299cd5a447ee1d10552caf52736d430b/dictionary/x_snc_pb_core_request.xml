@@ -9,6 +9,8 @@
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
                 <element inactive_on_update="false" label="Ready" sequence="1" value="ready"/>
+                <element inactive_on_update="false" label="Complete" sequence="20" value="complete"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="30" value="cancelled"/>
             </choice>
         </element>
         <index name="index">
