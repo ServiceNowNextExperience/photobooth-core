@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">b59e556b6bc8ad104f9d8bf4e2b6e930</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"22.1.7","scoreSize":"md","headingPosition":"top","sparklineStyle":"area","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":true,"showZero":true,"colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Photobooth Request","sourceType":"table","tableOrViewName":"x_snc_pb_core_request","filterQuery":"photobooth.active=true","id":"dGFibGV4X3NuY19wYl9jb3JlX3JlcXVlc3QxNjcyNzcxMDQ3NDEw","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Requests","showBorder":true,"bareBorder":false,"showDataPassthrough":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV4X3NuY19wYl9jb3JlX3JlcXVlc3QxNjcyNzcxMDQ3NDEw","id":"ZEdGaWJHVjRYM051WTE5d1lsOWpiM0psWDNKbGNYVmxjM1F4TmpjeU56Y3hNRFEzTkRFdzE2NzI3NzEwNDc3MTA=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"filterConfigurations":[],"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","dateFormat":"default"}</component_props>
+        <h>9</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:33</sys_created_on>
+        <sys_id>7d9e556bd1c8ad1049510d60da6f212f</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>par_dashboard_widget_7d9e556bd1c8ad1049510d60da6f212f</sys_update_name>
+        <visualization/>
+        <w>4</w>
+        <x>4</x>
+        <y>2</y>
+    </par_dashboard_widget>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>par_dashboard_widget_7d9e556bd1c8ad1049510d60da6f212f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">b59e556b6bc8ad104f9d8bf4e2b6e930</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"22.1.7","scoreSize":"md","headingPosition":"top","sparklineStyle":"area","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":true,"showZero":true,"colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Photobooth Request","sourceType":"table","tableOrViewName":"x_snc_pb_core_request","filterQuery":"photobooth.active=true","id":"dGFibGV4X3NuY19wYl9jb3JlX3JlcXVlc3QxNjcyNzcxMDQ3NDEw","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Requests","showBorder":true,"bareBorder":false,"showDataPassthrough":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV4X3NuY19wYl9jb3JlX3JlcXVlc3QxNjcyNzcxMDQ3NDEw","id":"ZEdGaWJHVjRYM051WTE5d1lsOWpiM0psWDNKbGNYVmxjM1F4TmpjeU56Y3hNRFEzTkRFdzE2NzI3NzEwNDc3MTA=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"filterConfigurations":[],"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","dateFormat":"default"}</component_props>
+        <h>9</h>
+        <name/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:33</sys_created_on>
+        <sys_id>7d9e556bd1c8ad1049510d60da6f212f</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>par_dashboard_widget_7d9e556bd1c8ad1049510d60da6f212f</sys_update_name>
+        <visualization/>
+        <w>4</w>
+        <x>4</x>
+        <y>2</y>
+    </par_dashboard_widget>
+</record_update>]]></payload>
+        <payload_hash>1025935258</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>34869d0f8760a11089790fe5dabb3518</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-26 22:37:20</sys_created_on>
+        <sys_id>7cb6554f8760a11089790fe5dabb3587</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185f03a747a0000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-01-26 22:37:20</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>b8b6554fb760a1108fa860082f324587</update_guid>
+        <update_guid_history>b8b6554fb760a1108fa860082f324587:0,a8b386abc34cad1085136e45c7845684:1994991008,57c0e12fe2c8ad103c0ab0bd308d95dd:16900123,9fc0e12f05c8ad108f6cc56e61b399da:-487149657</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c31be1298766611089790fe5dabb350c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-01 18:21:12</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>11fea712c558417d87550bcfee1c6831</sys_id>
+        <sys_metadata>7d9e556bd1c8ad1049510d60da6f212f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_7d9e556bd1c8ad1049510d60da6f212f</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_7d9e556bd1c8ad1049510d60da6f212f">7cb6554f8760a11089790fe5dabb3587</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-01 18:21:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

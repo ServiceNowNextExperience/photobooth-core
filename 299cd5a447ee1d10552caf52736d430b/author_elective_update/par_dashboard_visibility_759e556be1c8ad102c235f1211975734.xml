@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="DELETE">
+        <dashboard display_value="Photobooth Workspace">359e556bfec8ad1021ea600ea9911d2f</dashboard>
+        <experience display_value="Photobooth Workspace">bd9e556bd7c8ad10e797a1d87a80e42f</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:25</sys_created_on>
+        <sys_id>759e556be1c8ad102c235f1211975734</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>par_dashboard_visibility_759e556be1c8ad102c235f1211975734</sys_update_name>
+    </par_dashboard_visibility>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>par_dashboard_visibility_759e556be1c8ad102c235f1211975734</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="Photobooth Workspace">359e556bfec8ad1021ea600ea9911d2f</dashboard>
+        <experience display_value="Photobooth Workspace">bd9e556bd7c8ad10e797a1d87a80e42f</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:25</sys_created_on>
+        <sys_id>759e556be1c8ad102c235f1211975734</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>par_dashboard_visibility_759e556be1c8ad102c235f1211975734</sys_update_name>
+    </par_dashboard_visibility>
+</record_update>]]></payload>
+        <payload_hash>1557379501</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>34869d0f8760a11089790fe5dabb3518</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-26 22:37:20</sys_created_on>
+        <sys_id>f8b6554f8760a11089790fe5dabb357f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185f03a73600000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-01-26 22:37:20</sys_updated_on>
+        <type>PAR Dashboard Visibility</type>
+        <update_guid>38b6554ffa60a1106d51144b430a117f</update_guid>
+        <update_guid_history>38b6554ffa60a1106d51144b430a117f:0,f7c0252fc4c8ad1059af7f392e888741:809746430,7fc0252f45c8ad10a921ca8f3720bf3e:-241161078</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">d31be1298766611089790fe5dabb3534</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-01 18:21:13</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_visibility">par_dashboard_visibility</sys_db_object>
+        <sys_id>3a62e8a1763543bfbc035d4d09879a99</sys_id>
+        <sys_metadata>759e556be1c8ad102c235f1211975734</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>par_dashboard_visibility_759e556be1c8ad102c235f1211975734</sys_update_name>
+        <sys_update_version display_value="par_dashboard_visibility_759e556be1c8ad102c235f1211975734">f8b6554f8760a11089790fe5dabb357f</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-01 18:21:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_canvas">
+    <par_dashboard_canvas action="DELETE">
+        <dashboard display_value="Photobooth Workspace">359e556bfec8ad1021ea600ea9911d2f</dashboard>
+        <dashboard_tab/>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:26</sys_created_on>
+        <sys_id>359e556b19c8ad1068a72ea660820635</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>par_dashboard_canvas_359e556b19c8ad1068a72ea660820635</sys_update_name>
+    </par_dashboard_canvas>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>par_dashboard_canvas_359e556b19c8ad1068a72ea660820635</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_canvas">
+    <par_dashboard_canvas action="INSERT_OR_UPDATE">
+        <dashboard display_value="Photobooth Workspace">359e556bfec8ad1021ea600ea9911d2f</dashboard>
+        <dashboard_tab/>
+        <layout>[]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:26</sys_created_on>
+        <sys_id>359e556b19c8ad1068a72ea660820635</sys_id>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>par_dashboard_canvas_359e556b19c8ad1068a72ea660820635</sys_update_name>
+    </par_dashboard_canvas>
+</record_update>]]></payload>
+        <payload_hash>-130187765</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>34869d0f8760a11089790fe5dabb3518</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-26 22:37:19</sys_created_on>
+        <sys_id>a4b6554f8760a11089790fe5dabb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185f03a70b00000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-01-26 22:37:19</sys_updated_on>
+        <type>PAR Dashboard Page Canvas</type>
+        <update_guid>e0b6554fd160a110bcf5876bcb680f27</update_guid>
+        <update_guid_history>e0b6554fd160a110bcf5876bcb680f27:0,0ec0e12f7bc8ad10cc568d2d960e4579:1834060597,06c0e12f3dc8ad1049f63b7f21ecd977:-495232983</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7a1ba1298766611089790fe5dabb35e5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-01 18:21:11</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_canvas">par_dashboard_canvas</sys_db_object>
+        <sys_id>665ce9eebe5d470287f9d832a33fab71</sys_id>
+        <sys_metadata>359e556b19c8ad1068a72ea660820635</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>par_dashboard_canvas_359e556b19c8ad1068a72ea660820635</sys_update_name>
+        <sys_update_version display_value="par_dashboard_canvas_359e556b19c8ad1068a72ea660820635">a4b6554f8760a11089790fe5dabb3527</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-01 18:21:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

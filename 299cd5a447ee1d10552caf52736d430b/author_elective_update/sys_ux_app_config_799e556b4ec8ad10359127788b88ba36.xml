@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config">
+    <sys_ux_app_config action="DELETE">
+        <active>true</active>
+        <custom_icon/>
+        <default_route_type/>
+        <description>Workspace to manage the photobooths and review requests and snapshots.</description>
+        <encode_query_string>false</encode_query_string>
+        <icon/>
+        <landing_path>home</landing_path>
+        <name>Photobooth Workspace Config</name>
+        <prefetch_limits/>
+        <sys_class_name>sys_ux_app_config</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:28</sys_created_on>
+        <sys_id>799e556b4ec8ad10359127788b88ba36</sys_id>
+        <sys_name>Photobooth Workspace Config</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_app_config_799e556b4ec8ad10359127788b88ba36</sys_update_name>
+    </sys_ux_app_config>
+    <sys_translated_text action="DELETE" query="documentkey=799e556b4ec8ad10359127788b88ba36"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>sys_ux_app_config_799e556b4ec8ad10359127788b88ba36</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_config">
+    <sys_ux_app_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <custom_icon/>
+        <default_route_type/>
+        <description>Workspace to manage the photobooths and review requests and snapshots.</description>
+        <encode_query_string>false</encode_query_string>
+        <icon/>
+        <landing_path>home</landing_path>
+        <name>Photobooth Workspace Config</name>
+        <prefetch_limits/>
+        <sys_class_name>sys_ux_app_config</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:28</sys_created_on>
+        <sys_id>799e556b4ec8ad10359127788b88ba36</sys_id>
+        <sys_name>Photobooth Workspace Config</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ux_app_config_799e556b4ec8ad10359127788b88ba36</sys_update_name>
+    </sys_ux_app_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=799e556b4ec8ad10359127788b88ba36"/>
+</record_update>]]></payload>
+        <payload_hash>117521847</payload_hash>
+        <record_name>Photobooth Workspace Config</record_name>
+        <reverted_from/>
+        <source>34869d0f8760a11089790fe5dabb3518</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-26 22:37:38</sys_created_on>
+        <sys_id>81c6194f8760a11089790fe5dabb35a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185f03ab96b0000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-01-26 22:37:38</sys_updated_on>
+        <type>UX App Configuration</type>
+        <update_guid>cdc6194fbc60a11016fceddef73db2a0</update_guid>
+        <update_guid_history>cdc6194fbc60a11016fceddef73db2a0:0,1ce0e52fcdc8ad10f6f5cae5db31181d:-323313591,a3d0a52fbec8ad102f7c262c7706669e:841769429</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-01 18:46:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_config">sys_ux_app_config</sys_db_object>
+        <sys_id>03c4cccf798948a880b89ba5d3e0f710</sys_id>
+        <sys_metadata>799e556b4ec8ad10359127788b88ba36</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Photobooth Workspace Config</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>sys_ux_app_config_799e556b4ec8ad10359127788b88ba36</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_config_799e556b4ec8ad10359127788b88ba36">81c6194f8760a11089790fe5dabb35a1</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-01 18:46:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

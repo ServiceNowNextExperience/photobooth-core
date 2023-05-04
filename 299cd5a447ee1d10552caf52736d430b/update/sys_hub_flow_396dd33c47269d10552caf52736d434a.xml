@@ -10,13 +10,13 @@
         <copied_from_name>FlowTemplate_Empty</copied_from_name>
         <description>Receives snapshot and request to be formatted and sent via email to the requester.</description>
         <internal_name>process_snapshot</internal_name>
-        <label_cache>[{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"number"},{"name":"Updated_1.current.request.email","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_request","column_name":"email"},{"name":"Updated_1.current.request","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request","reference":"x_snc_pb_core_request","reference_display":"Photobooth Request","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_snapshot","column_name":"request"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.request","label":"Trigger - Record Created➛Photobooth Snapshot Record➛Request","reference":"x_snc_pb_core_request","reference_display":"Photobooth Request","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_snapshot","column_name":"request"},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"number"},{"name":"Updated_1.current.request.email","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_request","column_name":"email"},{"name":"Updated_1.current.request","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request","reference":"x_snc_pb_core_request","reference_display":"Photobooth Request","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_snapshot","column_name":"request"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
         <master_snapshot>728c87898706a51089790fe5dabb3546</master_snapshot>
         <name>Process Snapshot</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>90e962cc871aed1089790fe5dabb3541</remote_trigger_id>
+        <remote_trigger_id>d1fe6ff5476ae110552caf52736d4376</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>396dd33c47269d10552caf52736d434a</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Process Snapshot</sys_name>
         <sys_overrides/>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
@@ -37,20 +37,19 @@
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_hub_flow_396dd33c47269d10552caf52736d434a</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:52</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=396dd33c47269d10552caf52736d434a"/>
     <sys_variable_value action="delete_multiple" query="document_key=396dd33c47269d10552caf52736d434a"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_snc_pb_core_snapshot">snapshot_stateCHANGESTOSharing^integrationsISNOTEMPTY<item display_value="Sharing" endquery="false" field="snapshot_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Sharing"/>
-            <item endquery="false" field="integrations" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <condition table="x_snc_pb_core_snapshot">snapshot_type=main<item display_value="Main" endquery="false" field="snapshot_type" goto="false" newquery="false" operator="=" or="false" value="main"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
-        <on_insert>false</on_insert>
-        <on_update>true</on_update>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
         <run_flow_in>background</run_flow_in>
         <run_on_extended>false</run_on_extended>
         <run_when_setting>both</run_when_setting>
@@ -58,15 +57,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>jon.lind</sys_created_by>
-        <sys_created_on>2023-04-14 20:48:51</sys_created_on>
+        <sys_created_on>2023-05-02 22:35:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>90e962cc871aed1089790fe5dabb3541</sys_id>
+        <sys_id>d1fe6ff5476ae110552caf52736d4376</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:51</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
         <table>x_snc_pb_core_snapshot</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -75,77 +74,62 @@
         <identifier>396dd33c47269d10552caf52736d434a</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>jon.lind</sys_created_by>
-        <sys_created_on>2023-04-14 20:48:51</sys_created_on>
-        <sys_id>dce962cc871aed1089790fe5dabb3541</sys_id>
+        <sys_created_on>2023-05-02 22:35:44</sys_created_on>
+        <sys_id>ddfe6ff5476ae110552caf52736d4376</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:51</sys_updated_on>
-        <trigger display_value="">90e962cc871aed1089790fe5dabb3541</trigger>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
+        <trigger display_value="">d1fe6ff5476ae110552caf52736d4376</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=396dd33c47269d10552caf52736d434a^sys_idNOT INdce962cc871aed1089790fe5dabb3541"/>
-    <sys_hub_trigger_instance action="delete_multiple" query="flow=396dd33c47269d10552caf52736d434a^sys_idNOT IN36e4c3c18706a51089790fe5dabb3536"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=396dd33c47269d10552caf52736d434a^sys_idNOT INddfe6ff5476ae110552caf52736d4376"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=396dd33c47269d10552caf52736d434a^sys_idNOT INf48da3b5476ae110552caf52736d43e2"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
         <flow display_value="Process Snapshot">396dd33c47269d10552caf52736d434a</flow>
-        <name>Updated</name>
+        <name>Created</name>
         <remote_sys_id/>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:05:13</sys_created_on>
-        <sys_id>36e4c3c18706a51089790fe5dabb3536</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-02 22:29:24</sys_created_on>
+        <sys_id>f48da3b5476ae110552caf52736d43e2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:52</sys_updated_on>
-        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
-        <trigger_type>record_update</trigger_type>
+        <trigger_type>record_create</trigger_type>
     </sys_hub_trigger_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=36e4c3c18706a51089790fe5dabb3536"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f48da3b5476ae110552caf52736d43e2"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_trigger_instance</document>
-        <document_key>36e4c3c18706a51089790fe5dabb3536</document_key>
-        <order>101</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:58:04</sys_created_on>
-        <sys_id>700157cd8706a51089790fe5dabb350f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:58:04</sys_updated_on>
-        <value>every</value>
-        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>36e4c3c18706a51089790fe5dabb3536</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:05:13</sys_created_on>
-        <sys_id>76e4c3c18706a51089790fe5dabb3537</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:38:22</sys_updated_on>
-        <value>snapshot_stateCHANGESTOSharing^integrationsISNOTEMPTY</value>
-        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_trigger_instance</document>
-        <document_key>36e4c3c18706a51089790fe5dabb3536</document_key>
+        <document_key>f48da3b5476ae110552caf52736d43e2</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:05:13</sys_created_on>
-        <sys_id>fee4c3c18706a51089790fe5dabb3537</sys_id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-02 22:29:24</sys_created_on>
+        <sys_id>308da3b5476ae110552caf52736d43e4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:13</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:29:24</sys_updated_on>
         <value>x_snc_pb_core_snapshot</value>
-        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=36e4c3c18706a51089790fe5dabb3536"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f48da3b5476ae110552caf52736d43e2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-02 22:29:24</sys_created_on>
+        <sys_id>f48da3b5476ae110552caf52736d43e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
+        <value>snapshot_type=main</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
     <sys_hub_flow_stage action="delete_multiple" query="flow=396dd33c47269d10552caf52736d434a"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=396dd33c47269d10552caf52736d434a^sys_idNOT IN796dd33c47269d10552caf52736d434c"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -160,90 +144,7 @@
         <sys_updated_on>2022-10-12 22:33:57</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=796dd33c47269d10552caf52736d434c"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=396dd33c47269d10552caf52736d434a^sys_idNOT IN46e4c3c18706a51089790fe5dabb352e,dde4c3c18706a51089790fe5dabb351a,e6e4c3c18706a51089790fe5dabb3531"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>changed_fields</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Changed Fields</label>
-        <mandatory>false</mandatory>
-        <max_length>4000</max_length>
-        <model display_value="Process Snapshot">396dd33c47269d10552caf52736d434a</model>
-        <model_id>396dd33c47269d10552caf52736d434a</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_396dd33c47269d10552caf52736d434a</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:05:11</sys_created_on>
-        <sys_id>46e4c3c18706a51089790fe5dabb352e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:11</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
+    <sys_hub_flow_input action="delete_multiple" query="model=396dd33c47269d10552caf52736d434a^sys_idNOT INdde4c3c18706a51089790fe5dabb351a,e6e4c3c18706a51089790fe5dabb3531"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -307,14 +208,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:08</sys_created_on>
         <sys_id>dde4c3c18706a51089790fe5dabb351a</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:51</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -390,14 +291,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:12</sys_created_on>
         <sys_id>e6e4c3c18706a51089790fe5dabb3531</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:51</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -427,10 +328,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:14</sys_created_on>
         <sys_id>03e4c3c18706a51089790fe5dabb357b</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:49:21</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-04 22:18:45</sys_updated_on>
         <ui_id>4c6917c9-0e3b-457c-92a1-ff36e20da71d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=03e4c3c18706a51089790fe5dabb357b"/>
@@ -442,9 +343,9 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>03e4c3c18706a51089790fe5dabb357e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:15</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
         <value>d4a045f047f35d5075cac472846d43c1</value>
         <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
     </sys_variable_value>
@@ -481,11 +382,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>8fe4c3c18706a51089790fe5dabb357d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:15</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:29:24</sys_updated_on>
         <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
-        <value>{{Updated_1.current}}</value>
+        <value>{{Created_1.current}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
@@ -515,10 +416,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>13e4c3c18706a51089790fe5dabb3595</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:49:21</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-04 22:18:45</sys_updated_on>
         <ui_id>14c840fc-4a62-4b8b-9988-964266cc9da5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=13e4c3c18706a51089790fe5dabb3595"/>
@@ -530,9 +431,9 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:16</sys_created_on>
         <sys_id>6be4c3c18706a51089790fe5dabb3596</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:16</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
         <value>x_snc_pb_core_request</value>
         <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
     </sys_variable_value>
@@ -543,11 +444,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:16</sys_created_on>
         <sys_id>e7e4c3c18706a51089790fe5dabb3596</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:16</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Updated_1.current.request}}</value>
+        <value>{{Created_1.current.request}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
@@ -567,11 +468,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:16</sys_created_on>
         <sys_id>27e4c3c18706a51089790fe5dabb3596</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:40:12</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>notes=Sending snapshot {{Updated_1.current.number}} to: {{Updated_1.current.request.email}}</value>
+        <value>notes=Sent main snapshot {{Updated_1.current.number}} to: {{Updated_1.current.request.email}}</value>
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=13e4c3c18706a51089790fe5dabb3595"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=13e4c3c18706a51089790fe5dabb3595"/>
@@ -589,10 +490,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>57e4c3c18706a51089790fe5dabb3582</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:49:21</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-04 22:18:45</sys_updated_on>
         <ui_id>403c3530-5909-4478-a6f5-bd015f75870f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=57e4c3c18706a51089790fe5dabb3582"/>
@@ -604,9 +505,9 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>17e4c3c18706a51089790fe5dabb3584</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:15</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
         <value>snapshot_state=Shared</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
@@ -618,9 +519,9 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>d7e4c3c18706a51089790fe5dabb3584</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:15</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
         <value>x_snc_pb_core_snapshot</value>
         <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
     </sys_variable_value>
@@ -631,11 +532,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:05:15</sys_created_on>
         <sys_id>93e4c3c18706a51089790fe5dabb3584</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:15</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:31:15</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Updated_1.current}}</value>
+        <value>{{Created_1.current}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
@@ -667,30 +568,7 @@
     <sys_hub_flow_logic action="delete_multiple" query="flow=396dd33c47269d10552caf52736d434a"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=396dd33c47269d10552caf52736d434a"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=396dd33c47269d10552caf52736d434a"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_396dd33c47269d10552caf52736d434a^sys_idNOT IN1ee4c3c18706a51089790fe5dabb3530,7ae4c3c18706a51089790fe5dabb3533,8ee4c3c18706a51089790fe5dabb3520"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>changed_fields</element>
-        <help/>
-        <hint/>
-        <label>Changed Fields</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_396dd33c47269d10552caf52736d434a</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:05:12</sys_created_on>
-        <sys_id>1ee4c3c18706a51089790fe5dabb3530</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:05:12</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_396dd33c47269d10552caf52736d434a^sys_idNOT IN7ae4c3c18706a51089790fe5dabb3533,8ee4c3c18706a51089790fe5dabb3520"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
         <help/>
@@ -742,21 +620,21 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_396dd33c47269d10552caf52736d434a"/>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=396dd33c47269d10552caf52736d434a^sys_idNOT IN3c9cc7898706a51089790fe5dabb351f"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3c9cc7898706a51089790fe5dabb351f","name":"plan","plan_signature":null}}</plan>
         <plan_id>396dd33c47269d10552caf52736d434a</plan_id>
-        <snapshot>9ff926cc871aed1089790fe5dabb35a0</snapshot>
+        <snapshot>884e39ea4722a510552caf52736d43d4</snapshot>
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3c9cc7898706a51089790fe5dabb351f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:51</sys_updated_on>
-        <trigger display_value="">90e962cc871aed1089790fe5dabb3541</trigger>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
+        <trigger display_value="">d1fe6ff5476ae110552caf52736d4376</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=396dd33c47269d10552caf52736d434a"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -770,7 +648,7 @@
         <copied_from_name/>
         <description>Receives snapshot and request to be formatted and sent via email to the requester.</description>
         <internal_name>process_snapshot</internal_name>
-        <label_cache>[{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"number"},{"name":"Updated_1.current.request.email","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_request","column_name":"email"},{"name":"Updated_1.current.request","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request","reference":"x_snc_pb_core_request","reference_display":"Photobooth Request","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_snapshot","column_name":"request"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.request","label":"Trigger - Record Created➛Photobooth Snapshot Record➛Request","reference":"x_snc_pb_core_request","reference_display":"Photobooth Request","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_snapshot","column_name":"request"},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"number"},{"name":"Updated_1.current.request.email","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_request","column_name":"email"},{"name":"Updated_1.current.request","label":"Trigger - Record Updated➛Photobooth Snapshot Record➛Request","reference":"x_snc_pb_core_request","reference_display":"Photobooth Request","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_snapshot","column_name":"request"},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
         <master>true</master>
         <name>Process Snapshot</name>
         <natlang/>
@@ -787,7 +665,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>728c87898706a51089790fe5dabb3546</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -795,7 +673,7 @@
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:50</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=728c87898706a51089790fe5dabb3546"/>
@@ -805,21 +683,35 @@
         <comment/>
         <display_text/>
         <flow display_value="Process Snapshot">728c87898706a51089790fe5dabb3546</flow>
-        <name>Updated</name>
+        <name>Created</name>
         <remote_sys_id/>
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>209c87898706a51089790fe5dabb35f3</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:51</sys_updated_on>
-        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <sys_updated_on>2023-05-02 22:35:44</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
-        <trigger_type>record_update</trigger_type>
+        <trigger_type>record_create</trigger_type>
     </sys_hub_trigger_instance>
     <sys_variable_value action="delete_multiple" query="document_key=209c87898706a51089790fe5dabb35f3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>209c87898706a51089790fe5dabb35f3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-02 22:35:43</sys_created_on>
+        <sys_id>01fe6ff5476ae110552caf52736d4314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
+        <value>x_snc_pb_core_snapshot</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_trigger_instance</document>
         <document_key>209c87898706a51089790fe5dabb35f3</document_key>
@@ -853,6 +745,20 @@
         <document_key>209c87898706a51089790fe5dabb35f3</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-02 22:35:43</sys_created_on>
+        <sys_id>4dfe6ff5476ae110552caf52736d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
+        <value>snapshot_type=main</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>209c87898706a51089790fe5dabb35f3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>6c9c87898706a51089790fe5dabb35f4</sys_id>
@@ -862,7 +768,6 @@
         <value>snapshot_stateCHANGESTOSharing^integrationsISNOTEMPTY</value>
         <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=209c87898706a51089790fe5dabb35f3"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=728c87898706a51089790fe5dabb3546"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=728c87898706a51089790fe5dabb3546^sys_idNOT IN728c87898706a51089790fe5dabb3547"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -877,90 +782,7 @@
         <sys_updated_on>2023-04-05 15:38:32</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=728c87898706a51089790fe5dabb3547"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=728c87898706a51089790fe5dabb3546^sys_idNOT IN6f8c87898706a51089790fe5dabb3597,7b8c87898706a51089790fe5dabb35b8,f68c87898706a51089790fe5dabb3548"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>changed_fields</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Changed Fields</label>
-        <mandatory>false</mandatory>
-        <max_length>4000</max_length>
-        <model display_value="Process Snapshot">728c87898706a51089790fe5dabb3546</model>
-        <model_id>728c87898706a51089790fe5dabb3546</model_id>
-        <model_table>sys_hub_flow_snapshot</model_table>
-        <name>var__m_sys_hub_flow_input_728c87898706a51089790fe5dabb3546</name>
-        <next_element/>
-        <order>100</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:38:35</sys_created_on>
-        <sys_id>6f8c87898706a51089790fe5dabb3597</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:40:39</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
+    <sys_hub_flow_input action="delete_multiple" query="model=728c87898706a51089790fe5dabb3546^sys_idNOT IN7b8c87898706a51089790fe5dabb35b8,f68c87898706a51089790fe5dabb3548"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1024,14 +846,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:36</sys_created_on>
         <sys_id>7b8c87898706a51089790fe5dabb35b8</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:50</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1107,14 +929,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:32</sys_created_on>
         <sys_id>f68c87898706a51089790fe5dabb3548</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:50</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1144,10 +966,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>9c9c87898706a51089790fe5dabb35ea</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:50</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <ui_id>403c3530-5909-4478-a6f5-bd015f75870f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9c9c87898706a51089790fe5dabb35ea"/>
@@ -1186,11 +1008,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>a89c87898706a51089790fe5dabb35ec</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:38:39</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Updated_1.current}}</value>
+        <value>{{Created_1.current}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
@@ -1232,10 +1054,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:38</sys_created_on>
         <sys_id>d09c87898706a51089790fe5dabb35d5</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:50</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <ui_id>4c6917c9-0e3b-457c-92a1-ff36e20da71d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d09c87898706a51089790fe5dabb35d5"/>
@@ -1286,11 +1108,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>589c87898706a51089790fe5dabb35d7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:38:39</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
-        <value>{{Updated_1.current}}</value>
+        <value>{{Created_1.current}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
@@ -1320,10 +1142,10 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>e09c87898706a51089790fe5dabb35f1</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-14 20:48:50</sys_updated_on>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <ui_id>14c840fc-4a62-4b8b-9988-964266cc9da5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e09c87898706a51089790fe5dabb35f1"/>
@@ -1348,11 +1170,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>a89c87898706a51089790fe5dabb35f2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:38:39</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>{{Updated_1.current.request}}</value>
+        <value>{{Created_1.current.request}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table_name</field>
@@ -1372,11 +1194,11 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 15:38:39</sys_created_on>
         <sys_id>e49c87898706a51089790fe5dabb35f2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:40:35</sys_updated_on>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-02 22:35:43</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>notes=Sending snapshot {{Updated_1.current.number}} to: {{Updated_1.current.request.email}}</value>
+        <value>notes=Sent main snapshot {{Updated_1.current.number}} to: {{Updated_1.current.request.email}}</value>
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e09c87898706a51089790fe5dabb35f1"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e09c87898706a51089790fe5dabb35f1"/>
@@ -1384,7 +1206,7 @@
     <sys_hub_flow_logic action="delete_multiple" query="flow=728c87898706a51089790fe5dabb3546"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=728c87898706a51089790fe5dabb3546"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=728c87898706a51089790fe5dabb3546"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_728c87898706a51089790fe5dabb3546^sys_idNOT IN009c87898706a51089790fe5dabb35bd,938c87898706a51089790fe5dabb3594,b78c87898706a51089790fe5dabb359c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_728c87898706a51089790fe5dabb3546^sys_idNOT IN009c87898706a51089790fe5dabb35bd,938c87898706a51089790fe5dabb3594"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
         <help/>
@@ -1431,35 +1253,12 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>changed_fields</element>
-        <help/>
-        <hint/>
-        <label>Changed Fields</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_728c87898706a51089790fe5dabb3546</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 15:38:36</sys_created_on>
-        <sys_id>b78c87898706a51089790fe5dabb359c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:38:36</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_728c87898706a51089790fe5dabb3546"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_728c87898706a51089790fe5dabb3546"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_728c87898706a51089790fe5dabb3546"/>
     <sys_hub_flow action="UPDATE">
         <sys_id>396dd33c47269d10552caf52736d434a</sys_id>
         <latest_snapshot>728c87898706a51089790fe5dabb3546</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch7-02-16-2023_02-28-2023_1844.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch7a-03-27-2023_04-04-2023_1511.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

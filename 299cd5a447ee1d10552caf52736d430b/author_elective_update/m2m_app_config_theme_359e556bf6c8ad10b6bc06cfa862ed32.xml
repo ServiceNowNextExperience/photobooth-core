@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="DELETE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>359e556bf6c8ad10b6bc06cfa862ed32</sys_id>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>m2m_app_config_theme_359e556bf6c8ad10b6bc06cfa862ed32</sys_update_name>
+        <theme display_value="Starter Workspace Theme">f59e556b44c8ad10df84f86f6aa1e230</theme>
+        <ux_app_configuration display_value="Photobooth Workspace Config">799e556b4ec8ad10359127788b88ba36</ux_app_configuration>
+    </m2m_app_config_theme>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</application>
+        <file_path/>
+        <instance_id>634887c3db11915c8aea21c4059619b9</instance_id>
+        <instance_name>tennis</instance_name>
+        <name>m2m_app_config_theme_359e556bf6c8ad10b6bc06cfa862ed32</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability/>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-03 15:57:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>359e556bf6c8ad10b6bc06cfa862ed32</sys_id>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>m2m_app_config_theme_359e556bf6c8ad10b6bc06cfa862ed32</sys_update_name>
+        <theme display_value="Starter Workspace Theme">f59e556b44c8ad10df84f86f6aa1e230</theme>
+        <ux_app_configuration display_value="Photobooth Workspace Config">799e556b4ec8ad10359127788b88ba36</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>]]></payload>
+        <payload_hash>-1936458797</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>34869d0f8760a11089790fe5dabb3518</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-01-26 22:37:17</sys_created_on>
+        <sys_id>ccb6154f8760a11089790fe5dabb35af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185f03a682a0000001</sys_recorded_at>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-01-26 22:37:17</sys_updated_on>
+        <type>UX App Theme</type>
+        <update_guid>0cb6154f5460a110393a691f211b73af</update_guid>
+        <update_guid_history>0cb6154f5460a110393a691f211b73af:0,5ac0e12f5fc8ad10fce3da49cbbec9bc:-1145869309,92c0e12f26c8ad1094611c3dbc6d7fba:-2117357065</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">45e0f16d8766611089790fe5dabb35bd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-01 18:46:27</sys_created_on>
+        <sys_db_object display_value="" name="m2m_app_config_theme">m2m_app_config_theme</sys_db_object>
+        <sys_id>209b5b4db26e47ac87bb028eddcd0610</sys_id>
+        <sys_metadata>359e556bf6c8ad10b6bc06cfa862ed32</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_scope_delete display_value="">269f95b18a9c4886be05170961de1a64</sys_scope_delete>
+        <sys_update_name>m2m_app_config_theme_359e556bf6c8ad10b6bc06cfa862ed32</sys_update_name>
+        <sys_update_version display_value="m2m_app_config_theme_359e556bf6c8ad10b6bc06cfa862ed32">ccb6154f8760a11089790fe5dabb35af</sys_update_version>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-01 18:46:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
