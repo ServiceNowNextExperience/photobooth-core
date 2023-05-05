@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_pb_core.PBNotificationUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>PBNotificationUtil</name>
+        <script><![CDATA[var PBNotificationUtil = Class.create();
+PBNotificationUtil.prototype = {
+    initialize: function() {
+    },
+
+	createButton: function(template, url, message) {
+        var backgroundColor = 'background-color: #4F52BD;';
+        var color = 'color: #ffffff;';
+        var fontSize = 'font-size: 16px;';
+        var fontFamily = 'font-family: Lato, Arial, sans-serif;';
+        var textDecoration = 'text-decoration: none; border-radius: 4px;';
+        var webKitBorder = '-webkit-border-radius: 4px;';
+        var mozBorder = '-moz-border-radius: 4px;';
+        var display = 'display: inline-block;';
+        var padding = 'padding: 6px 16px;';
+        var marginBottom = 'margin-bottom:32px';
+		template.print('<div><a href="' + url + '"');
+        template.print('style="' + backgroundColor + color + fontSize + fontFamily + textDecoration + webKitBorder + mozBorder + display + padding + marginBottom);
+        template.print('">');
+        template.print(message);
+        template.print('</a></div>');
+	},
+
+    type: 'PBNotificationUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>paige.duffey</sys_created_by>
+        <sys_created_on>2023-05-05 20:07:14</sys_created_on>
+        <sys_id>f7296a7ac3aa6110c12205bdc001314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PBNotificationUtil</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_script_include_f7296a7ac3aa6110c12205bdc001314a</sys_update_name>
+        <sys_updated_by>paige.duffey</sys_updated_by>
+        <sys_updated_on>2023-05-05 20:07:14</sys_updated_on>
+    </sys_script_include>
+</record_update>
