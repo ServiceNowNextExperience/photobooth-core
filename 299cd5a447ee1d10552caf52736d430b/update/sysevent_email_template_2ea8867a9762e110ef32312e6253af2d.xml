@@ -3,27 +3,26 @@
         <collection>x_snc_pb_core_snapshot</collection>
         <email_layout display_value="Photobooth Standard">a4098d874769a950552caf52736d43a5</email_layout>
         <message/>
-        <message_html><![CDATA[<p><span style="font-size: 10pt;">Here is the photo from ${request.photobooth.long_name}!</span></p>
+        <message_html><![CDATA[<p><span style="font-size: 10pt;">${request.first_name} is sharing a photo from ${request.photobooth.long_name} with you!</span></p>
 <p><img src="cid:pb_image.jpg" alt="Photobooth Image" /></p>
-<p><a title="Share" href="https://nextphotobooth.service-now.com/pb?id=home&amp;sys_id=${request.sys_id}"><span style="font-size: 10pt;">See the individual snaps and share to the K23 Mural Board.</span></a></p>
-<p><span style="font-size: 10pt;">Thanks for stopping by!</span></p>]]></message_html>
+<p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Photobooth Message Main w/ Sharing Link</name>
+        <name>Photobooth Message Only</name>
         <sms_alternate/>
         <subject>Your K23 Photo is Attached</subject>
         <sys_class_name>sysevent_email_template</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 14:56:49</sys_created_on>
-        <sys_id>41a28f018706a51089790fe5dabb3545</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Photobooth Message Main w/ Sharing Link</sys_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-05 17:42:43</sys_created_on>
+        <sys_id>2ea8867a9762e110ef32312e6253af2d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Photobooth Message Only</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name>sysevent_email_template_41a28f018706a51089790fe5dabb3545</sys_update_name>
+        <sys_update_name>sysevent_email_template_2ea8867a9762e110ef32312e6253af2d</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-05-05 17:42:36</sys_updated_on>
+        <sys_updated_on>2023-05-05 17:44:03</sys_updated_on>
         <sys_version>2</sys_version>
     </sysevent_email_template>
 </record_update>

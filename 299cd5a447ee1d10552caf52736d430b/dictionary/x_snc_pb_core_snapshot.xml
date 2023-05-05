@@ -5,6 +5,7 @@
         <element label="Notes" max_length="40" name="notes" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element label="Request" max_length="32" name="request" reference="x_snc_pb_core_request" type="reference"/>
+        <element label="Share Email" max_length="255" name="share_email" type="string"/>
         <element choice="3" default="Ready" label="Snapshot state" max_length="40" name="snapshot_state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Ready" sequence="0" value="Ready"/>
