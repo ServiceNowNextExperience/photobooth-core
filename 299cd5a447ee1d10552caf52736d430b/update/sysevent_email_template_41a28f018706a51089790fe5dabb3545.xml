@@ -7,11 +7,8 @@
 <div style="font-family: lato,arial,sans; line-height: 24px;">
 <div style="text-align: center; padding-bottom: 24px; line-height: 36px; border-bottom: 1px solid #DADDE2;"><span style="font-size: 18pt;">Here is the photo from ${request.photobooth.long_name}!</span></div>
 <p><img src="cid:pb_image.jpg" alt="Photobooth Image" /></p>
-<p><a title="Share" href="https://nextphotobooth.service-now.com/pb?id=home&amp;sys_id=${request.sys_id}"><span style="font-size: 10pt;">See the individual snaps and share to the K23 Mural Board.</span></a></p>
-<p>&nbsp;</p>
 <p><span style="font-size: 10pt;">${mail_script:pb_mural_button}</span></p>
-<p>&nbsp;</p>
-<p><span style="font-size: 10pt;">Thanks for stopping by!</span></p>
+<p><span style="font-size: 12pt;">Thanks for stopping by!</span></p>
 </div>]]></message_html>
         <message_list/>
         <message_text/>
@@ -22,14 +19,14 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-04-05 14:56:49</sys_created_on>
         <sys_id>41a28f018706a51089790fe5dabb3545</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Photobooth Message Main w/ Sharing Link</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sysevent_email_template_41a28f018706a51089790fe5dabb3545</sys_update_name>
         <sys_updated_by>paige.duffey</sys_updated_by>
-        <sys_updated_on>2023-05-05 20:13:56</sys_updated_on>
+        <sys_updated_on>2023-05-08 22:28:45</sys_updated_on>
         <sys_version>2</sys_version>
     </sysevent_email_template>
 </record_update>
