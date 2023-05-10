@@ -84,19 +84,19 @@
 	}
 </style>
 <div style="margin: 0 auto !important;" align="center">
-<table class="w100" style="width: 600px; background-color: #f7f7f9; margin: 0 auto !important; padding: 0px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#F7F7F9">
+<table class="w100" style="width: 600px; background-color: #032d42; margin: 0 auto !important; padding: 0px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#032D42">
 <tbody>
 <tr>
-<td style="background: #27284A; text-align: center; font-family: Arial, Tahoma, sans-serif; color: #425968; font-size: 13px; line-height: 14px;" align="center">
+<td style="background: #032D42; text-align: center; font-family: Arial, Tahoma, sans-serif; color: #425968; font-size: 13px; line-height: 14px;" align="center">
 <table style="border-spacing: 0; width: 100%;" border="0" width="600" cellspacing="0" cellpadding="0">
 <tbody>
-<tr style="background-color: #27284a;">
-<td width="140" height="98"><img style="height: 98px;" src="email_template_header.png" width="140" height="98" /></td>
+<tr style="background-color: #032d42;">
+<td width="140" height="98"></td>
 <td align="center" valign="bottom" height="98">
 <table style="margin: 0 auto;">
 <tbody>
 <tr>
-<td height="34"><img style="height: 34px;" src="email_template_now_logo.png" height="34" /></td>
+<td height="100"><img style="height: 100px; margin-top: 15px;" src="x_snc_pb_app.CreatorCon2023_mark__Two-color_White_stacked.png" height="100" /></td>
 </tr>
 <tr>
 <td height="16"></td>
@@ -106,7 +106,7 @@
 </td>
 <td width="140"></td>
 </tr>
-<tr style="background-color: #27284a;" height="32">
+<tr style="background-color: #032d42;" height="32">
 <td></td>
 </tr>
 </tbody>
@@ -121,7 +121,7 @@
 <td valign="top" width="18">
 <table width="18" cellspacing="0">
 <tbody>
-<tr style="background: #27284A;" height="48">
+<tr style="background: #032D42;" height="48">
 <td></td>
 </tr>
 </tbody>
@@ -139,10 +139,10 @@
 </td>
 <!-- END CONTAINER --> <!-- Right-->
 <td valign="top" width="18">
-<table width="18" cellspacing="0">
+<table width="18" cellspacing="0" style="width: 18px;">
 <tbody>
-<tr style="background: #27284A;" height="48">
-<td></td>
+<tr style="background: #032D42;" height="48">
+<td style="width: 10px;"></td>
 </tr>
 </tbody>
 </table>
@@ -152,36 +152,27 @@
 </table>
 </td>
 </tr>
-<tr>
-<td style="background-color: #f7f7f9;" align="center" height="60"></td>
-</tr>
+<tr></tr>
 <!-- Footer started -->
-<tr style="background-color: #27284a;">
+<tr style="background-color: #032d42;">
 <td>
-<table style="background-color: #27284a;" border="0" cellspacing="0" cellpadding="0">
+<table style="background-color: #032d42;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td style="background-color: #27284a;" height="36"></td>
+<td style="background-color: #032d42;" height="36"></td>
 </tr>
 <tr>
-<td style="background-color: #27284a;" align="center" valign="top" height="38"><img style="height: 20px;" src="email_template_now_logo.png" height="20" /></td>
-</tr>
-<tr>
-<td style="background-color: #27284a; color: #fff;">
+<td style="background-color: #032d42; color: #fff;">
 <table style="color: #fff;" border="0" width="600" cellspacing="0" cellpadding="0">
 <tbody>
-<tr align="center">
-<td><span id="templateAddress" class="footer" style="color: #ffffff; font-size: 12px; line-height: 18px; text-align: center; margin: 0 !important;"> 2225 Lawson Lane, Santa Clara, CA 95054, United States </span></td>
-</tr>
-<tr align="center">
-<td><span id="templateCopyright" class="footer" style="color: #ffffff; font-size: 12px; line-height: 18px; text-align: center; margin: 0 !important;"> &copy; 2020 AcmeTech Inc. All rights reserved. </span></td>
-</tr>
+<tr align="center"></tr>
+<tr align="center"></tr>
 </tbody>
 </table>
 </td>
 </tr>
 <tr cellspacing="0">
-<td align="center" bgcolor="#27284A" height="102"><img src="email_template_footer.png" width="600" height="102" /></td>
+<td vertical-align="right" bgcolor="#032D42"><img src="x_snc_pb_core.coffeebackground-full.png" width="600" /></td>
 </tr>
 </tbody>
 </table>
@@ -195,13 +186,13 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-03-17 14:41:17</sys_created_on>
         <sys_id>a4098d874769a950552caf52736d43a5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Photobooth Standard</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_email_layout_a4098d874769a950552caf52736d43a5</sys_update_name>
         <sys_updated_by>paige.duffey</sys_updated_by>
-        <sys_updated_on>2023-05-05 20:16:47</sys_updated_on>
+        <sys_updated_on>2023-05-09 15:23:10</sys_updated_on>
     </sys_email_layout>
 </record_update>
