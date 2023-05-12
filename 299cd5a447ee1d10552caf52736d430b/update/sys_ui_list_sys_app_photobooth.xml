@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_app" version="2" view="photobooth">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_app" element="NULL" name="sys_app" parent="NULL" relationship="NULL" sys_domain="global" view="c6612685977a6910ef32312e6253af89">6471e685977a6910ef32312e6253af6c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-05-12 19:17:20</sys_created_on>
+            <sys_id>2071e685977a6910ef32312e6253af6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-05-12 19:17:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>scope</element>
+            <list_id display_value="sys_app" element="NULL" name="sys_app" parent="NULL" relationship="NULL" sys_domain="global" view="c6612685977a6910ef32312e6253af89">6471e685977a6910ef32312e6253af6c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-05-12 19:17:20</sys_created_on>
+            <sys_id>2471e685977a6910ef32312e6253af6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-05-12 19:17:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="sys_app" element="NULL" name="sys_app" parent="NULL" relationship="NULL" sys_domain="global" view="c6612685977a6910ef32312e6253af89">6471e685977a6910ef32312e6253af6c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-05-12 19:17:20</sys_created_on>
+            <sys_id>2871e685977a6910ef32312e6253af6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-05-12 19:17:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>version</element>
+            <list_id display_value="sys_app" element="NULL" name="sys_app" parent="NULL" relationship="NULL" sys_domain="global" view="c6612685977a6910ef32312e6253af89">6471e685977a6910ef32312e6253af6c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-05-12 19:17:20</sys_created_on>
+            <sys_id>2c71e685977a6910ef32312e6253af6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-05-12 19:17:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="sys_app" element="NULL" name="sys_app" parent="NULL" relationship="NULL" sys_domain="global" view="c6612685977a6910ef32312e6253af89">6471e685977a6910ef32312e6253af6c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-05-12 19:17:20</sys_created_on>
+            <sys_id>2071e685977a6910ef32312e6253af6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-05-12 19:17:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="sys_app" element="NULL" name="sys_app" parent="NULL" relationship="NULL" sys_domain="global" view="c6612685977a6910ef32312e6253af89">6471e685977a6910ef32312e6253af6c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-05-12 19:17:20</sys_created_on>
+            <sys_id>2471e685977a6910ef32312e6253af6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-05-12 19:17:20</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_app</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2023-05-12 19:17:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6471e685977a6910ef32312e6253af6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_app</sys_name>
+            <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+            <sys_update_name>sys_ui_list_sys_app_photobooth</sys_update_name>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2023-05-12 19:17:20</sys_updated_on>
+            <sys_user/>
+            <view display_value="Photobooth" name="photobooth">c6612685977a6910ef32312e6253af89</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

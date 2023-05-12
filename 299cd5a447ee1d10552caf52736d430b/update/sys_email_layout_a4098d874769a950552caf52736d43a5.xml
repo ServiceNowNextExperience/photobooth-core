@@ -4,6 +4,7 @@
         <advanced_layout/>
         <description>K23 Branding for Photobooth Emails</description>
         <layout><![CDATA[<p></p>
+<p></p>
 <style type="text/css">
 	* {
 		-webkit-text-size-adjust: none;
@@ -99,15 +100,12 @@
 <td height="100"><img style="height: 100px; margin-top: 15px;" src="x_snc_pb_app.CreatorCon2023_mark__Two-color_White_stacked.png" height="100" /></td>
 </tr>
 <tr>
-<td height="16"></td>
+<td height="10"></td>
 </tr>
 </tbody>
 </table>
 </td>
 <td width="140"></td>
-</tr>
-<tr style="background-color: #032d42;" height="32">
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -186,13 +184,13 @@
         <sys_created_by>jarod.mundt@snc</sys_created_by>
         <sys_created_on>2023-03-17 14:41:17</sys_created_on>
         <sys_id>a4098d874769a950552caf52736d43a5</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Photobooth Standard</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_email_layout_a4098d874769a950552caf52736d43a5</sys_update_name>
         <sys_updated_by>paige.duffey</sys_updated_by>
-        <sys_updated_on>2023-05-09 15:23:10</sys_updated_on>
+        <sys_updated_on>2023-05-12 18:04:51</sys_updated_on>
     </sys_email_layout>
 </record_update>

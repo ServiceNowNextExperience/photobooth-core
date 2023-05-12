@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>photobooth</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-05-12 19:17:09</sys_created_on>
+        <sys_id>c6612685977a6910ef32312e6253af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Photobooth</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_ui_view_c6612685977a6910ef32312e6253af89</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2023-05-12 19:17:09</sys_updated_on>
+        <title>Photobooth</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
