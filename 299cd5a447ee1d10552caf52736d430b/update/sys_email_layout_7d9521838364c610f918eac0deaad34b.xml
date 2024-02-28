@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_layout">
+    <sys_email_layout action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <advanced_layout/>
+        <description>Photbooth Email layout with the Spaceman</description>
+        <layout><![CDATA[<style type="text/css">	* {		-webkit-text-size-adjust: none;	}	body {		margin: 0 auto !important;		padding: 0 !important;		font-family: Lato, Arial, sans-serif;	}	.btn a {		text-decoration: none;	}	.btn.inverse a {		color: #fff;	}	#requestapprove a {		color: #fff !important;	}	span.footer,	#templateAddress,	#templateCopyright,	#templateCopyright *,	#templateAddress * {		margin: 0;		font-size: 14px;		line-height: 18px;		color: #ffffff;	}	#snc_notification_unsubscribe,	#snc_notification_preference {		color: #3C59E7;		font-size: 16px;		line-height: 19px;	}	#snc_notification_unsubscribe {		padding-right: 8px;	}	#snc_notification_preference {		padding-left: 8px;	}	body,	table,	td,	p,	a {		-ms-text-size-adjust: 100% !important;		-webkit-text-size-adjust: 100% !important;	}	table,	tr,	td {		border-spacing: 0 !important;		mso-table-lspace: 0 !important;		mso-table-rspace: 0 !important;		border-collapse: collapse !important;		mso-line-height-rule: exactly !important;	}	.ExternalClass * {		line-height: 100%;	}	.mobile-link a,	.mobile-link span {		text-decoration: none !important;		color: inherit !important;		border: none !important;	}</style>
+<div style="margin: 0 auto !important;" align="center">
+<table class="w100" style="width: 600px; background-color: #f7f7f9; margin: 0 auto !important; padding: 0px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#F7F7F9">
+<tbody>
+<tr>
+<td style="background: #27284A; text-align: center; font-family: Arial, Tahoma, sans-serif; color: #425968; font-size: 13px; line-height: 14px;" align="center">
+<table style="border-spacing: 0; width: 100%;" border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="background-color: #27284a;">
+<td width="140" height="98"><img style="height: 98px;" src="email_template_header.png" width="140" height="98" /></td>
+<td align="center" valign="bottom" height="98">
+<table style="margin: 0 auto;">
+<tbody>
+<tr>
+<td height="34"><img style="height: 34px;" src="email_template_now_logo.png" height="34" /></td>
+</tr>
+<tr>
+<td height="16"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="140"></td>
+</tr>
+<tr style="background-color: #27284a;" height="32">
+<td></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr><!-- Left-->
+<td valign="top" width="18">
+<table width="18" cellspacing="0">
+<tbody>
+<tr style="background: #27284A;" height="48">
+<td></td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- CONTAINER -->
+<td width="564">
+<table class="w100" style="background-image: linear-gradient(to bottom , rgba(39,40,74,1), rgba(247,247,249,0)); margin: 0px; padding: 0px; box-shadow: 0px 2px 10px rgba(23, 40, 52, 0.08);" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+<tbody><!-- Main Container -->
+<tr>
+<td class="pad-sides-20" style="border-radius: 6px; text-align: left; background-color: #ffffff; padding: 24px 24px 24px 24px;" align="center">${notification:body}</td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- END CONTAINER --> <!-- Right-->
+<td valign="top" width="18">
+<table width="18" cellspacing="0">
+<tbody>
+<tr style="background: #27284A;" height="48">
+<td></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="background-color: #f7f7f9;" align="center" height="60">${NOTIF_UNSUB} | ${NOTIF_PREFS}</td>
+</tr>
+<!-- Footer started -->
+<tr style="background-color: #27284a;">
+<td>
+<table style="background-color: #27284a;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background-color: #27284a;" height="36"></td>
+</tr>
+<tr>
+<td style="background-color: #27284a;" align="center" valign="top" height="38"><img style="height: 20px;" src="email_template_now_logo.png" height="20" /></td>
+</tr>
+<tr>
+<td style="background-color: #27284a; color: #fff;">
+<table style="color: #fff;" border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr align="center">
+<td><span id="templateAddress" class="footer" style="color: #ffffff; font-size: 12px; line-height: 18px; text-align: center; margin: 0 !important;"> 2225 Lawson Lane, Santa Clara, CA 95054, United States </span></td>
+</tr>
+<tr align="center">
+<td><span id="templateCopyright" class="footer" style="color: #ffffff; font-size: 12px; line-height: 18px; text-align: center; margin: 0 !important;"> &copy; 2023 ServiceNow Inc. All rights reserved. </span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr cellspacing="0">
+<td align="center" bgcolor="#27284A" height="102"><img src="email_template_footer.png" width="600" height="102" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- Footer end--></tbody>
+</table>
+</div>]]></layout>
+        <name>Photobooth Spaceman</name>
+        <sys_class_name>sys_email_layout</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-02-28 16:06:31</sys_created_on>
+        <sys_id>7d9521838364c610f918eac0deaad34b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Photobooth Spaceman</sys_name>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_email_layout_7d9521838364c610f918eac0deaad34b</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-02-28 20:43:37</sys_updated_on>
+    </sys_email_layout>
+</record_update>

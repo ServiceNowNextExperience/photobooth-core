@@ -10,7 +10,7 @@
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
-        <description>Send snapshot.</description>
+        <description>Send snapshot. See Flows Process Snapshot and Send Photobooth Snapshot To Email.</description>
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
@@ -28,7 +28,7 @@
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
-        <from>K23 Photobooth &lt;noreply@servicenow.com&gt;</from>
+        <from>ServiceNow Photobooth &lt;noreply@servicenow.com&gt;</from>
         <generation_type>triggered</generation_type>
         <importance/>
         <include_attachments>true</include_attachments>
@@ -39,14 +39,14 @@
         <message_html/>
         <message_list/>
         <message_text/>
-        <name>Photobooth - Send Snapshot Main</name>
-        <omit_watermark>false</omit_watermark>
+        <name>Photobooth - Send Snapshot Main - Share</name>
+        <omit_watermark>true</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields>share_email</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
-        <reply_to>jon.lind@servicenow.com</reply_to>
+        <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
@@ -58,17 +58,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d4a045f047f35d5075cac472846d43c1</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_name>Photobooth - Send Snapshot Main</sys_name>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Photobooth - Send Snapshot Main - Share</sys_name>
         <sys_overrides/>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sysevent_email_action_d4a045f047f35d5075cac472846d43c1</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-05-05 17:44:43</sys_updated_on>
+        <sys_updated_on>2024-02-28 20:29:46</sys_updated_on>
         <sys_version>2</sys_version>
-        <template display_value="Photobooth Message Main w/ Sharing Link">41a28f018706a51089790fe5dabb3545</template>
+        <template display_value="Photobooth Message Only">2ea8867a9762e110ef32312e6253af2d</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
