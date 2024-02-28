@@ -2,7 +2,7 @@
     <sys_email_layout action="INSERT_OR_UPDATE">
         <advanced>false</advanced>
         <advanced_layout/>
-        <description>K23 Branding for Photobooth Emails</description>
+        <description>K23 branding for Photobooth Emails</description>
         <layout><![CDATA[<p></p>
 <p></p>
 <style type="text/css">
@@ -97,7 +97,7 @@
 <table style="margin: 0 auto;">
 <tbody>
 <tr>
-<td height="100"><img style="height: 70px; margin-top: 15px;" src="email_template_now_logo.png" height="100" width="253" alt="ServiceNow Logo" /></td>
+<td height="100"><img style="height: 100px; margin-top: 15px;" src="x_snc_pb_app.CreatorCon2023_mark__Two-color_White_stacked.png" height="100" /></td>
 </tr>
 <tr>
 <td height="10"></td>
@@ -181,16 +181,16 @@
 </div>]]></layout>
         <name>Photobooth Standard K23</name>
         <sys_class_name>sys_email_layout</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-03-17 14:41:17</sys_created_on>
-        <sys_id>a4098d874769a950552caf52736d43a5</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-10-18 18:35:36</sys_created_on>
+        <sys_id>e3ac4594c3c2f910c12205bdc001313c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Photobooth Standard K23</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name>sys_email_layout_a4098d874769a950552caf52736d43a5</sys_update_name>
+        <sys_update_name>sys_email_layout_e3ac4594c3c2f910c12205bdc001313c</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-10-18 18:36:39</sys_updated_on>
+        <sys_updated_on>2023-10-18 18:48:39</sys_updated_on>
     </sys_email_layout>
 </record_update>

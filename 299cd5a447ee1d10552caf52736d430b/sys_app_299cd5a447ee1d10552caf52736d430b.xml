@@ -5,7 +5,6 @@
         <enforce_license>log</enforce_license>
         <guided_setup_guid/>
         <hide_on_ui>false</hide_on_ui>
-        <ide_created/>
         <installed_as_dependency>false</installed_as_dependency>
         <js_level>es_latest</js_level>
         <licensable>true</licensable>
@@ -25,22 +24,21 @@
         <source>x_snc_pb_core</source>
         <store_correlation_id/>
         <store_url/>
-        <subscription_entitlement/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2022-10-11 18:32:40</sys_created_on>
         <sys_id>299cd5a447ee1d10552caf52736d430b</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-02-28 16:11:41</sys_updated_on>
+        <sys_updated_on>2024-02-28 23:09:02</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.9.6</version>
+        <version>1.9.7</version>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=299cd5a447ee1d10552caf52736d430b"/>
 </record_update>

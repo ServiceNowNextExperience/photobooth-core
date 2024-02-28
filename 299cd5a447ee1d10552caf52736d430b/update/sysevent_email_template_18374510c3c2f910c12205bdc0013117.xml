@@ -6,25 +6,27 @@
         <message_html><![CDATA[<div style="font-family: lato,arial,sans; line-height: 24px;">
 <div style="text-align: center; padding-bottom: 24px; line-height: 36px; border-bottom: 1px solid #DADDE2;"><span style="font-size: 18pt;">Here is the photo from ${request.photobooth.long_name}!</span></div>
 <p><img src="cid:pb_image.jpg" alt="Photobooth Image" /></p>
-<p><span style="font-size: 12pt;">Thanks for joining us!</span></p>
+<p style="text-align: center;"><span style="font-size: 10pt;">${mail_script:pb_mural_button}</span></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="x_snc_pb_core.photo_wall_smaller_shorter.jpgx" alt="" width="500" height="119" /></p>
+<p><span style="font-size: 12pt;">Thanks for stopping by!</span></p>
 </div>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Photobooth Message Main w/o Sharing Link</name>
+        <name>Photobooth Message Main w/ Sharing Link</name>
         <sms_alternate/>
         <subject>Your ServiceNow Photo is Attached</subject>
         <sys_class_name>sysevent_email_template</sys_class_name>
-        <sys_created_by>jarod.mundt@snc</sys_created_by>
-        <sys_created_on>2023-04-05 14:56:49</sys_created_on>
-        <sys_id>41a28f018706a51089790fe5dabb3545</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>Photobooth Message Main w/o Sharing Link</sys_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2023-10-18 18:11:37</sys_created_on>
+        <sys_id>18374510c3c2f910c12205bdc0013117</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Photobooth Message Main w/ Sharing Link</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_update_name>sysevent_email_template_41a28f018706a51089790fe5dabb3545</sys_update_name>
+        <sys_update_name>sysevent_email_template_18374510c3c2f910c12205bdc0013117</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-02-28 22:37:42</sys_updated_on>
+        <sys_updated_on>2024-02-28 22:38:41</sys_updated_on>
         <sys_version>2</sys_version>
     </sysevent_email_template>
 </record_update>
