@@ -10,7 +10,7 @@
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
-        <description>Send snapshot.</description>
+        <description>Used by share portal to share individual snapshots.</description>
         <digest_from/>
         <digest_html/>
         <digest_reply_to/>
@@ -39,7 +39,7 @@
         <message_html/>
         <message_list/>
         <message_text/>
-        <name>Photobooth - Send Snapshot Email</name>
+        <name>Photobooth - Single Snapshot - Default</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -58,15 +58,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3f29ca7a9762e110ef32312e6253aff7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Photobooth - Send Snapshot Email</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Photobooth - Single Snapshot - Default</sys_name>
         <sys_overrides/>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sysevent_email_action_3f29ca7a9762e110ef32312e6253aff7</sys_update_name>
-        <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-10-18 18:24:15</sys_updated_on>
+        <sys_updated_by>jon.lind@snc</sys_updated_by>
+        <sys_updated_on>2024-03-01 20:18:25</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Photobooth Single Snapshot Only">2ea8867a9762e110ef32312e6253af2d</template>
         <type>email</type>
