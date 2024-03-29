@@ -3,308 +3,224 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ad8ecbf832c4a10f918eac0deaad314</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>56b64c649791ce506c017f6de053af1d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>long_name</element>
             <position>1</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ed8ecbf832c4a10f918eac0deaad314</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af1e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>2</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>82d8ecbf832c4a10f918eac0deaad315</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>5ab64c649791ce506c017f6de053af1e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>url</element>
             <position>3</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>86d8ecbf832c4a10f918eac0deaad315</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>4</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ad8ecbf832c4a10f918eac0deaad315</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>5ab64c649791ce506c017f6de053af1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
             <position>5</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ed8ecbf832c4a10f918eac0deaad315</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af20</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>start_date</element>
             <position>6</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>82d8ecbf832c4a10f918eac0deaad316</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>5ab64c649791ce506c017f6de053af20</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>end_date</element>
             <position>7</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>86d8ecbf832c4a10f918eac0deaad316</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af21</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>8</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ad8ecbf832c4a10f918eac0deaad316</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>5ab64c649791ce506c017f6de053af21</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>completion_message</element>
             <position>9</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ed8ecbf832c4a10f918eac0deaad316</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af22</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>idle_message</element>
             <position>10</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>82d8ecbf832c4a10f918eac0deaad317</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>5ab64c649791ce506c017f6de053af22</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>camera_device_id</element>
             <position>11</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>86d8ecbf832c4a10f918eac0deaad317</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af23</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>12</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ad8ecbf832c4a10f918eac0deaad317</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>5ab64c649791ce506c017f6de053af23</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>use_share_portal</element>
+            <element>email_notification_main</element>
             <position>13</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ed8ecbf832c4a10f918eac0deaad317</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af24</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>14</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>82d8ecbf832c4a10f918eac0deaad318</sys_id>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>5ab64c649791ce506c017f6de053af24</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>15</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>86d8ecbf832c4a10f918eac0deaad318</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>16</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ad8ecbf832c4a10f918eac0deaad318</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>email_notification_main</element>
-            <position>17</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ed8ecbf832c4a10f918eac0deaad318</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>18</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>82d8ecbf832c4a10f918eac0deaad319</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>email_notification_share</element>
-            <position>19</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>86d8ecbf832c4a10f918eac0deaad319</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>20</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 19:34:45</sys_created_on>
-            <sys_id>8ad8ecbf832c4a10f918eac0deaad319</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 19:34:45</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>email_notification_single</element>
-            <position>21</position>
-            <sys_created_by>jon.lind@snc</sys_created_by>
-            <sys_created_on>2024-03-01 20:10:10</sys_created_on>
-            <sys_id>38f03cf7836c4a10f918eac0deaad3e2</sys_id>
+            <position>15</position>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-03-28 21:32:30</sys_created_on>
+            <sys_id>52b64c649791ce506c017f6de053af25</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_photobooth" sys_domain="global" view="Default view">7afd9f3c47269d10552caf52736d433a</sys_ui_section>
-            <sys_updated_by>jon.lind@snc</sys_updated_by>
-            <sys_updated_on>2024-03-01 20:10:10</sys_updated_on>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-03-28 21:32:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
