@@ -53,5 +53,24 @@
             <sys_updated_on>2023-03-09 18:13:41</sys_updated_on>
             <value>single</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>snapshot_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AI</label>
+            <language>en</language>
+            <name>x_snc_pb_core_snapshot</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-04-15 17:30:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-04-15 17:30:32</sys_updated_on>
+            <value>ai</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

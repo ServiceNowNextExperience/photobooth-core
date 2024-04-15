@@ -7,25 +7,34 @@
         <enforce_acl/>
         <http_method>GET</http_method>
         <name>snapshot</name>
-        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
-	const { snapshotId } = request.pathParams;
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    const {
+        snapshotId
+    } = request.pathParams;
+    const logPrefix = `PB: SNAP: ${snapshotId} Snapshot API:`;
 
-	const attachment = new GlideRecord('sys_attachment');
-	attachment.addQuery('table_name', 'x_snc_pb_core_snapshot');
-	attachment.addQuery('table_sys_id', snapshotId);
-	attachment.query();
+    try {
+        gs.info(`${logPrefix} Get Snapshot Called`);
 
-	if (!attachment.next()) {
-		throw `No sys attachment was found for snapshot x_snc_pb_core_snapshot with sys_id of ${snapshotId}: ${attachment.getEncodedQuery()}`;
-	}
-	response.setHeader("Content-Type", attachment.content_type);
-	const write = response.getStreamWriter();
+        const attachment = new GlideRecord('sys_attachment');
+        attachment.addQuery('table_name', 'x_snc_pb_core_snapshot');
+        attachment.addQuery('table_sys_id', snapshotId);
+        attachment.query();
 
-	const attachmentStream = new GlideSysAttachment().getContentStream(attachment.sys_id);
+        if (!attachment.next()) {
+            throw `No sys attachment was found for snapshot x_snc_pb_core_snapshot with sys_id of ${snapshotId}: ${attachment.getEncodedQuery()}`;
+        }
+        response.setHeader("Content-Type", attachment.content_type);
+        const write = response.getStreamWriter();
 
-	var writer = response.getStreamWriter();
-	writer.writeStream(attachmentStream);
-	
+        const attachmentStream = new GlideSysAttachment().getContentStream(attachment.sys_id);
+
+        var writer = response.getStreamWriter();
+        writer.writeStream(attachmentStream);
+    } catch (exc) {
+        gs.error(`${logPrefix} error: ` + JSON.stringify(exc));
+        throw exc;
+    }
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_snc_pb_core/photobooth/snapshot/{snapshotId}</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
@@ -40,14 +49,14 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2023-04-03 18:54:04</sys_created_on>
         <sys_id>a4d5296c47026510552caf52736d4300</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>snapshot</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_ws_operation_a4d5296c47026510552caf52736d4300</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2023-04-03 20:51:16</sys_updated_on>
+        <sys_updated_on>2024-04-02 19:30:13</sys_updated_on>
         <web_service_definition display_value="Photobooth">b37a4bb847e29d10552caf52736d4394</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
