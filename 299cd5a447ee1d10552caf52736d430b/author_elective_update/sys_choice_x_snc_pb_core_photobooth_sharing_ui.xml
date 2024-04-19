@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="sharing_ui" table="x_snc_pb_core_photobooth" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>sharing_ui</element>
+            <name>x_snc_pb_core_photobooth</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-04-17 17:03:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sharing_ui</sys_name>
+            <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+            <sys_update_name>sys_choice_x_snc_pb_core_photobooth_sharing_ui</sys_update_name>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-04-17 17:03:42</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sharing_ui</element>
+            <hint>Simply send the main 2x2 with the provided email and notification (inlcude a link to Portal in the email if you wish to use that as well)</hint>
+            <inactive>false</inactive>
+            <label>Email</label>
+            <language>en</language>
+            <name>x_snc_pb_core_photobooth</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-04-17 17:03:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-04-17 17:06:39</sys_updated_on>
+            <value>Email</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sharing_ui</element>
+            <hint>Offer sharing options within the app immediately instead of sending the Portal link</hint>
+            <inactive>false</inactive>
+            <label>In App</label>
+            <language>en</language>
+            <name>x_snc_pb_core_photobooth</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-04-17 17:04:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-04-17 17:07:16</sys_updated_on>
+            <value>In App</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
