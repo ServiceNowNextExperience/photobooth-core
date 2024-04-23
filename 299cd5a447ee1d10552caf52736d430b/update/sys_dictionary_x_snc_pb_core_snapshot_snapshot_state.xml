@@ -16,7 +16,7 @@
         <column_label>Snapshot state</column_label>
         <comments/>
         <create_roles/>
-        <default_value>Ready</default_value>
+        <default_value>Draft</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -57,8 +57,8 @@
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_pb_core_snapshot_snapshot_state</sys_update_name>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-03 17:25:13</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-23 16:15:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

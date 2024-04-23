@@ -4,10 +4,8 @@
         <email_layout display_value="Photobooth Spaceman">7d9521838364c610f918eac0deaad34b</email_layout>
         <message/>
         <message_html><![CDATA[<div style="font-family: lato,arial,sans; line-height: 22px;">
-<div style="text-align: center; padding-bottom: 24px; line-height: 36px; border-bottom: 1px solid #DADDE2;"><span style="font-size: 16pt;">${request.first_name} is sharing a photo from ${request.photobooth.long_name} with you!</span></div>
-<div style="font-family: lato,arial,sans;">
-<p><img src="cid:pb_image.jpg" alt="Photobooth Image" /></p>
-</div>
+<div style="text-align: center; padding-bottom: 24px; line-height: 36px; border-bottom: 1px solid #DADDE2;"><span style="font-size: 16pt;">Attached is your photo from ${request.photobooth.long_name}!</span></div>
+<div style="font-family: lato,arial,sans;">&nbsp;</div>
 </div>]]></message_html>
         <message_list/>
         <message_text/>
@@ -18,14 +16,14 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2023-05-05 17:42:43</sys_created_on>
         <sys_id>2ea8867a9762e110ef32312e6253af2d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Photobooth Standard - Snapshot Only</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sysevent_email_template_2ea8867a9762e110ef32312e6253af2d</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 14:58:58</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:59:32</sys_updated_on>
         <sys_version>2</sys_version>
     </sysevent_email_template>
 </record_update>

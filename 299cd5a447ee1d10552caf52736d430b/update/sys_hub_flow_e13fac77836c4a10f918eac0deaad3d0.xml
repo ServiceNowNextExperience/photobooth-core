@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2680473000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4560219000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -14,7 +14,7 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>send_photobooth_snapshot_wtih_notification</internal_name>
-        <label_cache>[{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_single","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Single","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_single"},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.snapshot_type","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Snapshot type","reference":"","reference_display":"Snapshot type","type":"choice","base_type":"choice","parent_table_name":"x_snc_pb_core_snapshot","column_name":"snapshot_type","choices":[{"image":"","label":"Main","used":false,"missing":false,"rawLabel":"Main","selected":false,"reference":false,"value":"main","parameters":{"name":"x_snc_pb_core_snapshot"}},{"image":"","label":"Single","used":false,"missing":false,"rawLabel":"Single","selected":false,"reference":false,"value":"single","parameters":{"name":"x_snc_pb_core_snapshot"}}]},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_main","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Main","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_main"},{"name":"subflow.email","label":"Input➛Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5b5ee64c-b178-4af1-ab65-c5e9d17dd836","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"57871040-84c6-4965-a42b-631a259db848.Record","label":"1 - Look Up Record➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.snapshot_sys_id","label":"Input➛Snapshot Sys ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"125700c3-6787-403e-a120-7cfed566e340"}}]</label_cache>
+        <label_cache>[{"name":"subflow.snapshot_sys_id","label":"Input➛Snapshot Sys ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"125700c3-6787-403e-a120-7cfed566e340"}},{"name":"57871040-84c6-4965-a42b-631a259db848.Record","label":"1 - Look Up Record➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.email","label":"Input➛Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5b5ee64c-b178-4af1-ab65-c5e9d17dd836","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_main","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Main","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_main"},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.snapshot_type","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Snapshot type","reference":"","reference_display":"Snapshot type","type":"choice","base_type":"choice","parent_table_name":"x_snc_pb_core_snapshot","column_name":"snapshot_type","choices":[{"label":"Main","used":false,"image":"","missing":false,"rawLabel":"Main","selected":false,"reference":false,"value":"main","parameters":{"name":"x_snc_pb_core_snapshot"}},{"label":"Single","used":false,"image":"","missing":false,"rawLabel":"Single","selected":false,"reference":false,"value":"single","parameters":{"name":"x_snc_pb_core_snapshot"}},{"label":"AI","used":false,"image":"","missing":false,"rawLabel":"AI","selected":false,"reference":false,"value":"ai","parameters":{"name":"x_snc_pb_core_snapshot"}}]},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_single","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Single","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_single"}]</label_cache>
         <master_snapshot>492ea431ebd5021036e7f734bad0cd98</master_snapshot>
         <name>Send Photobooth Snapshot by Notification</name>
         <natlang/>
@@ -33,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e13fac77836c4a10f918eac0deaad3d0</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Send Photobooth Snapshot by Notification</sys_name>
         <sys_overrides/>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
@@ -41,7 +41,7 @@
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_hub_flow_e13fac77836c4a10f918eac0deaad3d0</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:10</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:19</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=e13fac77836c4a10f918eac0deaad3d0"/>
@@ -239,20 +239,20 @@
         <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
         <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
         <attributes/>
-        <comment>Send a single snapshot using the notification from Email Notification Single specified in the Photobooth Instance record.</comment>
+        <comment>Send a single snapshot using the notification from the field "Email Notification Single" in the Photobooth Instance record.</comment>
         <display_text/>
         <flow display_value="Send Photobooth Snapshot by Notification">e13fac77836c4a10f918eac0deaad3d0</flow>
         <generation_source/>
         <order>6</order>
-        <parent_ui_id>f64b8f42-a604-4c13-b94b-05f7a9ed62fb</parent_ui_id>
+        <parent_ui_id>741e09a4-5c82-442b-b231-9b6b26074557</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>jon.lind@snc</sys_created_by>
         <sys_created_on>2024-03-01 20:23:53</sys_created_on>
         <sys_id>3d147cbb836c4a10f918eac0deaad39f</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:41:00</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:52:11</sys_updated_on>
         <ui_id>86d28a2e-f023-452c-8ae6-01a595ff6b79</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3d147cbb836c4a10f918eac0deaad39f"/>
@@ -325,10 +325,10 @@
         <sys_created_by>jon.lind@snc</sys_created_by>
         <sys_created_on>2024-03-01 20:02:35</sys_created_on>
         <sys_id>653fec77836c4a10f918eac0deaad318</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:41:00</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:52:11</sys_updated_on>
         <ui_id>6ddd7c53-eafa-4001-92bf-683561460d33</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=653fec77836c4a10f918eac0deaad318"/>
@@ -414,10 +414,10 @@
         <sys_created_by>jon.lind@snc</sys_created_by>
         <sys_created_on>2024-03-01 20:02:35</sys_created_on>
         <sys_id>793fec77836c4a10f918eac0deaad32b</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:41:00</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:52:11</sys_updated_on>
         <ui_id>80156fe5-6537-4815-85ca-33d3ffdeb5bf</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=793fec77836c4a10f918eac0deaad32b"/>
@@ -443,10 +443,10 @@
         <sys_created_by>jon.lind@snc</sys_created_by>
         <sys_created_on>2024-03-01 20:02:35</sys_created_on>
         <sys_id>b13fec77836c4a10f918eac0deaad32d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jon.lind@snc</sys_updated_by>
-        <sys_updated_on>2024-03-01 20:02:35</sys_updated_on>
-        <value>snapshot_state=Ready</value>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:11:44</sys_updated_on>
+        <value>snapshot_state=Shared</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=793fec77836c4a10f918eac0deaad32b"/>
@@ -494,7 +494,7 @@
         <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
         <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
         <attributes/>
-        <comment>Send the main snapshot using the notification from Email Notification Main specified in the Photobooth Instance record.</comment>
+        <comment>Send the main snapshot using the notification from the field "Email Notification Main" in the Photobooth Instance record.</comment>
         <display_text/>
         <flow display_value="Send Photobooth Snapshot by Notification">e13fac77836c4a10f918eac0deaad3d0</flow>
         <generation_source/>
@@ -504,10 +504,10 @@
         <sys_created_by>jon.lind@snc</sys_created_by>
         <sys_created_on>2024-03-01 20:23:53</sys_created_on>
         <sys_id>b5147cbb836c4a10f918eac0deaad395</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:41:00</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:52:11</sys_updated_on>
         <ui_id>60608f3f-2170-4d0d-8015-5f40e86fc182</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b5147cbb836c4a10f918eac0deaad395"/>
@@ -580,10 +580,10 @@
         <sys_created_by>jon.lind@snc</sys_created_by>
         <sys_created_on>2024-03-01 20:02:34</sys_created_on>
         <sys_id>ed3fec77836c4a10f918eac0deaad310</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:41:00</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:52:11</sys_updated_on>
         <ui_id>57871040-84c6-4965-a42b-631a259db848</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ed3fec77836c4a10f918eac0deaad310"/>
@@ -629,7 +629,41 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=ed3fec77836c4a10f918eac0deaad310"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ed3fec77836c4a10f918eac0deaad310"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e13fac77836c4a10f918eac0deaad3d0"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=e13fac77836c4a10f918eac0deaad3d0^sys_idNOT IN31147cbb836c4a10f918eac0deaad380,b5147cbb836c4a10f918eac0deaad398"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e13fac77836c4a10f918eac0deaad3d0^sys_idNOT IN23703870fbb10250d84afe7405efdc16,31147cbb836c4a10f918eac0deaad380"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f3b07c70fbb10250d84afe7405efdc6b</block>
+        <comment/>
+        <connected_to>2898510e-9a7e-4335-b440-bdc7a7f9edee</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Send Photobooth Snapshot by Notification">e13fac77836c4a10f918eac0deaad3d0</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-23 15:44:53</sys_created_on>
+        <sys_id>23703870fbb10250d84afe7405efdc16</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-23 15:46:19</sys_updated_on>
+        <ui_id>741e09a4-5c82-442b-b231-9b6b26074557</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=23703870fbb10250d84afe7405efdc16"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=23703870fbb10250d84afe7405efdc16"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=23703870fbb10250d84afe7405efdc16"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">742ea431ebd5021036e7f734bad0cd36</block>
@@ -654,10 +688,10 @@
         <sys_created_by>jon.lind@snc</sys_created_by>
         <sys_created_on>2024-03-01 20:23:53</sys_created_on>
         <sys_id>31147cbb836c4a10f918eac0deaad380</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:10</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:19</sys_updated_on>
         <ui_id>2898510e-9a7e-4335-b440-bdc7a7f9edee</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -704,80 +738,6 @@
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=31147cbb836c4a10f918eac0deaad380"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=31147cbb836c4a10f918eac0deaad380"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">bc2ea431ebd5021036e7f734bad0cd3d</block>
-        <comment/>
-        <connected_to>2898510e-9a7e-4335-b440-bdc7a7f9edee</connected_to>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="Send Photobooth Snapshot by Notification">e13fac77836c4a10f918eac0deaad3d0</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
-        <order>5</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>jon.lind@snc</sys_created_by>
-        <sys_created_on>2024-03-01 20:23:53</sys_created_on>
-        <sys_id>b5147cbb836c4a10f918eac0deaad398</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
-        <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:10</sys_updated_on>
-        <ui_id>f64b8f42-a604-4c13-b94b-05f7a9ed62fb</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=b5147cbb836c4a10f918eac0deaad398"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>b5147cbb836c4a10f918eac0deaad398</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>jon.lind@snc</sys_created_by>
-        <sys_created_on>2024-03-01 20:23:53</sys_created_on>
-        <sys_id>79147cbb836c4a10f918eac0deaad39b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jon.lind@snc</sys_updated_by>
-        <sys_updated_on>2024-03-01 20:23:53</sys_updated_on>
-        <value>Snapshot Type is Single</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=b5147cbb836c4a10f918eac0deaad398"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>b5147cbb836c4a10f918eac0deaad398</id>
-        <sys_created_by>jon.lind@snc</sys_created_by>
-        <sys_created_on>2024-03-01 20:23:53</sys_created_on>
-        <sys_id>f5147cbb836c4a10f918eac0deaad39b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jon.lind@snc</sys_updated_by>
-        <sys_updated_on>2024-03-01 20:23:53</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
-        <value>{{57871040-84c6-4965-a42b-631a259db848.Record.snapshot_type}}=single</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>b5147cbb836c4a10f918eac0deaad398</id>
-        <sys_created_by>jon.lind@snc</sys_created_by>
-        <sys_created_on>2024-03-01 20:23:53</sys_created_on>
-        <sys_id>35147cbb836c4a10f918eac0deaad39b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jon.lind@snc</sys_updated_by>
-        <sys_updated_on>2024-03-01 20:23:53</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b5147cbb836c4a10f918eac0deaad398"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=b5147cbb836c4a10f918eac0deaad398"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=e13fac77836c4a10f918eac0deaad3d0"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=e13fac77836c4a10f918eac0deaad3d0"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e13fac77836c4a10f918eac0deaad3d0^sys_idNOT IN653fac77836c4a10f918eac0deaad3e3,a13fac77836c4a10f918eac0deaad3e0"/>
@@ -844,7 +804,7 @@
         <description>Sends snapshot based on its type "Main" or "Single" and uses the corresponding notification specified in the "Email Notification Main" and "Email Notification Single" fields on the photobooth instance record.</description>
         <flow_priority/>
         <internal_name>send_photobooth_snapshot_by_notification</internal_name>
-        <label_cache>[{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_single","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Single","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_single"},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.snapshot_type","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Snapshot type","reference":"","reference_display":"Snapshot type","type":"choice","base_type":"choice","parent_table_name":"x_snc_pb_core_snapshot","column_name":"snapshot_type","choices":[{"image":"","label":"Main","used":false,"missing":false,"rawLabel":"Main","selected":false,"reference":false,"value":"main","parameters":{"name":"x_snc_pb_core_snapshot"}},{"image":"","label":"Single","used":false,"missing":false,"rawLabel":"Single","selected":false,"reference":false,"value":"single","parameters":{"name":"x_snc_pb_core_snapshot"}}]},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_main","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Main","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_main"},{"name":"subflow.email","label":"Input➛Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5b5ee64c-b178-4af1-ab65-c5e9d17dd836","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"57871040-84c6-4965-a42b-631a259db848.Record","label":"1 - Look Up Record➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.snapshot_sys_id","label":"Input➛Snapshot Sys ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"125700c3-6787-403e-a120-7cfed566e340"}}]</label_cache>
+        <label_cache>[{"name":"subflow.snapshot_sys_id","label":"Input➛Snapshot Sys ID","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"125700c3-6787-403e-a120-7cfed566e340"}},{"name":"57871040-84c6-4965-a42b-631a259db848.Record","label":"1 - Look Up Record➛Photobooth Snapshot Record","reference":"x_snc_pb_core_snapshot","reference_display":"Photobooth Snapshot","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.email","label":"Input➛Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5b5ee64c-b178-4af1-ab65-c5e9d17dd836","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_main","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Main","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_main"},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.snapshot_type","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Snapshot type","reference":"","reference_display":"Snapshot type","type":"choice","base_type":"choice","parent_table_name":"x_snc_pb_core_snapshot","column_name":"snapshot_type","choices":[{"label":"Main","used":false,"image":"","missing":false,"rawLabel":"Main","selected":false,"reference":false,"value":"main","parameters":{"name":"x_snc_pb_core_snapshot"}},{"label":"Single","used":false,"image":"","missing":false,"rawLabel":"Single","selected":false,"reference":false,"value":"single","parameters":{"name":"x_snc_pb_core_snapshot"}},{"label":"AI","used":false,"image":"","missing":false,"rawLabel":"AI","selected":false,"reference":false,"value":"ai","parameters":{"name":"x_snc_pb_core_snapshot"}}]},{"name":"57871040-84c6-4965-a42b-631a259db848.Record.request.photobooth.email_notification_single","label":"1 - Look Up Record➛Photobooth Snapshot Record➛Request➛Photobooth➛Email Notification Single","reference":"sysevent_email_action","reference_display":"Notification","type":"reference","base_type":"reference","parent_table_name":"x_snc_pb_core_photobooth","column_name":"email_notification_single"}]</label_cache>
         <master>true</master>
         <name>Send Photobooth Snapshot by Notification</name>
         <natlang/>
@@ -861,7 +821,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>492ea431ebd5021036e7f734bad0cd98</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -869,7 +829,7 @@
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:08</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=492ea431ebd5021036e7f734bad0cd98"/>
@@ -1077,10 +1037,10 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:09</sys_created_on>
         <sys_id>152ea431ebd5021036e7f734bad0cde6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:09</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
         <ui_id>6ddd7c53-eafa-4001-92bf-683561460d33</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=152ea431ebd5021036e7f734bad0cde6"/>
@@ -1166,10 +1126,10 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:08</sys_created_on>
         <sys_id>192ea431ebd5021036e7f734bad0cdde</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:08</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
         <ui_id>57871040-84c6-4965-a42b-631a259db848</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=192ea431ebd5021036e7f734bad0cdde"/>
@@ -1230,10 +1190,10 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:09</sys_created_on>
         <sys_id>912ea431ebd5021036e7f734bad0cdfa</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:09</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
         <ui_id>80156fe5-6537-4815-85ca-33d3ffdeb5bf</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=912ea431ebd5021036e7f734bad0cdfa"/>
@@ -1259,10 +1219,10 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:09</sys_created_on>
         <sys_id>d92ea431ebd5021036e7f734bad0cdfb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:09</sys_updated_on>
-        <value>snapshot_state=Ready</value>
+        <sys_updated_on>2024-04-22 16:11:55</sys_updated_on>
+        <value>snapshot_state=Shared</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=912ea431ebd5021036e7f734bad0cdfa"/>
@@ -1310,7 +1270,7 @@
         <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
         <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
         <attributes/>
-        <comment>Send the main snapshot using the notification from Email Notification Main specified in the Photobooth Instance record.</comment>
+        <comment>Send the main snapshot using the notification from the field "Email Notification Main" in the Photobooth Instance record.</comment>
         <display_text/>
         <flow display_value="Send Photobooth Snapshot by Notification">492ea431ebd5021036e7f734bad0cd98</flow>
         <generation_source/>
@@ -1320,10 +1280,10 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:09</sys_created_on>
         <sys_id>d92ea431ebd5021036e7f734bad0cded</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:09</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
         <ui_id>60608f3f-2170-4d0d-8015-5f40e86fc182</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d92ea431ebd5021036e7f734bad0cded"/>
@@ -1386,20 +1346,20 @@
         <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
         <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
         <attributes/>
-        <comment>Send a single snapshot using the notification from Email Notification Single specified in the Photobooth Instance record.</comment>
+        <comment>Send a single snapshot using the notification from the field "Email Notification Single" in the Photobooth Instance record.</comment>
         <display_text/>
         <flow display_value="Send Photobooth Snapshot by Notification">492ea431ebd5021036e7f734bad0cd98</flow>
         <generation_source/>
         <order>6</order>
-        <parent_ui_id>f64b8f42-a604-4c13-b94b-05f7a9ed62fb</parent_ui_id>
+        <parent_ui_id>741e09a4-5c82-442b-b231-9b6b26074557</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:09</sys_created_on>
         <sys_id>dd2ea431ebd5021036e7f734bad0cdf3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:09</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
         <ui_id>86d28a2e-f023-452c-8ae6-01a595ff6b79</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dd2ea431ebd5021036e7f734bad0cdf3"/>
@@ -1457,7 +1417,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=dd2ea431ebd5021036e7f734bad0cdf3"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd2ea431ebd5021036e7f734bad0cdf3"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=492ea431ebd5021036e7f734bad0cd98"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=492ea431ebd5021036e7f734bad0cd98^sys_idNOT IN412ea431ebd5021036e7f734bad0cdce,c92ea431ebd5021036e7f734bad0cdd2"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=492ea431ebd5021036e7f734bad0cd98^sys_idNOT IN412ea431ebd5021036e7f734bad0cdce,ccd0fc70fbb10250d84afe7405efdc9e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">742ea431ebd5021036e7f734bad0cd36</block>
@@ -1482,10 +1442,10 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:08</sys_created_on>
         <sys_id>412ea431ebd5021036e7f734bad0cdce</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:08</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
         <ui_id>2898510e-9a7e-4335-b440-bdc7a7f9edee</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1534,7 +1494,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=412ea431ebd5021036e7f734bad0cdce"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">bc2ea431ebd5021036e7f734bad0cd3d</block>
+        <block display_value="">f3b07c70fbb10250d84afe7405efdc6b</block>
         <comment/>
         <connected_to>2898510e-9a7e-4335-b440-bdc7a7f9edee</connected_to>
         <decision_table/>
@@ -1546,66 +1506,26 @@
         <flow_variables_assigned/>
         <generation_source/>
         <inputs/>
-        <inputs/>
-        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
         <order>5</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic</sys_class_name>
         <sys_created_by>jon.lind</sys_created_by>
-        <sys_created_on>2024-04-01 21:37:08</sys_created_on>
-        <sys_id>c92ea431ebd5021036e7f734bad0cdd2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
+        <sys_created_on>2024-04-23 15:46:16</sys_created_on>
+        <sys_id>ccd0fc70fbb10250d84afe7405efdc9e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:08</sys_updated_on>
-        <ui_id>f64b8f42-a604-4c13-b94b-05f7a9ed62fb</ui_id>
+        <sys_updated_on>2024-04-23 15:46:16</sys_updated_on>
+        <ui_id>741e09a4-5c82-442b-b231-9b6b26074557</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
     </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=c92ea431ebd5021036e7f734bad0cdd2"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>c92ea431ebd5021036e7f734bad0cdd2</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>jon.lind</sys_created_by>
-        <sys_created_on>2024-04-01 21:37:08</sys_created_on>
-        <sys_id>4d2ea431ebd5021036e7f734bad0cdd5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:08</sys_updated_on>
-        <value>Snapshot Type is Single</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=c92ea431ebd5021036e7f734bad0cdd2"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>c92ea431ebd5021036e7f734bad0cdd2</id>
-        <sys_created_by>jon.lind</sys_created_by>
-        <sys_created_on>2024-04-01 21:37:08</sys_created_on>
-        <sys_id>c92ea431ebd5021036e7f734bad0cdd5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:08</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
-        <value>{{57871040-84c6-4965-a42b-631a259db848.Record.snapshot_type}}=single</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>c92ea431ebd5021036e7f734bad0cdd2</id>
-        <sys_created_by>jon.lind</sys_created_by>
-        <sys_created_on>2024-04-01 21:37:08</sys_created_on>
-        <sys_id>092ea431ebd5021036e7f734bad0cdd5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:08</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c92ea431ebd5021036e7f734bad0cdd2"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=c92ea431ebd5021036e7f734bad0cdd2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ccd0fc70fbb10250d84afe7405efdc9e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ccd0fc70fbb10250d84afe7405efdc9e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ccd0fc70fbb10250d84afe7405efdc9e"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=492ea431ebd5021036e7f734bad0cd98"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=492ea431ebd5021036e7f734bad0cd98"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_492ea431ebd5021036e7f734bad0cd98^sys_idNOT IN452ea431ebd5021036e7f734bad0cda7,892ea431ebd5021036e7f734bad0cdc7"/>
@@ -1668,16 +1588,16 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"a12ee431ebd5021036e7f734bad0cd4c","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Send Photobooth Snapshot by Notification">e13fac77836c4a10f918eac0deaad3d0</plan_id>
-        <snapshot>a50fa871ebd5021036e7f734bad0cd62</snapshot>
+        <snapshot>a622f4f0fbb10250d84afe7405efdca3</snapshot>
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-04-01 21:37:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a12ee431ebd5021036e7f734bad0cd4c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-04-01 21:37:10</sys_updated_on>
+        <sys_updated_on>2024-04-23 15:46:18</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2133000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Share a snapshot.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>share_snapshot</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.integrations","label":"Trigger - Record Created or Updated➛Photobooth Snapshot Record➛Integrations","reference":"","reference_display":"Integrations","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"integrations","usedInstances":{"36933dde-d76b-4d31-96b5-0e2da14f7bf0":["condition"]}},{"name":"Created or Updated_1.current.share_email","label":"Trigger - Record Created or Updated➛Photobooth Snapshot Record➛Share Email","reference":"","reference_display":"Share Email","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"share_email","usedInstances":{"2ae754e5-5c86-41ed-8976-b3cbc92d5e56":["email"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Photobooth Snapshot Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_pb_core_snapshot","column_name":"sys_id","usedInstances":{"2ae754e5-5c86-41ed-8976-b3cbc92d5e56":["snapshot_sys_id"]}}]</label_cache>
+        <master_snapshot>e6bd2398fb7d8e10d84afe7405efdcbe</master_snapshot>
+        <name>Share Snapshot</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>c8f2f710fbbd8e10d84afe7405efdcbf</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:07:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>192cefd4fb7d8e10d84afe7405efdc31</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_name>Share Snapshot</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_hub_flow_192cefd4fb7d8e10d84afe7405efdc31</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:45:09</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_variable_value action="delete_multiple" query="document_key=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_pb_core_snapshot">snapshot_stateCHANGESTOSharing<item display_value="Sharing" endquery="false" field="snapshot_state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Sharing"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:37:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c8f2f710fbbd8e10d84afe7405efdcbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:37:27</sys_updated_on>
+        <table>x_snc_pb_core_snapshot</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>192cefd4fb7d8e10d84afe7405efdc31</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:43:22</sys_created_on>
+        <sys_id>e6443790fbbd8e10d84afe7405efdce2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:22</sys_updated_on>
+        <trigger display_value="">c8f2f710fbbd8e10d84afe7405efdcbf</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT INe6443790fbbd8e10d84afe7405efdce2"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT INc7fc6358fb7d8e10d84afe7405efdc17"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Share Snapshot">192cefd4fb7d8e10d84afe7405efdc31</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:11:26</sys_created_on>
+        <sys_id>c7fc6358fb7d8e10d84afe7405efdc17</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:44:59</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c7fc6358fb7d8e10d84afe7405efdc17"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c7fc6358fb7d8e10d84afe7405efdc17</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:11:26</sys_created_on>
+        <sys_id>4bfc6358fb7d8e10d84afe7405efdc18</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:42:42</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c7fc6358fb7d8e10d84afe7405efdc17</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:11:27</sys_created_on>
+        <sys_id>87fc6358fb7d8e10d84afe7405efdc19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:11:27</sys_updated_on>
+        <value>x_snc_pb_core_snapshot</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c7fc6358fb7d8e10d84afe7405efdc17</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:11:27</sys_created_on>
+        <sys_id>c3fc6358fb7d8e10d84afe7405efdc19</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:37:19</sys_updated_on>
+        <value>snapshot_stateCHANGESTOSharing</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=c7fc6358fb7d8e10d84afe7405efdc17"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT IN112cefd4fb7d8e10d84afe7405efdc34"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>192cefd4fb7d8e10d84afe7405efdc31</id>
+        <name>Share Snapshot</name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:07:46</sys_created_on>
+        <sys_id>112cefd4fb7d8e10d84afe7405efdc34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:07:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=112cefd4fb7d8e10d84afe7405efdc34"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT INc6bd2398fb7d8e10d84afe7405efdc6d,cebd2398fb7d8e10d84afe7405efdc71,d6bd2398fb7d8e10d84afe7405efdc75"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Share Snapshot">192cefd4fb7d8e10d84afe7405efdc31</model>
+        <model_id>192cefd4fb7d8e10d84afe7405efdc31</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:39</sys_created_on>
+        <sys_id>c6bd2398fb7d8e10d84afe7405efdc6d</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c6bd2398fb7d8e10d84afe7405efdc6d"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">d6018d5c90c0021087de3cfccdb0d63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Share Snapshot">192cefd4fb7d8e10d84afe7405efdc31</model>
+        <model_id>192cefd4fb7d8e10d84afe7405efdc31</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:40</sys_created_on>
+        <sys_id>cebd2398fb7d8e10d84afe7405efdc71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cebd2398fb7d8e10d84afe7405efdc71"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Share Snapshot">192cefd4fb7d8e10d84afe7405efdc31</model>
+        <model_id>192cefd4fb7d8e10d84afe7405efdc31</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:40</sys_created_on>
+        <sys_id>d6bd2398fb7d8e10d84afe7405efdc75</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d6bd2398fb7d8e10d84afe7405efdc75"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT IN5d3da758fb7d8e10d84afe7405efdc8d"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Share Snapshot">192cefd4fb7d8e10d84afe7405efdc31</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id>36933dde-d76b-4d31-96b5-0e2da14f7bf0</parent_ui_id>
+        <subflow display_value="Send Photobooth Snapshot by Notification">492ea431ebd5021036e7f734bad0cd98</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:12:26</sys_created_on>
+        <sys_id>5d3da758fb7d8e10d84afe7405efdc8d</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:23</sys_updated_on>
+        <ui_id>2ae754e5-5c86-41ed-8976-b3cbc92d5e56</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5d3da758fb7d8e10d84afe7405efdc8d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>5d3da758fb7d8e10d84afe7405efdc8d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:12:26</sys_created_on>
+        <sys_id>ed3de758fb7d8e10d84afe7405efdc43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:12:26</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">a53da758fb7d8e10d84afe7405efdc8f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5d3da758fb7d8e10d84afe7405efdc8d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>5d3da758fb7d8e10d84afe7405efdc8d</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:35</sys_created_on>
+        <sys_id>45bd2398fb7d8e10d84afe7405efdc1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_492ea431ebd5021036e7f734bad0cd98</table>
+        <value>{{Created or Updated_1.current.share_email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>snapshot_sys_id</field>
+        <id>5d3da758fb7d8e10d84afe7405efdc8d</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:35</sys_created_on>
+        <sys_id>81bd2398fb7d8e10d84afe7405efdc1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_492ea431ebd5021036e7f734bad0cd98</table>
+        <value>{{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>5d3da758fb7d8e10d84afe7405efdc8d</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:12:26</sys_created_on>
+        <sys_id>293de758fb7d8e10d84afe7405efdc43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:12:26</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_5d3da758fb7d8e10d84afe7405efdc8d</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_5d3da758fb7d8e10d84afe7405efdc8d^id=5d3da758fb7d8e10d84afe7405efdc8d"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=5d3da758fb7d8e10d84afe7405efdc8d^sys_idNOT INa53da758fb7d8e10d84afe7405efdc8f"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">5d3da758fb7d8e10d84afe7405efdc8d</model>
+        <model_id>5d3da758fb7d8e10d84afe7405efdc8d</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_5d3da758fb7d8e10d84afe7405efdc8d</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:12:26</sys_created_on>
+        <sys_id>a53da758fb7d8e10d84afe7405efdc8f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5d3da758fb7d8e10d84afe7405efdc8d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT INa6f23b10fbbd8e10d84afe7405efdcb6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b6233f10fbbd8e10d84afe7405efdc39</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Share Snapshot">192cefd4fb7d8e10d84afe7405efdc31</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:37:37</sys_created_on>
+        <sys_id>a6f23b10fbbd8e10d84afe7405efdcb6</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:23</sys_updated_on>
+        <ui_id>36933dde-d76b-4d31-96b5-0e2da14f7bf0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a6f23b10fbbd8e10d84afe7405efdcb6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a6f23b10fbbd8e10d84afe7405efdcb6</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:38:09</sys_created_on>
+        <sys_id>1a133b10fbbd8e10d84afe7405efdc33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:38:09</sys_updated_on>
+        <value>Integrations contains Share to Email</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a6f23b10fbbd8e10d84afe7405efdcb6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a6f23b10fbbd8e10d84afe7405efdcb6</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:38:09</sys_created_on>
+        <sys_id>96133b10fbbd8e10d84afe7405efdc33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:38:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.integrations}}LIKEShare to Email</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>a6f23b10fbbd8e10d84afe7405efdcb6</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:38:09</sys_created_on>
+        <sys_id>de133b10fbbd8e10d84afe7405efdc32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:38:09</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a6f23b10fbbd8e10d84afe7405efdcb6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a6f23b10fbbd8e10d84afe7405efdcb6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT IN02bd2398fb7d8e10d84afe7405efdc71,1abd2398fb7d8e10d84afe7405efdc74,dabd2398fb7d8e10d84afe7405efdc77"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:40</sys_created_on>
+        <sys_id>02bd2398fb7d8e10d84afe7405efdc71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:40</sys_created_on>
+        <sys_id>1abd2398fb7d8e10d84afe7405efdc74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:40</sys_created_on>
+        <sys_id>dabd2398fb7d8e10d84afe7405efdc77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_192cefd4fb7d8e10d84afe7405efdc31"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Share a snapshot.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>share_snapshot</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.integrations","label":"Trigger - Record Created or Updated➛Photobooth Snapshot Record➛Integrations","reference":"","reference_display":"Integrations","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"integrations","usedInstances":{"36933dde-d76b-4d31-96b5-0e2da14f7bf0":["condition"]}},{"name":"Created or Updated_1.current.share_email","label":"Trigger - Record Created or Updated➛Photobooth Snapshot Record➛Share Email","reference":"","reference_display":"Share Email","type":"string","base_type":"string","parent_table_name":"x_snc_pb_core_snapshot","column_name":"share_email","usedInstances":{"2ae754e5-5c86-41ed-8976-b3cbc92d5e56":["email"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Photobooth Snapshot Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_pb_core_snapshot","column_name":"sys_id","usedInstances":{"2ae754e5-5c86-41ed-8976-b3cbc92d5e56":["snapshot_sys_id"]}}]</label_cache>
+        <master>true</master>
+        <name>Share Snapshot</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Share Snapshot">192cefd4fb7d8e10d84afe7405efdc31</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e6bd2398fb7d8e10d84afe7405efdcbe</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:21</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e6bd2398fb7d8e10d84afe7405efdcbe^sys_idNOT INf2bd6398fb7d8e10d84afe7405efdc0e"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Share Snapshot">e6bd2398fb7d8e10d84afe7405efdcbe</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>f2bd6398fb7d8e10d84afe7405efdc0e</sys_id>
+        <sys_mod_count>41</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:22</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f2bd6398fb7d8e10d84afe7405efdc0e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f2bd6398fb7d8e10d84afe7405efdc0e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>3ebd6398fb7d8e10d84afe7405efdc0e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:37:26</sys_updated_on>
+        <value>snapshot_stateCHANGESTOSharing</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f2bd6398fb7d8e10d84afe7405efdc0e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>7abd6398fb7d8e10d84afe7405efdc0e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:42:49</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f2bd6398fb7d8e10d84afe7405efdc0e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>febd6398fb7d8e10d84afe7405efdc0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:42</sys_updated_on>
+        <value>x_snc_pb_core_snapshot</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=f2bd6398fb7d8e10d84afe7405efdc0e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e6bd2398fb7d8e10d84afe7405efdcbe^sys_idNOT INa6bd2398fb7d8e10d84afe7405efdcbf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e6bd2398fb7d8e10d84afe7405efdcbe</id>
+        <name>Share Snapshot</name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:41</sys_created_on>
+        <sys_id>a6bd2398fb7d8e10d84afe7405efdcbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a6bd2398fb7d8e10d84afe7405efdcbf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e6bd2398fb7d8e10d84afe7405efdcbe^sys_idNOT IN66bd2398fb7d8e10d84afe7405efdcc9,6abd2398fb7d8e10d84afe7405efdcd1,aabd2398fb7d8e10d84afe7405efdcc0"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">d6018d5c90c0021087de3cfccdb0d63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Share Snapshot">e6bd2398fb7d8e10d84afe7405efdcbe</model>
+        <model_id>e6bd2398fb7d8e10d84afe7405efdcbe</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:41</sys_created_on>
+        <sys_id>66bd2398fb7d8e10d84afe7405efdcc9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:17:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=66bd2398fb7d8e10d84afe7405efdcc9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Share Snapshot">e6bd2398fb7d8e10d84afe7405efdcbe</model>
+        <model_id>e6bd2398fb7d8e10d84afe7405efdcbe</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:41</sys_created_on>
+        <sys_id>6abd2398fb7d8e10d84afe7405efdcd1</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6abd2398fb7d8e10d84afe7405efdcd1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Share Snapshot">e6bd2398fb7d8e10d84afe7405efdcbe</model>
+        <model_id>e6bd2398fb7d8e10d84afe7405efdcbe</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:41</sys_created_on>
+        <sys_id>aabd2398fb7d8e10d84afe7405efdcc0</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aabd2398fb7d8e10d84afe7405efdcc0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e6bd2398fb7d8e10d84afe7405efdcbe^sys_idNOT INb2bd6398fb7d8e10d84afe7405efdc0f"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Share Snapshot">e6bd2398fb7d8e10d84afe7405efdcbe</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id>36933dde-d76b-4d31-96b5-0e2da14f7bf0</parent_ui_id>
+        <subflow display_value="Send Photobooth Snapshot by Notification">492ea431ebd5021036e7f734bad0cd98</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>b2bd6398fb7d8e10d84afe7405efdc0f</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:21</sys_updated_on>
+        <ui_id>2ae754e5-5c86-41ed-8976-b3cbc92d5e56</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b2bd6398fb7d8e10d84afe7405efdc0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>b2bd6398fb7d8e10d84afe7405efdc0f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>febd6398fb7d8e10d84afe7405efdc27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:42</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">7ebd6398fb7d8e10d84afe7405efdc0f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b2bd6398fb7d8e10d84afe7405efdc0f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>b2bd6398fb7d8e10d84afe7405efdc0f</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>76bd6398fb7d8e10d84afe7405efdc27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_492ea431ebd5021036e7f734bad0cd98</table>
+        <value>{{Created or Updated_1.current.share_email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>snapshot_sys_id</field>
+        <id>b2bd6398fb7d8e10d84afe7405efdc0f</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>b2bd6398fb7d8e10d84afe7405efdc27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_492ea431ebd5021036e7f734bad0cd98</table>
+        <value>{{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>b2bd6398fb7d8e10d84afe7405efdc0f</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>7ebd6398fb7d8e10d84afe7405efdc27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:42</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_b2bd6398fb7d8e10d84afe7405efdc0f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_b2bd6398fb7d8e10d84afe7405efdc0f^id=b2bd6398fb7d8e10d84afe7405efdc0f"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=b2bd6398fb7d8e10d84afe7405efdc0f^sys_idNOT IN7ebd6398fb7d8e10d84afe7405efdc0f"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">b2bd6398fb7d8e10d84afe7405efdc0f</model>
+        <model_id>b2bd6398fb7d8e10d84afe7405efdc0f</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_b2bd6398fb7d8e10d84afe7405efdc0f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>7ebd6398fb7d8e10d84afe7405efdc0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b2bd6398fb7d8e10d84afe7405efdc0f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e6bd2398fb7d8e10d84afe7405efdcbe^sys_idNOT IN53233f10fbbd8e10d84afe7405efdcdf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b6233f10fbbd8e10d84afe7405efdc39</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Share Snapshot">e6bd2398fb7d8e10d84afe7405efdcbe</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:38:29</sys_created_on>
+        <sys_id>53233f10fbbd8e10d84afe7405efdcdf</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:43:21</sys_updated_on>
+        <ui_id>36933dde-d76b-4d31-96b5-0e2da14f7bf0</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=53233f10fbbd8e10d84afe7405efdcdf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>53233f10fbbd8e10d84afe7405efdcdf</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:38:29</sys_created_on>
+        <sys_id>17233f10fbbd8e10d84afe7405efdce2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:38:29</sys_updated_on>
+        <value>Integrations contains Share to Email</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=53233f10fbbd8e10d84afe7405efdcdf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>53233f10fbbd8e10d84afe7405efdcdf</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:38:29</sys_created_on>
+        <sys_id>93233f10fbbd8e10d84afe7405efdce2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:38:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.integrations}}LIKEShare to Email</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>53233f10fbbd8e10d84afe7405efdcdf</id>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:38:29</sys_created_on>
+        <sys_id>df233f10fbbd8e10d84afe7405efdce1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:38:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=53233f10fbbd8e10d84afe7405efdcdf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=53233f10fbbd8e10d84afe7405efdcdf"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe^sys_idNOT IN22bd2398fb7d8e10d84afe7405efdcce,2ebd2398fb7d8e10d84afe7405efdcc5,6ebd6398fb7d8e10d84afe7405efdc07"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:41</sys_created_on>
+        <sys_id>22bd2398fb7d8e10d84afe7405efdcce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:41</sys_created_on>
+        <sys_id>2ebd2398fb7d8e10d84afe7405efdcc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_id>6ebd6398fb7d8e10d84afe7405efdc07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:14:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e6bd2398fb7d8e10d84afe7405efdcbe"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>192cefd4fb7d8e10d84afe7405efdc31</sys_id>
+        <latest_snapshot>e6bd2398fb7d8e10d84afe7405efdcbe</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch1-hotfix1-03-20-2024_03-21-2024_1424.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=192cefd4fb7d8e10d84afe7405efdc31^sys_idNOT INf6bd6398fb7d8e10d84afe7405efdc34"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f6bd6398fb7d8e10d84afe7405efdc34","name":"plan","plan_signature":null}}</plan>
+        <plan_id>192cefd4fb7d8e10d84afe7405efdc31</plan_id>
+        <snapshot>6f643b90fbbd8e10d84afe7405efdca5</snapshot>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-04-22 16:14:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6bd6398fb7d8e10d84afe7405efdc34</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-22 16:42:50</sys_updated_on>
+        <trigger display_value="">c8f2f710fbbd8e10d84afe7405efdcbf</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=192cefd4fb7d8e10d84afe7405efdc31"/>
+</record_update>
