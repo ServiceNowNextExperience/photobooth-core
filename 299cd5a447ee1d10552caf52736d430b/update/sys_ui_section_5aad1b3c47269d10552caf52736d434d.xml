@@ -168,6 +168,20 @@
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>client_id</element>
+            <position>12</position>
+            <sys_created_by>jon.lind</sys_created_by>
+            <sys_created_on>2024-04-25 17:02:47</sys_created_on>
+            <sys_id>9485d791fb7d8250d84afe7405efdca6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_pb_core_request" sys_domain="global" view="Default view">5aad1b3c47269d10552caf52736d434d</sys_ui_section>
+            <sys_updated_by>jon.lind</sys_updated_by>
+            <sys_updated_on>2024-04-25 17:02:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

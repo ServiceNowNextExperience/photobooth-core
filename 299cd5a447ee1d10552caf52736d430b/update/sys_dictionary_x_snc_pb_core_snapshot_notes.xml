@@ -34,7 +34,7 @@
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>4000</max_length>
         <name>x_snc_pb_core_snapshot</name>
         <next_element/>
         <primary>false</primary>
@@ -57,8 +57,8 @@
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_pb_core_snapshot_notes</sys_update_name>
-        <sys_updated_by>jarod.mundt@snc</sys_updated_by>
-        <sys_updated_on>2023-04-05 15:43:12</sys_updated_on>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-04-25 19:53:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
