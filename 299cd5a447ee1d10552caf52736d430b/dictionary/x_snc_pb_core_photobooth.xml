@@ -7,6 +7,12 @@
         <element attributes="edge_encryption_enabled=true" label="Completion Message" max_length="255" name="completion_message" type="string"/>
         <element default="d4a045f047f35d5075cac472846d43c1" label="Email Notification Main" mandatory="true" max_length="32" name="email_notification_main" reference="sysevent_email_action" reference_qual="sys_scope.nameSTARTSWITHPhotobooth^EQ" reference_qual_condition="sys_scope.nameSTARTSWITHPhotobooth^EQ" type="reference"/>
         <element default="3f29ca7a9762e110ef32312e6253aff7" label="Email Notification Single" max_length="32" name="email_notification_single" reference="sysevent_email_action" type="reference"/>
+        <element choice="3" default="yes" label="Enable Camera Button" max_length="40" name="enable_camera_button" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="10" value="no"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" default="white" hint="The CSS Canvas Fill Style (usually a color such as &quot;Green&quot; or &quot;White&quot;) for the background of the composite 2x2 image." label="Fill Style" mandatory="true" max_length="100" name="fill_style" type="string"/>
         <element default="10" hint="Gap around edges and between images in 2x2 composite." label="Gap Pixels" mandatory="true" max_length="40" name="gap" type="integer"/>
