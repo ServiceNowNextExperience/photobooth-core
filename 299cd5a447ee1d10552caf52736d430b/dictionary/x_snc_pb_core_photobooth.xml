@@ -6,7 +6,7 @@
         <element default="50" hint="Height of the &quot;Chin&quot; at the bottom of the composite 2x2 image result.  Leave as 0 for no chin." label="Chin Height Pixels" mandatory="true" max_length="40" name="chin_height" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Completion Message" max_length="255" name="completion_message" type="string"/>
         <element default="d4a045f047f35d5075cac472846d43c1" label="Email Notification Main" mandatory="true" max_length="32" name="email_notification_main" reference="sysevent_email_action" reference_qual="sys_scope.nameSTARTSWITHPhotobooth^EQ" reference_qual_condition="sys_scope.nameSTARTSWITHPhotobooth^EQ" type="reference"/>
-        <element default="3f29ca7a9762e110ef32312e6253aff7" label="Email Notification Single" max_length="32" name="email_notification_single" reference="sysevent_email_action" type="reference"/>
+        <element default="3f29ca7a9762e110ef32312e6253aff7" label="Email Notification Single" max_length="32" name="email_notification_single" reference="sysevent_email_action" reference_qual="sys_scope.nameSTARTSWITHPhotobooth^EQ" reference_qual_condition="sys_scope.nameSTARTSWITHPhotobooth^EQ" type="reference"/>
         <element choice="3" default="yes" label="Enable Camera Button" max_length="40" name="enable_camera_button" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
