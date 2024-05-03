@@ -95,7 +95,7 @@
 <td><span id="templateAddress" class="footer" style="color: #ffffff; font-size: 12px; line-height: 18px; text-align: center; margin: 0 !important;"> 2225 Lawson Lane, Santa Clara, CA 95054, United States </span></td>
 </tr>
 <tr align="center">
-<td><span id="templateCopyright" class="footer" style="color: #ffffff; font-size: 12px; line-height: 18px; text-align: center; margin: 0 !important;"> &copy; 2023 ServiceNow Inc. All rights reserved. </span></td>
+<td><span id="templateCopyright" class="footer" style="color: #ffffff; font-size: 12px; line-height: 18px; text-align: center; margin: 0 !important;"> &copy; 2024 ServiceNow Inc. All rights reserved. </span></td>
 </tr>
 </tbody>
 </table>
@@ -116,13 +116,13 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2024-02-28 16:06:31</sys_created_on>
         <sys_id>7d9521838364c610f918eac0deaad34b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Photobooth Spaceman</sys_name>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_email_layout_7d9521838364c610f918eac0deaad34b</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-02-28 20:43:37</sys_updated_on>
+        <sys_updated_on>2024-05-03 17:22:04</sys_updated_on>
     </sys_email_layout>
 </record_update>
