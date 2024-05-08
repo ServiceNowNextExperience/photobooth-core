@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_pb_core_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Stop Dupe Requests</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	const MIN_INTERVAL_SECONDS = 10;
+	const createdOn = current.sys_created_on+"";
+	const gdt = new GlideDateTime();
+	gdt.setValue(createdOn);	
+	const timeEpoc = gdt.getNumericValue() - 1000 * MIN_INTERVAL_SECONDS;
+	gdt.setNumericValue(timeEpoc);
+	const mostRecentAllowed = gdt.getValue();
+
+	const gr = new GlideRecord("x_snc_pb_core_request");
+	gr.addQuery("sys_created_by", current.sys_created_by);
+	gr.addQuery("sys_created_on", ">", mostRecentAllowed);
+	gr.query();
+
+	if(gr.getRowCount() > 0) {
+		gs.addInfoMessage("Attempt to create a new request within " + MIN_INTERVAL_SECONDS + " seconds stopped.  Please wait and try again.");
+		current.setAbortAction(true);
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2024-05-08 15:06:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8094fd29eb4e0e1036e7f734bad0cd5d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Stop Dupe Requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
+        <sys_update_name>sys_script_8094fd29eb4e0e1036e7f734bad0cd5d</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-05-08 15:16:21</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=8094fd29eb4e0e1036e7f734bad0cd5d"/>
+</record_update>
