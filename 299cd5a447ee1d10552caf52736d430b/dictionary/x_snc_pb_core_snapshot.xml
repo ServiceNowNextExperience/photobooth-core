@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="80cc1bf847269d10552caf52736d4346" label="Photobooth Snapshot" max_length="40" name="x_snc_pb_core_snapshot" type="collection">
-        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Image" max_length="40" name="image" type="user_image"/>
         <element attributes="edge_encryption_enabled=true" hint="List of information to support integrations, line delimited.  E.g. for email it would be an email address." label="Integrations" max_length="1000" name="integrations" type="string"/>
-        <element label="Notes" max_length="4000" name="notes" type="string"/>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Parent" max_length="32" name="parent" reference="x_snc_pb_core_snapshot" type="reference"/>
-        <element label="Request" max_length="32" name="request" reference="x_snc_pb_core_request" type="reference"/>
         <element label="Share Email" max_length="255" name="share_email" type="string"/>
         <element choice="3" default="Draft" label="Snapshot state" max_length="40" name="snapshot_state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="0" value="Draft"/>
+                <element inactive_on_update="false" label="Shared" sequence="3" value="Shared"/>
                 <element inactive_on_update="false" label="Ready" sequence="1" value="Ready"/>
                 <element inactive_on_update="false" label="Sharing" sequence="2" value="Sharing"/>
-                <element inactive_on_update="false" label="Shared" sequence="3" value="Shared"/>
             </choice>
         </element>
+        <element label="Notes" max_length="4000" name="notes" type="string"/>
+        <element label="Parent" max_length="32" name="parent" reference="x_snc_pb_core_snapshot" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element choice="3" label="Snapshot type" max_length="40" name="snapshot_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Main" sequence="0" value="main"/>
                 <element inactive_on_update="false" label="Single" sequence="1" value="single"/>
                 <element inactive_on_update="false" label="AI" sequence="2" value="ai"/>
+                <element inactive_on_update="false" label="Main" sequence="0" value="main"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true,pdf_cell_type=image" label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Request" max_length="32" name="request" reference="x_snc_pb_core_request" type="reference"/>
+        <element label="Company Email" max_length="40" name="company_email" type="string"/>
         <index name="index">
             <element name="parent"/>
         </index>
