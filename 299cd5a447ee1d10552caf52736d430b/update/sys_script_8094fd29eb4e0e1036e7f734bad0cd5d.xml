@@ -28,7 +28,7 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	const MIN_INTERVAL_SECONDS = 10;
+	const MIN_INTERVAL_SECONDS = 15;
 	const createdOn = current.sys_created_on+"";
 	const gdt = new GlideDateTime();
 	gdt.setValue(createdOn);	
@@ -39,6 +39,7 @@
 	const gr = new GlideRecord("x_snc_pb_core_request");
 	gr.addQuery("sys_created_by", current.sys_created_by);
 	gr.addQuery("sys_created_on", ">", mostRecentAllowed);
+	gr.addQuery("photobooth", current.photobooth+"");
 	gr.query();
 
 	if(gr.getRowCount() > 0) {
@@ -52,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8094fd29eb4e0e1036e7f734bad0cd5d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Stop Dupe Requests</sys_name>
         <sys_overrides/>
         <sys_package display_value="Photobooth Core" source="x_snc_pb_core">299cd5a447ee1d10552caf52736d430b</sys_package>
@@ -60,7 +61,7 @@
         <sys_scope display_value="Photobooth Core">299cd5a447ee1d10552caf52736d430b</sys_scope>
         <sys_update_name>sys_script_8094fd29eb4e0e1036e7f734bad0cd5d</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2024-05-08 15:16:21</sys_updated_on>
+        <sys_updated_on>2024-05-08 16:05:07</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
