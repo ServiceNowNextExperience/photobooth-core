@@ -16,6 +16,7 @@
         <logo/>
         <menu/>
         <name>Photobooth Core</name>
+        <package_json/>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
@@ -31,16 +32,16 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2022-10-11 18:32:40</sys_created_on>
         <sys_id>299cd5a447ee1d10552caf52736d430b</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_updated_by>jon.lind@snc</sys_updated_by>
-        <sys_updated_on>2024-03-01 19:54:02</sys_updated_on>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2024-08-14 16:06:13</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>2.0</version>
+        <version>2.1</version>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=299cd5a447ee1d10552caf52736d430b"/>
 </record_update>
